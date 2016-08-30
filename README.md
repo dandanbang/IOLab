@@ -1,37 +1,22 @@
-# IOLab
-Course Structure and Map
-
+# Course Structure and Map
 Module 1 : Getting Started
 Fundamentals, Git,  IDEs, Command line etc
+
 Module 2 : Front End design and development
 HTML, CSS, DOM, Javascript, JQuery, Ajax
+
 Module 3 : Back End design and development
 Web Frameworks, architecture , Database design
-Module 4 :  Advanced topics
-APIs, Visualization tools, Security, Deployment
-Project Presentations
-Grade Distribution
 
+Module 4 :  Advanced topics. APIs, Visualization tools, Security, Deployment
+Project Presentations
+
+# Grade Distribution
 40% final project delivery
 40% weekly submissions (assignments + project milestones + reading responses)
 20% participation (attendance and class-work)
-Course Websites
 
-BCourses: Assignments, Grades, Reading material, Syllabus
-
-Github: Code, Resources, Templates, etc (TBD)
-
-Feedback: This class will take an iterative approach to its teaching. We welcome any and all feedback at anytime throughout the course.
-
-Structure of Lectures*
-
-Class time will be roughly divided into:
-50% - Lecture
-50% - Hands-on lab work 
-
-*subject to change depending on topic
-
-Due Dates & Late Policy
+# Due Dates & Late Policy
 
 All homework assignments are due before 12pm on the submission date. 
 
