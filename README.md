@@ -1,5 +1,7 @@
 # How to Submit Homework Via Github
-You're going to submit homework via Git. 
+
+You're going to submit homework via Git.
+
 1. After you've done with your homework, navigate to your IOLab directory using the shell. 
 
 2. Run a git status command in the shell and you should see the homework files appearing as untracked files
