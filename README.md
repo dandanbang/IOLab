@@ -1,3 +1,13 @@
+# Make sure you do this before you start every homework/lab that requires submission to git (this assumes you've configured the upstream in lab2 already)
+
+1. Fetch all the branches of that remote into remote-tracking branches, such as upstream/master: Do it by typing the command “git fetch upstream’
+
+2. Make sure that you're on your master branch by typing “git checkout master”
+
+3. Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes. Do this by typing “git rebase upstream/master"
+
+4. Now, let’s do “git push origin master” to make sure your origin master has is up to date as well. (so far only your local/master is up to date)
+
 # How to Submit Homework Via Github
 
 You're going to submit homework via Git.
