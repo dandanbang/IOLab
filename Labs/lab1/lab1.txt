@@ -1,0 +1,9 @@
+1. cd
+2. mkdir
+3. mv old_name new_name
+4. ls
+5. mv old_folder new_folder
+6. cp source_file destination_folder
+7. grep this_word this_file.txt
+8. ssh 
+9. rm
