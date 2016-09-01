@@ -1,0 +1,9 @@
+1. cd /home/user/directory
+2. mkdir /home/user/newdirectory
+3. mv /home/user/oldname /home/user/newname
+4. ls /home/user/
+5. mv /home/user/files/filename.txt /home/user/documents/
+6. copy /home/user/files/filename.txt /home/user/docments/filename.txt
+7. grep "string" filename.txt
+8. ssh user@remote-server
+9. rm -rf /path/to/directory
