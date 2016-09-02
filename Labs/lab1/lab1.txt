@@ -1,0 +1,9 @@
+1. cd
+2. mkdir
+3. mv old_name new_name
+4. ls
+5. mv file_name location
+6. cp source destination
+7. grep string file_name
+8. ssh user@host 'bash -s'
+9. rm -r directory
