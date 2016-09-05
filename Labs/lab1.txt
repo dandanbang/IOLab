@@ -1,0 +1,9 @@
+1. cd
+2. mkdir
+3. mv old-folder-name new-folder-name
+4. ls
+5. mv
+6. cp ~directory/filename ~/new location
+7. grep -n 'string to find' directory_to_search
+8. ssh remote_username@remote_host
+9. rm -rf Directory-name
