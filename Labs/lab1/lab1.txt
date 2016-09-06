@@ -1,0 +1,9 @@
+Change Directory: cd Desktop
+Create a Directory: mkdir IOLab
+Rename a Directory: mv IOLab IOLaboratory
+List the contents of a directory: ls IOLaboratory
+Move a file to a new location: mv test.txt ~/Desktop/IOLaboratory
+Copy a file to a new location: cp test.txt ~/Desktop
+Search for a string in a file: grep -c "hi" test.txt
+Access the shell of a remote machine: ssh
+Remove a directory folder: rmdir IOLaboratory
