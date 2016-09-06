@@ -17,9 +17,11 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family:  "Times New Roman", Georgia, Serif;;
 	vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -52,7 +54,7 @@ body {
 
 header, footer {
 	width: 100%;
-	background: #4d94ff;
+	background: #F67280;
 	color: #ffffff;
 	box-sizing: border-box;
 	height: 50px;
@@ -62,6 +64,7 @@ header, footer {
 
 header {
 	display: inline-block;
+	position: fixed;
 }
 
 footer {
@@ -89,6 +92,7 @@ h3 {
 	font-size: 1.33em;
 	font-weight: bold;
 	padding: 20px;
+	color: #F67280;
 }
 
 a {
@@ -124,15 +128,19 @@ a.nav-button:visited {
 /*START HERE*/
 
 .other-news-container {
-	float:left;
-	width: 25%;
-
+	display: inline-block;
+	width: 20%;
+	margin-top: 50px;
+	vertical-align: top; 
+	
 }
 
 .main-container {
-	float:left;
+	display: inline-block;
+	margin-top: 50px;
 	width: 75%;
-	
+	vertical-align: top;
+
 }
 
 .ib-grid-item {
@@ -143,12 +151,11 @@ a.nav-button:visited {
 
 .ib-grid-item img {
 	max-width: 66.67%;
-	max-height: 66.67%;
-	
+	max-height: 66.67%;	
 }
 
 .other-news-item {
 	box-sizing: border-box;
 	padding: 0 10%;
-	
+
 }
