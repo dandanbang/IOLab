@@ -62,6 +62,7 @@ header, footer {
 
 header {
 	display: inline-block;
+	position: fixed;
 }
 
 footer {
@@ -71,6 +72,8 @@ footer {
 }
 
 nav {
+	font-weight: bold;
+	font-size: 20px;
 	width: 50%;
 	margin-left: 25%;
 }
@@ -89,6 +92,7 @@ h3 {
 	font-size: 1.33em;
 	font-weight: bold;
 	padding: 20px;
+	color: lightblue;
 }
 
 a {
@@ -124,13 +128,17 @@ a.nav-button:visited {
 /*START HERE*/
 
 .other-news-container {
+	display:inline-block;
+	margin-top: 50px;
 	float: left;
 	width: 25%;
 
 }
 
 .main-container {
+	display:inline-block;
 	float: left;
+	margin-top: 50px;
 	width: 75%;
 	
 }
