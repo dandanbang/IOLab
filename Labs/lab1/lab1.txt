@@ -1,0 +1,4 @@
+Change Directory: cd
+Create a Directory: mkdir NAME-OF-YOUR-NEW-DIRECTORY
+Rename a Directory: git mv <old name> <new name>
+List the contents of a directory: ls
