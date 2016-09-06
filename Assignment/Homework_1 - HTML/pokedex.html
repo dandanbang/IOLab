@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			.container {
+				display: flex;
+				justify-content: space-between;
+			}
+			.footer1 {
+				display: inline-block;
+				margin: 15px 0 15px 0;
+			}
+			.input_box {
+				width:390px;
+				height:30px;
+				display: block;
+			}
+			.autoResizeImage {
+				max-width: 100%;
+				height:auto;
+				width:100%;
+			}
+			.notbold {
+				font-weight: normal;
+				text-indent:30px;
+			}
+			.buttonlength {
+				width:70px;
+			}
+			.indent {
+				text-indent:35px;
+			}
+			.poketable {
+				width: 420px;
+				border-spacing: 0px;
+			}
+			.poketable tr td {
+				background-color: #FFFFFF;
+				border: 1px solid black;
+			}
+			.background {
+				background: url("assets/backgrounds/background_home.png");
+				background-size: 420px 420px;
+				background-repeat: no-repeat;
+			}
+			#rcorners {
+				border-radius: 25px;
+				border: 5px solid #CD5C5C;
+				padding: 10px;
+				width: 380px;
+				height: 60px;
+				background-color: white;
+				margin: 10px 0 10px 5px;
+			}
+			input[type="text"]
+			{
+				font-family: "Gill Sans";
+				font-size: 14px;
+			}
+			h3,img {
+				display: inline-block;
+			}
+			ul {
+			  margin: 0;
+			}
+			ul.dashed {
+			  list-style-type: none;
+			}
+			ul.dashed > li {
+			  text-indent: -5px;
+			}
+			ul.dashed > li:before {
+			  content: "- ";
+			  text-indent: -5px;
+			}
+			li {
+				font-family: Gill Sans;
+				font-size: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container"; style="width:420px; height:60px; color: white; background-color: IndianRed">
+				<table class="table" cellspacing="0" cellpadding="4" border="0">
+					<tr>
+						<td width="200" align="left"> <button type="button" onclick="alert('Dropdown')"> <font face="Gill Sans" color="black"> Dropdown </font> </button> </td>
+						<td width="200" align="center"> <h3> <font face="Gill Sans" color="white"> <b> Pokedex </b> </font></h3> </td>
+						<td width="200" align="right"> <img src="assets/icons/pokeball_icon.png" alt="Pokeball" width="42" height="42"> </td>
+					</tr>
+				</table>
+			</div>
+		</header>
+		<article>
+			<div class="background">
+				<div style="padding:10px">
+					<input class="input_box" type="text" value="Search Pokemon">
+				</div>
+				<table>
+					<tr>
+						<td> <img src="assets/images/pickahu.png" alt="Pikachu" width="100" height="100" padding="10"> </td>
+						<td>
+							<table class="table" cellspacing="0" cellpadding="0" border="1">
+								<tr>
+									<th class="indent"; align="left"; bgcolor="#4682B4" width="295" border="1"> <font face="Gill Sans" size="3" color=white> <span class='notbold'> No. 001 Pikachu </span></font></th>
+								</tr>
+								<tr>
+									<td bgcolor="white" width="295" height="80"> 	<ul class="dashed">
+										<li>Electric</li>
+										<li>Gentle temperment</li>
+										<li>Grasslands</li>
+									</ul></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<p id="rcorners" position="relative" align="left"> <font face="Gill Sans" size="2">Pikachu can be seen napping in a bright sunlight.  It has two red dots on its cheeks. By practicing html and css Pikachu can learn confusion. Pikachu likes to steal computer chargers from sleeping collect students. </font></p>
+				<section>
+					<table class="poketable">
+						<tr>
+							<td> <img class="autoResizeImage" src="assets/images/whatisthat.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/abra.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/vulpix.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/nidorino.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/clafary.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/charmeleon.png"> </td>
+						</tr>
+							<td> <img class="autoResizeImage" src="assets/images/charmander.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/firething.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/jigglyppuff.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/horsea.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/pidgey.png"> </td>
+							<td> <img class="autoResizeImage" src="assets/images/wartortle.png"> </td>
+						</tr>
+					</table>
+				</section>
+				</div>
+		</article>
+		<footer>
+			<div class="container"; style="width:420px; height:60px; color: white; background-color: SteelBlue">	
+				<div class="footer1"; style="padding:5px">
+					<button class="buttonlength" type="button" onclick="alert('BACK')"> 
+					<font face="Gill Sans" color="black"> 
+					BACK 
+					</font> </button> 
+				</div>
+				<div class="footer1"; style="padding:5px">
+					<button class="buttonlength" type="button" onclick="window.location.href='map.html'"> 
+					<font face="Gill Sans" color="black"> 
+					MAP 
+					</font> </button> 
+				</div>
+				<div class="footer1"; style="padding:5px">
+					<button class="buttonlength" type="button" onclick="window.location.href='area.html'"> 
+					<font face="Gill Sans" color="black"> 
+					AREA 
+					</font> </button> 
+				</div>
+					<div class="footer1"; style="padding:5px">
+					<button class="buttonlength" type="button" onclick="alert('NEXT')"> 
+					<font face="Gill Sans" color="black"> 
+					NEXT 
+					</font> </button> 
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
