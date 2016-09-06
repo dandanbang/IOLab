@@ -1,3 +1,29 @@
 body {
 	background-image: url('../backgrounds/background_home.png');
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #BC5858;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+.topar_dropdown {
+	float: left;
+}
+h1 {
+	float: left;
+	color: white;
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+
+.topbar_icon {
+	float: right;
+	margin: 0;
+	padding: 0;
 }
