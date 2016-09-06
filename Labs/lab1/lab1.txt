@@ -1,0 +1,9 @@
+1. cd 
+2. mkdir
+3. mv lab1.txt lab2.txt
+4. ls
+5. mv lab1.txt ~/desktop/IOLab/IOLab-1/Labs/lab1
+6. cp lab1.txt ~/Desktop
+7. grep -l "text to find" lab1.txt
+8. ssh remote_host
+9. rmdir lab1
