@@ -17,7 +17,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/*font: inherit;*/
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -44,7 +44,9 @@ table {
 	border-spacing: 0;
 }
 
+
 /*----------------- CSS RESET ------------------*/
+
 
 body {
 	font-size: 18px;
@@ -123,14 +125,22 @@ a.nav-button:visited {
 
 /*START HERE*/
 
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .other-news-container {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	width: 25%;
 }
 
 .main-container {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	width: 75%;
+	text-align: center;
 }
 
 .ib-grid-item {
@@ -148,4 +158,8 @@ a.nav-button:visited {
 	box-sizing: border-box;
 	padding: 0 10%;
 	margin-bottom: 10%;
+}
+
+h3 {
+	text-align: center;
 }
