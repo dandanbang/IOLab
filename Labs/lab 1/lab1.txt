@@ -1,0 +1,26 @@
+1. Change Directory
+cd some_other_directory
+
+2. Create a Directory
+mkdir new_directory_name
+
+3. Rename a Directory
+mv old_dir_name new_dir_name
+
+4. List the contents of a directory
+ls
+
+5. Move a file to a new location
+mv file_to_move new_location
+
+6. Copy a file to a new location
+cp file_to_copy new_location
+
+7. Search for a string in a file
+grep string file
+
+8. Access the shell of a remote machine
+ssh [-p port_name] host_name
+
+9. Remove a directory folder
+rm -rf directory
