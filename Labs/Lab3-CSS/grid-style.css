@@ -124,32 +124,21 @@ a.nav-button:visited {
 /*START HERE*/
 
 .other-news-container {
-	float: left;
-	width: 25%; /* sets to 25% of body tag, because other-news-container is in body */
 
 }
 
 .main-container {
-	float: left;
-	width: 75%;
 	
 }
 
-.ib-grid-item { /* styles all the ib-grid-items using a single element in the css */
-	display: inline-block;
-	width: 33%;
-	margin-bottom: 5%; /* 5% of .main-container */
+.ib-grid-item {
+	
 }
 
 .ib-grid-item img {
-	max-width: 66.67%;
-	max-height: 66.67%; /* of div class ib-grid-item */
 	
 }
 
 .other-news-item {
-	box-sizing: border-box;
-	padding: 0 10%;
-	margin-bottom: 10%;
 	
 }
