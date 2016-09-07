@@ -1,0 +1,12 @@
+Change Directory: cd
+Create a Directory: mkdir NAME-OF-YOUR-NEW-DIRECTORY
+Rename a Directory: git mv <old name> <new name>
+List the contents of a directory: ls
+Move a file to a new location: delete, or git rm, the file from the old location and add, or git add, the file to the new location.
+Copy a file to a new location: cp old new; add new
+Search for a string in a file: git grep "string" $(git rev-list --all)
+Access the shell of a remote machine: ? don't quite understand what does this mean...
+	$ git add *.c
+	$ git add LICENSE
+	$ git commit -m 'initial project version'
+Remove a directory folder: git rm -r one-of-the-directories
