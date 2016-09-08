@@ -11,34 +11,35 @@
 </head>
 <body>
     <header class="topbar">
-            <button>Dropdown</button>
-            <h1>Pokedex</h1>
-            <img class="topbar_icon"alt="Pokeball Icon" src="assets/icons/pokeball_icon.png" />
+        <button class="topbar_button" onclick="location.href='#pickahu_detail'">Dropdown</button>
+        <h1>Pokedex</h1>
+        <div class="topbar_icon">
+            <img alt="Pokeball Icon" src="assets/icons/pokeball_icon.png" />
+        </div>
     </header>
-    <div>
-        <form>
-            <input type="text" placeholder="Search Pokemon"/>
+    <div id="search" class="searchbox">
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Search Pokemon"/>
         </form>
     </div>
-    <section>
-        <div>
+    <section class="pickahu">
+        <div class="pickahu_pic">
             <img src="assets/images/pickahu.png" alt="" />
         </div>
-        <div>
-            <span></span>
+        <div class="pickahu_profile">
             <h2>No. 001 Pikachu</h2>
-            <table>
+            <table class="pickahu_table">
                 <tr>
                     <td>
                         <ul>
                             <li>
-                                Electric type
+                                - Electric type
                             </li>
                             <li>
-                                Gentle temperment
+                                - Gentle temperment
                             </li>
                             <li>
-                                Grasslands
+                                - Grasslands
                             </li>
                         </ul>
                     </td>
@@ -46,69 +47,60 @@
             </table>
         </div>
     </section>
-    <article>
-        <h2>Pikachu</h2>
+    <article id="pickahu_detail" class="pickahu_content">
+        <!--  use h3 here to pass html validating, but it is invisible-->
+        <h3>Pikachu</h3>
         <p>
             Pikachu can be seen napping in a bright sunlight. It has two red dots on its cheeks. By practicing html and css Pikachu can learn confusion. Pikachu likes to steal computer chargers from sleeping college students.
         </p>
     </article>
-    <section>
-        <h2>Pictures</h2>
-        <table>
-            <tr>
-                <td>
-                    <img src="assets/images/whatisthat.png" alt="Whatisthat" />
-                </td>
-                <td>
-                    <img src="assets/images/abra.png" alt="Abra" />
-                </td>
-                <td>
-                    <img src="assets/images/vulpix.png" alt="Vulpix"  />
-                </td>
-                <td>
-                    <img src="assets/images/nidorino.png" alt="Nidorino"/>
-                </td>
-                <td>
-                    <img src="assets/images/clafary.png" alt="Clafary"/>
-                </td>
-                <td>
-                    <img src="assets/images/charmeleon.png" alt="Charmeleon" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="assets/images/charmander.png" alt="Charmander" />
-                </td>
-                <td>
-                    <img src="assets/images/firething.png" alt="Firething" />
-                </td>
-                <td>
-                    <img src="assets/images/jigglyppuff.png" alt="Jigglyppuff" />
-                </td>
-                <td>
-                    <img src="assets/images/horsea.png" alt="Horsea" />
-                </td>
-                <td>
-                    <img src="assets/images/pidgey.png" alt="Pidgey" />
-                </td>
-                <td>
-                    <img src="assets/images/wartortle.png" alt="Wartortle" />
-                </td>
-            </tr>
-        </table>
-
+    <section class="pictures">
+        <!--  use h3 here to pass html validating, but it is invisible-->
+        <h3>Pictures</h3>
+        <div class= "more_images">
+            <img src="assets/images/whatisthat.png" alt="Whatisthat" />
+        </div>
+        <div>
+            <img src="assets/images/abra.png" alt="Abra" />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/vulpix.png" alt="Vulpix"  />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/nidorino.png" alt="Nidorino"/>
+        </div>
+        <div class="more_images">
+            <img src="assets/images/clafary.png" alt="Clafary"/>
+        </div>
+        <div class="more_images">
+            <img src="assets/images/charmeleon.png" alt="Charmeleon" />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/charmander.png" alt="Charmander" />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/firething.png" alt="Firething" />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/jigglyppuff.png" alt="Jigglyppuff" />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/horsea.png" alt="Horsea" />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/pidgey.png" alt="Pidgey" />
+        </div>
+        <div class="more_images">
+            <img src="assets/images/wartortle.png" alt="Wartortle" />
+        </div>
     </section>
-
     <footer>
-        <nav>
-            <ul>
-                <li><span><a href="#">BACK</a></span></li>
-                <li><span><a href="#">MAP</a></span></li>
-                <li><span><a href="#">AREA</a></span></li>
-                <li><span><a href="#">NEXT</a></span></li>
-            </ul>
+        <nav class="navigation">
+            <a class="nav_button" href="#">BACK</a>
+            <a class="nav_button" href="map.html">MAP</a>
+            <a class="nav_button" href="area.html">AREA</a>
+            <a class="nav_button" href="#search">NEXT</a>
         </nav>
-
     </footer>
 </body>
 

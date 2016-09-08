@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 			main: {
 				files: [
 					{expand: true, cwd: 'src/assets/', src: ['**'], dest: 'Assignment/Homework_1 - HTML/assets/'},
-					{expand: true, cwd: 'src/', src: ['pokedex.html'], dest: 'Assignment/Homework_1 - HTML/'},
+					{expand: true, cwd: 'src/', src: ['*.html',], dest: 'Assignment/Homework_1 - HTML/'},
 				],
 			},
 		},
