@@ -1,1 +1,28 @@
 /*Your mobile targeted css should go here*/
+
+/* Styles */
+
+
+#site-title{
+    background: turquoise
+}
+
+h1 {
+    color:white;
+    font-size: 150%
+}
+
+
+.project img {
+    width:90%;
+}
+
+.navigation{
+    background: grey;
+
+}
+
+/*this isn't working*/
+.project_detail {
+    size: 50%;
+}
