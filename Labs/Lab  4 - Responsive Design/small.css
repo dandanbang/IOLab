@@ -1,1 +1,26 @@
 /*Your mobile targeted css should go here*/
+
+#site-title {
+    background-color: #ED6464;
+    padding: 3%;
+    /*max-width: 20%;*/
+}
+
+h1 {
+    color: white;
+}
+
+.main-container {
+    max-width: 100%;
+    padding: 5%;
+}
+
+.project img{
+    width: 100%;
+    display: block; 
+    
+}
+
+/*.project-detail p{
+    max-width: 90%;
+}*/
