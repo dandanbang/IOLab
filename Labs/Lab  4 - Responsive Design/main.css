@@ -47,3 +47,23 @@ table {
 /*----------------- CSS RESET ------------------*/
 
 /*Your main CSS should go here*/
+
+.project {
+	display: block;
+}
+
+img {
+	/*display: inline-block;*/
+	display: block;
+	width: 100%;
+}
+
+.project-image {
+	display: inline-block;
+	width: 50%;
+}
+
+.project-detail {
+	display: inline-block;
+	width: 50%;
+}
