@@ -47,3 +47,20 @@ table {
 /*----------------- CSS RESET ------------------*/
 
 /*Your main CSS should go here*/
+
+.project-image {
+	float: left;
+	width: 60%
+}
+
+.project-detail {
+	float: right;
+	width: 40%;
+}
+
+.tweetday {
+	clear: both;
+}
+footer {
+	clear: both;
+}
