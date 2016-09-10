@@ -16,7 +16,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 2em;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -47,12 +47,14 @@ table {
 /*----------------- CSS RESET ------------------*/
 
 body {
-	font-size: 18px;
+	font-size: 25px;
+	color: gray;
+	font-family: sans-serif;
 }
 
 header, footer {
 	width: 100%;
-	background: #4d94ff;
+	background: #f5f5f5;
 	color: #ffffff;
 	box-sizing: border-box;
 	height: 50px;
@@ -61,7 +63,9 @@ header, footer {
 }
 
 header {
-	display: inline-block;
+	/*display: inline-block;*/
+	position: fixed;
+    display: block;
 }
 
 footer {
@@ -99,12 +103,13 @@ a {
 	float: left;
 	width: 25%;
 	text-align: center;
+	background: gray;
 }
 
 .nav-button {
-	color: #ffffff;
+	color: white;
 	display: inline-block;
-	background: none;
+	background: gray;
 	height: 100%;
 	width: 150px;
 	border-left: 1px solid #ffffff;
@@ -124,16 +129,20 @@ a.nav-button:visited {
 /*START HERE*/
 
 .other-news-container {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	width: 25%;
 }
 
 .main-container {
-	float: left;
-	width: 75%;
+	/*float: left;*/
+	vertical-align:top;
+	display: inline-block;
+	width: 70%;
 }
 
 .ib-grid-item {
+
 	display: inline-block;
 	width: 33%;
 	margin-bottom: 5%;
