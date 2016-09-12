@@ -1,0 +1,68 @@
+.page {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+
+header {
+  justify-content: flex-start;
+}
+h1 {
+  margin-left: 25%;
+}
+
+#dropdown, #icon {
+  display: none;
+}
+
+#navicon {
+  display: block;
+}
+
+.poke_name_ipad {
+  display:block;
+}
+.poke_name_laptop {
+  display: none;
+}
+
+.poke_info {
+  flex-direction: column;
+}
+
+.info_img {
+  margin: 2% 30%;
+  width: 40%;
+  height: 40%;
+}
+
+.info_text {
+  width: 100%;
+}
+
+ul {
+  margin: 0 20%;
+}
+.poke_description {
+  display: none;
+}
+
+.item {
+  width: 49%;
+  height: 49%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer {
+  height: 100px;
+}
+
+.button {
+  margin: 10px 10%;
+}

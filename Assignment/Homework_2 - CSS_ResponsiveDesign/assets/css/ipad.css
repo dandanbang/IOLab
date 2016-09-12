@@ -1,0 +1,18 @@
+.page {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+.poke_name_ipad {
+  display:block;
+}
+.poke_name_laptop {
+  display: none;
+}
+ul {
+  margin: 10% 10%;
+}
+.item {
+  width: 24%;
+  height: 24%;
+}
