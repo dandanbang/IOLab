@@ -1,1 +1,28 @@
 /*Your tablet targeted CSS should go in this file*/
+/* Project */
+/*.project-title{
+	font-size: 120%;
+}*/
+
+.project-detail{
+	width: 90%;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 120%;
+}
+
+p{
+    text-align: center;
+}
+
+.project-image img{
+	width: 100%;
+}
+
+.project-image{
+	width: 60%;
+    margin-bottom: inherit;
+}
+
+footer{
+    font-size: 80%;
+}

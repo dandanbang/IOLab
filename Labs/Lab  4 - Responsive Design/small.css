@@ -1,1 +1,50 @@
 /*Your mobile targeted css should go here*/
+/* Header */
+h1{
+	font-size: 100%;
+}
+
+/* Nav bar */
+nav {
+	margin-top: 10px;
+	background: #000000;
+	margin: auto;
+	text-align: center;
+}
+
+.nav-button {
+	display: block;;
+	padding: 3%;
+    font-size: 80%;
+}
+
+.nav-button:hover {
+	background: #333333;
+}
+
+/* Project */
+.project-title{
+	font-size: 100%;
+}
+
+.project-detail{
+	width: 90%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    text-align: center;
+}
+
+.project-image img{
+	width: 100%;
+}
+
+.project-image{
+	width: 100%;
+    margin-bottom: inherit;
+}
+
+footer{
+    font-size: 80%;
+}
