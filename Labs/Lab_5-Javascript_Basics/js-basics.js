@@ -6,8 +6,45 @@
 // 1. Include 'alt' and 'src' as keys within each of the 3 objects - values should correspond to the cat's name and img source (you can re-use name and URLs from the existing cat elements in the HTML)
 // 2. Put these 3 objects into an array - you can do this programmatically or hard-coded
 // 3. We created the handler for the 'Cats from Obj' button in the HTML. Use the function below to trigger.
-function populateFromObj() {
+var cat1 = {
+src : "https://pbs.twimg.com/profile_images/424484505915621376/EOwsjaMZ_400x400.png",
+alt : "meow1"
+}
 
+var cat2 = {
+src : "https://pbs.twimg.com/profile_images/424484505915621376/EOwsjaMZ_400x400.png",
+alt : "meow2"
+
+}
+
+cat_array = [cat1, cat2]
+
+
+
+
+function populateFromObj() {
+	//console.log(cat_array)
+
+	for (var i  = 0; i < cat_array.length; i++) {
+		var newDiv = document.createElement("div");
+		newDiv.className += "ib-grid-item";
+
+		//console.log(newDiv);
+		var newImg = document.createElement("img");
+		var imgSrc = cat_array[i].src;
+		var imgAlt = cat_array[i].alt;
+
+		newImg.setAttribute("src", imgSrc);
+		newImg.setAttribute("alt", imgAlt);
+
+		newDiv.appendChild(newImg);
+
+		console.log(newDiv)
+
+	var mainContainer = document.getElementsByClassName("main-container")[0];
+	console.log(mainContainer)
+	mainContainer.appendChild(newDiv);
+	}
 	// 1. Iterate through each 'cat' object in the list you created above
 	// 2. For each obj:
 		// a) create a new div element with class 'ib-grid-item'
