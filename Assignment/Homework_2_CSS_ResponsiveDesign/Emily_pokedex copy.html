@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pokedex</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Load stylesheets based on viewport  -->
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" media="(min-width: 414px) and (max-width: 1024px)" href="medium.css">
+		<!-- media="(min-width: 414px) and (max-width: 1024)" -->
+		<link rel="stylesheet" type="text/css" media="(max-width: 414px)" href="small.css">
+	</head>
+	<body BGCOLOR="FFFFFF">
+		<header>
+			<button>Dropdown</button>
+			<h1 id="Pokedex">Pokedex</h1>
+			<img class="floating-image" src="assets/icons/pokeball_icon.png">
+		</header>
+		<article class="main-container">
+			<div class="search">
+				<input placeholder="SearchPokemon"></input>
+			</div>	
+			<div id="middle-layer">
+				<img id="selectedpoke" src="assets/images/pickahu.png">
+				<!-- <div id="floating-box"> -->
+					<h2 class="Poke-ID" id="Poke-ID">No.001 Pikachu</h2>
+					<ul id="listaboutpokes">
+  						<li>Electric type</li>
+  						<li>Gentle temperament</li>
+  						<li>Grasslands</li>
+  					</ul>
+  				<!-- </div> -->
+  			</div>	
+  			<div class="description"> 
+				<p id="pokescription">Pickahu can be seen napping in a bright sunlight. It has two red dots on its cheeks. By practicing html and css Pikachu can learn confusion. Pikachu likes to steal computer chargers from sleeping college students.</p>
+			</div>
+		</article>
+		<section class="images-grid">
+			<img src="assets/images/abra.png">
+			<img src="assets/images/charmander.png">
+			<img src="assets/images/charmeleon.png">
+			<img src="assets/images/clafary.png">
+			<img src="assets/images/firething.png">
+			<img src="assets/images/horsea.png">
+			<img src="assets/images/jigglyppuff.png">
+			<img src="assets/images/nidorino.png">
+			<img src="assets/images/whatisthat.png">
+			<img src="assets/images/pidgey.png">
+			<img src="assets/images/vulpix.png">
+			<img src="assets/images/wartortle.png">
+		</section>
+		<footer>
+			<nav>
+				<button class="button"><a href="#Pokedex">BACK</a></button>
+				<button class="button"><a href="map.html">MAP</a></button>
+				<button class="button"><a href="area.html">AREA</a></button>
+				<button class="button"><a href="#pokescription">NEXT</a></button>
+			</nav>
+		</footer>
+	</body>
+</html>

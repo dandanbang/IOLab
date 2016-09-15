@@ -1,0 +1,188 @@
+/*----------------- CSS RESET ------------------*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}*/
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}*/
+/*body {*/
+	/*line-height: 1;*/
+/*	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+}*/
+/*ol, ul {
+	list-style: none;
+}*/
+/*blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+/*----------------- CSS RESET ------------------*/
+
+body {
+	margin-top: 30px;
+	font-size: 18px;
+	background-image: url("assets/backgrounds/background_home.png");
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #A9A9A9;
+	background-color: #ffffff
+}
+
+a:hover {
+	color: #020122;
+}
+
+h1 {
+	font-family: "Gill Sans", sans-serif;
+	font-size: 2em;
+	color: #ffffff;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 1.4em;
+	color: #d33e43;
+}
+
+header {
+	margin: 15px 0;
+	background-color: #BD5858;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+
+footer {
+	margin: 15px 0;
+	text-align: center;
+	background-color: #5D90CB;
+	padding: 25px;
+}
+
+img {
+	height: auto;
+	width: 15%;
+	border-style: solid;
+	border-width: thin;
+	border-color: ##000000;
+}
+input {
+	width: 100%;
+}
+
+nav {
+	margin: 10px;
+}
+
+nav a {
+	margin: 10px;
+}
+
+p {
+	line-height: 22px;
+}
+.pokedex_header {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.search {
+	width: 90%;
+	display: block;
+}
+.images-grid {
+	padding: 15px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.dropdown {
+	float: left;
+	margin-right: 8px;
+}
+.icon {
+	display: inline-block;
+	width: 10%;
+}
+#middle-layer {
+	display: inline-block;
+	width: 100%;
+	padding: 25px;
+	height: 30%;
+}
+.floating-image {
+	height: auto;
+	width: 10%;
+	border: none;
+}
+.Poke-ID{
+	margin: 0;
+	display: inline-block;
+	width: 65%;
+	background-color: #5D90CB;
+	font-size: 1em;
+	color: #ffffff;
+	padding: 15px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000000;
+}
+#listaboutpokes{
+	margin: 0;
+	display: inline-block;
+	width:65%;
+	background-color: #ffffff;
+	padding: 15px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000000;
+}
+#selectedpoke {
+	height: auto;
+	float: left;
+	width: 25%;
+	border: none;
+	margin-bottom: 1%;
+	margin-right: 3%;
+}
+.description {
+	padding: 10px;
+	border-style: solid;
+	border-width: thick;
+	border-color: #BD5858;
+	border-radius: 15px;
+	width: 85%;
+	background-color: #ffffff;
+}
