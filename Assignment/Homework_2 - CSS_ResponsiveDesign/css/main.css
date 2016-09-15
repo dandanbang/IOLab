@@ -1,0 +1,188 @@
+#header{
+
+	background-color:#C0595A;
+	height: 10%;	
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items:centre;
+	text-align: centre;
+                                                                                                                                         │;
+}
+
+#dropdown{
+	height: 50%;
+	width :10%;
+	border-radius: 12px;
+	margin :1.5%;
+
+	order:1;
+	background-color: #E4F1F2;
+	border: none;
+	text-align: centre;
+}
+#pokedex{
+	order:2;
+	color:white;
+}
+#pokeball{
+	order:3;
+}
+#search{
+
+	width: 98%;
+	height:5%;
+	margin : auto;
+}
+#searchbar{
+
+margin-top: 1%;
+margin-left:1%;
+}
+#pokemon_display{
+
+	display:flex;
+	width:98%;
+	justify-content: space-between;
+	align-items:centre;
+	text-align: centre;
+	
+}
+@media only screen and (max-width: 768px){
+#pokemon_display{
+
+	display:flex;
+	width:98%;
+	justify-content: centre;
+	align-items:centre;
+	text-align: centre;
+	flex-wrap:wrap;
+}
+
+}
+
+#pokemon{
+	order:1;
+	width:23%;
+}
+#smalld{
+
+	order:2;
+	width:75%;
+	margin-left:5%;
+	
+}
+#smalldh{
+margin-top:5%;
+height:5%;
+background-color:#598EC8; 
+text-align:centre;
+color:white;
+font-size: 150%;
+border-color:black;
+border-style:solid;
+
+}
+#smallb{
+border-style:solid;
+	border-color:black;
+}
+
+#pokemon_description{
+margin-top:5%;
+width:98%;
+border-style:solid;
+	border-color:#C0595A;
+	border-radius: 12px;
+	font-size: 30px;
+}
+#descp{
+
+	margin-right:5%;
+	margin-left:5%;
+}
+
+#pokegrid{
+
+display: flex;
+width:98%;
+justify-content: space-between;
+flex-wrap:wrap;
+}
+#pokemon2{
+	order:1;
+	
+}
+#pokemon3{
+	order:2;
+	
+}
+#pokemon4{
+	order:3;
+	
+}
+#pokemon5{
+	order:4;
+	
+}
+#pokemon6{
+	order:5;
+	
+}
+#pokemon7{
+	order:6;
+	
+}
+
+#footer{
+
+display: flex;
+width:98%;
+height: 10%;
+justify-content: space-between;
+background-color:#598EC8 ;
+}
+#footer_button1{
+		height: 50%;
+	width :10%;
+	border-radius: 12px;
+	margin :1.5%;
+
+	order:1;
+	background-color: #E4F1F2;
+	border: none;
+	text-align: centre;
+}
+#footer_button2{
+	height: 50%;
+	width :10%;
+	border-radius: 12px;
+	margin :1.5%;
+
+	order:2;
+	background-color: #E4F1F2;
+	border: none;
+	text-align: centre;
+}
+#footer_button3{
+		height: 50%;
+	width :10%;
+	border-radius: 12px;
+	margin :1.5%;
+
+	order:3;
+	background-color: #E4F1F2;
+	border: none;
+	text-align: centre;
+}
+#footer_button4{
+	height: 50%;
+	width :10%;
+	border-radius: 12px;
+	margin :1.5%;
+
+	order:4;
+	background-color: #E4F1F2;
+	border: none;
+	text-align: centre;
+}
