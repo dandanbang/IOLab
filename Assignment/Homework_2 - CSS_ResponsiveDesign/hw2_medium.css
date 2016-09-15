@@ -1,0 +1,74 @@
+/*body {
+	overflow-x: hidden;
+}*/
+
+header {
+	width: 100%;
+}
+
+button {
+	font-size: x-small;
+}
+
+h1 {
+	width: 70%;
+}
+
+footer button {
+	width: 20%;
+}
+
+.search {
+	width: 100%;
+
+}
+
+.pikachu {
+	width: 100%;
+}
+
+#features h2 {
+	width: 100%;
+	float: top;
+}
+
+.column-1 {
+	width: 20%;
+}
+
+.column-2 {
+	width: 20%;
+}
+
+.column-3 {
+	margin-top: 0px;
+	width: 20%;
+}
+
+.column-4 {
+	margin-top: 0px;
+	width: 20%;
+}
+
+.column-5 {
+	margin-top: 0px;
+	width: 20%;
+}
+
+.column-6 {
+	width: 20%;
+}
+
+.column-1 img, .column-2 img, .column-3 img, .column-4 img, .column-5 img, .column-6 img {
+	width: 100%;
+}
+
+#pokeball {
+	width: 5%;
+}
+
+#pikachu_img img {
+	width: 60%;
+	margin-top: 50px;
+}
+
