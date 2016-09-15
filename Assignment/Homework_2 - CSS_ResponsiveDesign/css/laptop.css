@@ -1,0 +1,135 @@
+div header button {
+	font-size: 0.3em;
+    border-radius: 5px;
+	border: 1px solid black;
+	width: 7%;
+	height: 40%;
+	margin-left: 3%;
+	background-color: white;
+	
+}
+
+body {
+	font-size: 1.5em;
+	margin-right: 0;
+	margin-left: 0;
+	font-family: "Gill Sans";
+}
+
+table {
+	width: 50%; 
+	border: 1px solid black; 
+	display: inline-block; 
+	margin-left: 15%; 
+	background-color: #fefeff;
+	border-collapse: collapse;
+}
+
+#ball {
+	width: 3%;
+	margin-right: 3%;
+}
+
+
+a {
+    text-decoration:none;
+}
+
+div input {
+	padding: 1%;
+	width: 94%;
+	margin: 2%;
+
+	color: grey;
+
+	border: 1px solid black;
+	font-size: .5em;
+}
+
+#pikachu_image {
+	margin-left: 10%;
+	width: 17%;
+	display: inline-block;
+}
+
+#heading {
+	display: none;
+}
+
+#pikachu_image2{
+	display: none;
+}
+
+#menu_header {
+	display: none;
+    height:20px;
+}
+
+div header p {
+	color: white;
+}
+
+
+#main_section #pikachu_bullets {
+	display: none;
+}
+
+#table_id{
+    background-color:#5d90cb;
+}
+
+#center_box {
+ 	padding: 2%;
+ 	margin: 3%;
+	background-color: white;
+	border-radius: 25px;
+    text-align: center;
+    color: black;
+    border: 10px solid #bd5858;
+}
+
+#nav_1, #nav_2 {
+	display: none;
+}
+
+
+th {
+	color: white;
+	width: 4%;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+    background-color: #5d90cb;
+	height: 60px;
+}
+
+#pokedex img {
+	width: 15%;
+	border: 1px solid black;
+}
+
+#pokedex {
+	text-align: center;
+}
+
+footer button {
+	height: 60%;
+	margin-top: 1%;
+	width: 10%;
+	border-radius: 10px;
+	background-color: white;
+
+}
+
+
+div header {
+	background-color: #bd5858;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+
+
