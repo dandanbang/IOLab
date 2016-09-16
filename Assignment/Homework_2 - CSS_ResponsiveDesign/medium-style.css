@@ -1,0 +1,157 @@
+header {
+	background:#BC5858;
+	height:7%;
+	width:100%;
+}
+
+button {
+	display:inline;
+	background:#E4F0EF;
+	border-color:black;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	height:30px;
+	width:18%;
+	margin-left: 3%; 
+	margin-right:3%;
+	font-size:1.2em;
+}
+
+h1 {
+	display: inline-block; 
+	margin-left:15%;
+	font-family: gill sans;
+	font-size:2.5em;
+	color:white;
+}
+
+h2 {
+	font-size: 1.5em;
+	color:white;
+	margin-left:3%;
+}
+
+ul {
+	font-size: 1.5em;
+	line-height: 200%;
+	margin-left: 3%;
+
+}
+
+p {
+	font-size:1.5em;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+section {
+	margin-top: 0%;
+	background-image: url("background_home.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+
+
+.container-1{
+  width: 96%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+#search {
+	width:98%;
+	height:4em;
+	margin-top: 3%;
+	margin-left:2%;
+}
+
+footer {
+	display:inline-block;
+	width:100%;
+	padding-top:4%;
+	padding-bottom: 4%;
+	background: #5D90CB;
+}
+
+#dropdown {
+	display:block;
+	background:white;
+	border-color:#BC5858;
+	-moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
+	border-style: solid;
+	border-width: 15px;
+	padding:10px;
+	margin-left:10px;
+	margin-right:10px; 
+	margin-top:40%;
+}
+
+#pokeball {
+	float: right;
+	margin-right:3%;
+	margin-top: 2%;
+	width:8%;
+}
+
+#indexpic {
+	display:inline-block;
+	margin-top:3%;
+	
+
+}
+
+.indexx {
+	width:23%;
+	border:3px solid black;
+	padding:0px;
+}
+
+
+
+#listdiv {
+	float:right; 
+	margin-right:5%;
+	border-color:gray;
+	border-style:solid; 
+	border-width:0.5px; 
+	width:60%;
+	height:25%;
+	background:white;
+	margin-top: 6%;
+}
+
+
+#no001div {
+	display:block;
+	float:none;
+	margin-left: 2%;
+	/*margin-right:0%;*/
+	margin-top: 3%;
+	border-color:gray;
+	border-style: solid;
+	border-width:0.5px;
+	width:96%;
+	height:3em;
+	background-color:#6594C2;
+}
+
+
+#pikachu {
+	float:left;
+	display: block;
+	margin-right:2%;
+	margin-top: 10%;
+	margin-left: 4%;
+	width:25%;
+}
+
+
+.menu-btn {
+	display:none;
+}
+.menu-icon {
+	display:none;
+}
