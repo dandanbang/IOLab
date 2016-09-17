@@ -1,0 +1,94 @@
+html{
+	margin: 0;
+	padding: 0;
+	}
+
+	h1{
+	color: white;
+	background-color: maroon;
+	font-weight:bold;
+	padding: 20px 460px;
+	margin: 10 0 .4em;
+	}
+
+	body{
+	background-image:url('../assets/backgrounds/background_home.png');
+	/*background-size: 200px 200px
+	background-repeat: no-repeat*/
+
+	}
+	
+	table.menu {
+    width: auto;
+    margin-right: 0px;
+}
+
+	table.right{
+		align-self: right;
+	}
+
+	#id{
+		align-self: center;
+	}
+
+	.header1{
+		margin-right: 40px;
+		margin-left: 0px;
+
+	/*padding: 20px 460px;
+	margin: 10 0 .4em;*/
+
+	}
+	.header2{
+		margin-right: 40px;
+		margin-left: 40px;
+		font-size: 2em;
+		margin-bottom: 0px;
+		margin-top:0px;
+		padding: 0px;
+	}
+	.header3{
+		margin-right: 0px;
+		margin-left: 40px;
+		margin-bottom: 0px;
+		margin-top:0px;
+		padding: 0px;
+		width: .4em
+		height:.4em;
+	}
+
+
+	.header ul li {
+		background-color: maroon;
+    color: #fff;
+    display: inline-block;
+    padding: 25 25px;/*
+    line-height: 40px;*/
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+	.bottom{
+	background-color: blue;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: inline-block;
+
+
+}
+
+.button{
+	height: 2em;
+	width: 120px;
+	}
+
+.section{
+	border: 2px;
+	border-style: solid;
+	border-color: red;
+	border-radius: 2em;
+	border-width: .2em;
+
+
+}
