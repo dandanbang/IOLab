@@ -1,0 +1,9 @@
+1. cd
+2. mkdir
+3. mv <old dict> <new dict>
+4. ls
+5. mv <old file path> <new file path>
+6. cp <file to move> <new dict>
+7. grep -w localhost /etc/hosts
+8. ssh [user]@[server] '[command]'
+9. rm -rf tests1
