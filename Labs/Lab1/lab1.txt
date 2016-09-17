@@ -1,0 +1,9 @@
+cd 
+mkdir Directory/
+mv Directory/ Folder
+ls Folder
+mv lab1.txt ../NewFolder
+cp ../NewFolder/lab1.txt .
+grep 'He' lab1.txt
+sftp remote_machine
+rm - r Folder

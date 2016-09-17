@@ -47,7 +47,8 @@ table {
 /*----------------- CSS RESET ------------------*/
 
 body {
-	font-size: 18px;
+	font-size: 24px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header, footer {
