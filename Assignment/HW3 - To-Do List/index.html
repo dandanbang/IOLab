@@ -19,29 +19,41 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 <html>
 <head>
 
-    <title> Homework4 Javascript and jQuery </title>
-    <link rel="stylesheet" href="_css/style.css">
+    <title>To Do Do Do</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <!-- <link rel="stylesheet" href="_css/style.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="_js/main.js"> </script>
 </head>
     <body>
-            <!-- create input tag for user input -->
-            <input type="text" name="newItem" value="" maxlength="256"/>
+      <div class="container">
+        <!-- create input tag for user input -->
+        <div class="section">
+          <h5>Add stuff to your list</h5>
+          <input type="text" name="newItem" value="" maxlength="256"/>
+          <!-- button takes input and adds a new element with content to 'list_do' -->
+          <button class="btn-large btn-flat waves-effect waves-light blue white-text" id="new-item">Add Item</button>
+        </div>
 
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item">Add Item</button>
+        <!-- ability to move items between list_todo and list_completed -->
+        <div class="row">
+          todo list
+          <div class="col amber s6" id="list_todo">
+            <h5>To Do</h5>
+            <ul class="collection amber-text darken-4" id="todoList">
 
+            </ul>
+          </div>
 
-            <!-- ability to move items between list_todo and list_completed -->
-            <div id="list_todo">
-              <h3>To Do</h3>
-              <ul id="todoList"></ul>
-            </div>
-            <div id="list_completed">
-              <h3>Completed</h3>
-              <ul id="completedList"></ul>
-            </div>
-
+          <div class="col green lighten-3 s6" id="list_completed">
+            <h5>Completed</h5>
+            <ul class="collection green-text" id="completedList"></ul>
+          </div>
+        </div>
+      </div>
 
     </body>
 </html>
