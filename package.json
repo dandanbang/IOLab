@@ -1,0 +1,37 @@
+{
+  "name": "io-lab",
+  "version": "1.0.0",
+  "description": "repository of io-lab assignments",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-lee-jl/IOLab.git"
+  },
+  "keywords": [
+    "io-lab",
+    "html",
+    "css",
+    "js",
+    "full-stack"
+  ],
+  "author": "Leon Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon-lee-jl/IOLab/issues"
+  },
+  "homepage": "https://github.com/leon-lee-jl/IOLab#readme",
+  "devDependencies": {
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html": "^8.0.2"
+  }
+}
