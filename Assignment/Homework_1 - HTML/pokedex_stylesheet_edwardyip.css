@@ -1,0 +1,112 @@
+
+/*----------------- CSS RESET ------------------*/
+.header {
+	width: 50%;
+	color: #FFFFFF;
+	background-color: #CD5C5C;
+}
+.headertable {
+	width: 100%;
+}
+.background {
+	background: url("assets/backgrounds/background_home.png");
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+}
+.input_box {
+	width:47%;
+	height:30px;
+	margin: 1%;
+	border: 1px solid #000000;
+}
+.bodytable {
+	width: 46%;
+	height: 20%;
+	max-height:100%;
+	border-spacing: 0;
+	border-collapse: separate;
+}
+.autoResizeImagePokeBall {
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: 30%;
+}
+.autoResizeImage {
+	max-width: 100%;
+	height:auto;
+	width:100%;
+}
+.autoResizeImagePika {
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: 65%;
+}
+.notbold {
+	font-weight: normal;
+	text-indent:30px;
+}
+.indent {
+	text-indent:35px;
+}
+
+#rcorners {
+	border-radius: 25px;
+	border: 5px solid #CD5C5C;
+	width: 44%;
+	height: 20%;
+	max-height: 100%;
+	background-color: white;
+	margin: 1% 0 2% 1.5%;
+	padding: 1% 1% 1% 1%;
+}
+.poketable {
+	width: 50%;
+	border-spacing: 0px;
+}
+.poketable tr td {
+	background-color: #FFFFFF;
+	border: 1px solid black;
+}
+.footer {
+	width: 50%;
+	height: 60px;
+	color: #FFFFFF;
+	background-color: #4682B4;
+}
+.footerbutton {
+	width:100%;
+	display: inline-block;
+}
+.footertable {
+	width: 100%;
+}
+.footertable tr td {
+	width: 25%;
+}
+input[type="text"]
+{
+	font-family: "Gill Sans";
+	font-size: 14px;
+}
+h3,img {
+	display: inline-block;
+}
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "- ";
+  text-indent: -5px;
+}
+li {
+	font-family: Gill Sans;
+	font-size: 15px;
+}
