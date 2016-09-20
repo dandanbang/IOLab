@@ -1,0 +1,115 @@
+/* Add CSS */
+body{
+    background-color: #00acc1; 
+    font-family: 'Bungee', cursive;
+}
+
+.margin-top {
+    margin-top: 5%;
+}
+
+.padding-top {
+    padding-top: 5%;
+}
+
+.feature-image {
+    max-width: 90%;
+}
+
+.title-style {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.heading1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size:6em;
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+nav{
+    height:auto !important;
+}
+
+.remove-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.remove-margin-top {
+    margin-top: 0 !important;
+}
+
+.input-field .add-new-button .prefix.active {
+    color: white;
+}
+
+.add-new-button input[type=text]{
+    border-bottom: 1px solid white;
+}
+
+.add-new-button input[type=text]:focus:not([readonly]), 
+.add-new-button input[type=text].valid{
+    border-bottom: 1px solid #006064;
+    box-shadow: 0 1px 0 0 #006064;
+}
+
+.add-new-button .btn {
+    background-color: white;
+    font-family: 'Bungee', cursive;
+    font-size:1.5em;
+    color: #00acc1;
+    border-radius: 1em;
+    margin-top: 10%;
+}
+
+.add-new-button .btn:hover {
+    background-color: #006064;
+    color: white;
+}
+
+.two-card .card {
+    border-radius: 1.5em;
+/*    height: 300px;*/
+}
+
+.two-card .card {
+    font-family: 'Bungee', cursive;
+    padding: 1em; 
+
+    h5 {
+        font-size: 1.5em;
+    }
+}
+
+.two-card .card .card-action ul li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 1.2em 0; 
+}
+
+.sorted-list .btn {
+    border-radius: 1.5em;
+    font-size: 0.8em;
+    margin-right: 1em;
+    background-color: #f57f17;
+
+}
+
+.sorted-list .btn:hover {
+    background-color: #f9a825;
+    color: white;
+}
+
+.sorted-list .completed-button {
+    background-color: #558b2f !important;
+
+}
+
+
+.sorted-list .completed-button:hover {
+    background-color: #689f38 !important;
+
+}
