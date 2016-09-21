@@ -1,7 +1,7 @@
 <!--
 1. User sees labeled ‘to-do’ and ‘completed items’ lists, which are empty upon page load. The lists are visually distinct from each other.
 2. User can add one ‘to-do’ item at a time using a text input field and an ‘add to list’ button.
-3. Each newly-added ‘to-do’ item appears at the top of the ‘to-do’ list (not the bottom).
+3.  Each newly-added ‘to-do’ item appears at the top of the ‘to-do’ list (not the bottom).
 4. User can click a button within each ‘to-do’ item to mark it as complete, at which point:
 a. The ‘to-do’ item disappears from the ‘to-do’ list
 b. The ‘to-do’ item appears at the top of the ‘completed items’ list.
@@ -19,21 +19,38 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 <html>
 <head>
 
-    <title> Homework4 Javascript and jQuery </title>
+    <title>To-do List</title>
     <link rel="stylesheet" href="_css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
     <body>
-            <!-- create input tag for user input -->
-            <input>
+            <div id="picture">
+                <img src="https://i.ytimg.com/vi/i50ZAs7v9es/maxresdefault.jpg" alt="be-calm">
+            </div>
+            <div id="Accomplishments">
+                <h1>My Accomplishments</h1>
+            </div>
 
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
+            <div class="user">
+                <!-- create input tag for user input -->
+                <input type="text" id="to-do" placeholder="Task">
 
+                <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button id="new-item">Add To-do</button>
+            </div>
 
             <!-- ability to move items between list_todo and list_completed -->
-            <div id="list_todo"> </div>
-            <div id="list_completed"> </div>
+            <div id="todo_container">
+                <h2>To-do</h2>
+                <div id="list_todo"></div>
+            </div>
+            
+            <div id="completed_container">
+                <h2>Completed</h2>
+                <div id="list_completed"></div>
+            </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>
