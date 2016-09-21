@@ -18,13 +18,18 @@ $(document).ready(
 $("#list_todo").on('click', "button", function() {
     // move from list_todo container to list_completed container
     $("#list_completed .lists ul").prepend(this.parentNode);
-    $("#list_completed .lists button").text("To-Do");
+    $("#list_completed .lists button").text("TODO");
+
+
 });
-
-
+//
 $("#list_completed").on('click', "button", function() {
         // move back from list_completed container to list_todo container
     $("#list_todo .lists ul").prepend(this.parentNode);
     $("#list_todo .lists button").text("Completed");
 
 });
+
+function changestyle() {
+
+}
