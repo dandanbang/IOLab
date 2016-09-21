@@ -1,10 +1,11 @@
 function add_item() {
     // get input content
     text = document.getElementsByTagName('input')[0].value;
-    // if ( $.trim(text).length == 0) {
-    //     alert("You must enter some text");
-    //     return;
-    // }
+    // Check whether or not input is just spaces.
+    if (text.replace(" ", "").length == 0) {
+        alert("You must enter some text.");
+        return;
+    }
     var button = document.createElement("button");
     button.setAttribute("id", "todos");
     button.setAttribute("onclick", "move(this)");
