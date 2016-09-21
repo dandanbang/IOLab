@@ -1,1 +1,147 @@
 /* Add CSS */
+body {
+	background-color: #86B8B1;	
+}
+
+h1 {
+	color: #eceff1;
+	font-size: 3em;
+	font-family: ''Habibi', serif;'
+
+
+}
+
+input {
+	height:3em;
+	/*font-size: 24px;*/
+
+
+}
+
+input[type="text"]{
+	color: #1F1C0D;
+	font-family: 'Habibi', serif;
+	font-size: 24px;
+	padding: 5px;
+
+}
+
+
+::-webkit-input-placeholder {
+	height:2em;
+	font-size: 24px;
+	color: #eceff1;
+
+
+}
+.top-part{
+	box-sizing: border-box;
+	/*border: solid black 5px; */
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	/*justify-content: center;
+	align-items: center;*/
+}
+
+.todo-input {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	width: 60%;
+}
+
+.totalinput {
+	box-sizing: border-box;
+	
+
+}
+
+#new-item{	
+	display: inline-block;
+	/*float: right;*/
+	box-sizing: border-box;
+	background-color: #036564;
+	width: 100px;
+	height: 50px;
+	line-height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	color:#eceff1;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+#list_todo {
+	box-sizing: border-box;
+	width: 45%;
+	/*border: solid black 5px;*/
+	text-align: center;
+	display: inline-block;
+	margin: 0 1em 2em 1em;
+	float: left;
+
+}
+
+#list_completed {
+	box-sizing: border-box;
+	width: 45%;
+	text-align: center;
+	display: inline-block;
+	/*border: solid black 5px;*/
+	margin: 0 0 2em 1em;
+	
+}
+
+#list_completed button {
+	background-color: #C91842;
+}
+
+.newlist {
+	font-size: 2em;
+	display: inline-block;
+	box-sizing: border-box;
+	border: solid 2px fade(#eceff1, 40%);
+	border-radius: 20px;
+	width: 85%;
+	text-align: left;
+	padding: 1em;
+	background-color: #eceff1;
+	margin: 0 0 10px 0;
+	color: #86B8B1;
+
+}
+
+.statusbutton {
+	float: right;
+	margin: 0.5em 1em 0.5em 1em;
+	box-sizing: border-box;
+	background-color: #2FA596;
+	width: 100px;
+	height: 50px;
+	line-height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.5em;
+	color:#eceff1;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
