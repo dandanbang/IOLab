@@ -1,0 +1,69 @@
+<!--
+1. User sees labeled ‘to-do’ and ‘completed items’ lists, which are empty upon page load. The lists are visually distinct from each other.
+2. User can add one ‘to-do’ item at a time using a text input field and an ‘add to list’ button.
+3. Each newly-added ‘to-do’ item appears at the top of the ‘to-do’ list (not the bottom).
+4. User can click a button within each ‘to-do’ item to mark it as complete, at which point:
+a. The ‘to-do’ item disappears from the ‘to-do’ list
+b. The ‘to-do’ item appears at the top of the ‘completed items’ list.
+c. Items on the ‘completed items’ list should be styled differently than those on the ‘to-do’ list as an additional visual indication of their completion.
+5. User can click a button within each ‘complete’ item to ‘unmark’ it as complete, at which point:
+a. The ‘complete’ item disappears from the ‘completed items’ list.
+b. The ‘complete’ item appears at the top of the ‘to-do’ list with the same styling as the other ‘to-do’ list items.
+6. Items on each list remain there until the user marks or ‘unmarks’ them.
+7. Your site has a title and intuitive labeling or instructions on how to use it.
+8. You can use only jQuery and JavaScript – no additional plugins/libraries.
+9. Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
+10. All of your JavaScript is commented appropriately.
+11. Your code is clean and concise (minimal repetition and unused code)-->
+
+<html>
+<head>
+
+    <title> Homework3 Javascript and jQuery </title>
+    <link rel="stylesheet" href="_css/style.css">
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+    <body>
+        <div class = "heading">
+            <table>
+                <tr>
+                    <th>
+                        <h1 class = "title-hw4">Hello Mr. Hw4</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p id = 'hw-desc'>Here you have a way to add to your "To-do" list by adding and submitting text using the "Add Item" button. Items will automatically appear in your "To Do" list. When you have completed any task, click the "Move Me" button to send your item on over to the "Completed Items" list. Similarly, you can use the respective button to move your item back to the "To Do" list. Enjoy your list making! Dis some 202 shiz. 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <img src = "image.jpg"> </img>
+        </div>
+        <!-- create input tag for user input -->
+        <div class = "search-button">
+            <div class = "input-search">
+                <input id="todo-item-input" placeholder="Enter Task">
+            </div>
+            <div class = "initial-button">
+                <button id="new-item"> Add to list </button>
+            </div>
+        </div>
+
+
+        <!-- ability to move items between list_todo and list_completed -->
+        <div class = "list">
+            <div class = "list-p-to-do">
+                <h1 id = "text-to-do">To do</h1>
+                <div id="list_todo"> </div>
+            </div>
+            <div class = "list-p-to-do">
+                <h1 id = "text-completed">Completed Items</h1>
+                <div id="list_completed"> </div>
+            </div>
+        </div>
+
+            <script type="text/javascript" src="_js/main.js"> </script>
+    </body>
+</html>
