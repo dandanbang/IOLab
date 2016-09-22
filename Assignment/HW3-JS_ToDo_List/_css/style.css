@@ -1,1 +1,36 @@
 /* Add CSS */
+
+body{
+    background-color: #76A2CC;
+}
+
+h2{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+h5 {
+    font-style: italic;
+    color: #ADFFFC;
+}
+
+#list_todo li {
+    background-color:#FF8B6D;
+}
+
+#list_completed li{
+    background-color: #CC7B76;
+}
+
+#todo-item-input{
+    background-color: white
+
+}
+
+html {
+    font-family: 
+    
+}
