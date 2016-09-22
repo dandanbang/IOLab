@@ -1,1 +1,21 @@
-/* Add CSS */
+.list {
+    background-color: lightskyblue;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid blue;
+}
+
+button > img{
+    width: 10px;
+    margin: 2px;
+}
+
+.todo {
+    background-color: pink;
+    width: 200px;
+}
+
+.completed{
+    background-color: lightgreen;
+    width: 200px;
+}

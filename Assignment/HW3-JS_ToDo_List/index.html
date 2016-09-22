@@ -21,18 +21,27 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 
     <title> Homework4 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </head>
     <body>
-            <!-- create input tag for user input -->
-            <input>
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
+            <div class="list">
+                <!-- create input tag for user input -->
+                <input class="todo-item-input">
+                <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button class="new-item"><img src="add.png"></button>
 
 
-            <!-- ability to move items between list_todo and list_completed -->
-            <div id="list_todo"> </div>
-            <div id="list_completed"> </div>
+                <!-- ability to move items between list_todo and list_completed -->
+                <div class="todo">
+                    <p> Todo </p>
+                    <div class="list_todo">  </div>
+                </div>
+                <div class="completed">
+                    <p> Completed </p> 
+                    <div class="list_completed"> </div>
+                </div>
+            </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>
