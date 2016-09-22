@@ -1,1 +1,12 @@
 /* Add CSS */
+#meow img {
+    margin-top: -200px;
+    width: 100%;
+    /*position: absolute;
+    clip: rect(0px,60px,200px,0px);*/
+}
+
+#meow{
+    max-height: 200px;
+    overflow: hidden;
+}
