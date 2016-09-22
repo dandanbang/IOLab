@@ -1,1 +1,101 @@
-/* Add CSS */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 2em;
+}
+
+p {
+    display: block;
+    width: 80%;
+    margin: 0 auto 1em auto;
+}
+
+.entry_wrapper {
+    display: block;
+    width: 80%;
+    font-size: 35px;
+    margin: 0.5em auto;
+    overflow: auto;
+}
+
+.entry_wrapper input {
+    float: left;
+    width: 48%;
+    height: 2.5em;
+}
+
+.entry_wrapper button {
+    float: right;
+    width: 48%;
+    height: 2.5em; 
+}
+
+#new-item{
+    background: #25BAFF;
+    color: #fff;
+}
+
+.list_wrapper{
+    display: block;
+    width: 80%;
+    padding: 1em 0;
+    background: #cacaca;
+    margin: 0 auto;
+    text-align: left;
+    overflow: auto;
+}
+
+.container_todo {
+    float: left;
+    width: 48%;
+    padding: 0 1em;
+    height: auto;
+    color: #E8119A;
+    box-sizing: border-box;
+}
+
+.container_completed {
+    float: right;
+    width: 48%;
+    padding: 0 1em;
+    height: auto;
+    color: #1C58E8;
+    box-sizing: border-box;
+}
+
+#title_todo {
+    text-align: center;
+    background: #CEFFA3;
+    color: #000;
+    padding: 0.2em 0;
+    
+    border: 1px solid #636564;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+
+#title_completed {
+    text-align: center;
+    background: #FFD0BD;
+    color: #000;
+    padding: 0.2em 0;
+    border: 1px solid #636564;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+
+}
+
+#list_todo button {
+    color: #E8119A;
+}
+
+#list_completed button {
+    color: #1C58E8;
+}

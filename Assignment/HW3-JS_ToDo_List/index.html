@@ -21,19 +21,33 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 
     <title> Homework4 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
     <body>
-            <!-- create input tag for user input -->
-            <input>
+            <h1>Hello Mr. HW4 -- To Do List</h1>
 
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
+            <p>Here you have a way to add things to your "To Do" list by adding and submitting text using the "Add Item" button. Items will automatically appear in your "To Do" list. When you have completed any task, click the "Move Me" button to send your item on over to the "Completed Items" list. Similarly, you can use the respective button to move your item back to the "To Do" list. Enjoy your list making.</p>
+           
+            <div class="entry_wrapper">
+                <!-- create input tag for user input -->
+                <input id="todo-item-input"> <!-- type="text" id="task" /> -->
 
+                <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button id="new-item">Add To List</button>
+            </div>
 
             <!-- ability to move items between list_todo and list_completed -->
-            <div id="list_todo"> </div>
-            <div id="list_completed"> </div>
+            <div class="list_wrapper">
+                <div class="container_todo">
+                    <div id="title_todo">To Do</div>
+                    <div id="list_todo"> </div>
+                </div>
+
+                <div class="container_completed">
+                    <div id="title_completed">Completed Items</div>
+                    <div id="list_completed"> </div>
+                </div>
+            </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>
