@@ -25,7 +25,12 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 
 </head>
     <body>
-            <div class="list">
+    <h2> Todo Lists</h2>
+        Get started by creating a new list. On each list, enter a todo item to add it to the list. When completed, click the check mark to move it to the completed section. Repeat the item with ease to move it back to the top of your todo!<br><br>
+        <button id="new-list">New List</button> 
+        <div id="lists">
+            <div id="blank-list">
+                
                 <!-- create input tag for user input -->
                 <input class="todo-item-input">
                 <!-- button takes input and adds a new element with content to 'list_do' -->
@@ -41,7 +46,9 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
                     <p> Completed </p> 
                     <div class="list_completed"> </div>
                 </div>
+                <button class="delete">Remove List</button>
             </div>
+        </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>
