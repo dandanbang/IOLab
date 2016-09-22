@@ -18,23 +18,34 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 
 <html>
 <head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-    <title> Homework4 Javascript and jQuery </title>
+    <title> TODO List </title>
+
     <link rel="stylesheet" href="_css/style.css">
 
 </head>
-    <body>
+    <body>  
             <!-- create input tag for user input -->
-            <input>
+            <h2>Add items to your TODO LIST !!
+            <h2>
+            <input name ="task_name" type = "text" id = "task" />
 
             <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
-
+            <button id="new-item"> Add Task </button>
+            <div id ="Data_box" >
+            <div id ="todo">
+            <h2>TODO LIST</h2>
 
             <!-- ability to move items between list_todo and list_completed -->
             <div id="list_todo"> </div>
-            <div id="list_completed"> </div>
-
-            <script type="text/javascript" src="_js/main.js"> </script>
+            </div>
+            <div id ="completed">
+            <h2>Completed LIST</h2 >
+            <div id="list_completed">  </div>
+            </div>
+</div>
+            
     </body>
+    <script type="text/javascript" src = "_js/main.js"></script>
 </html>
