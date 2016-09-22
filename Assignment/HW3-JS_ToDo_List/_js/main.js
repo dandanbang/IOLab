@@ -23,14 +23,6 @@ var activeListCount = 0;
         }
     });
 
-    // $(".list_todo").on('click', "button", function() {
-
-    //     // move from list_todo container to list_completed container
-    //     $(this).html("<img src='repeat.png'>");
-    //     var completedItem = $(this).parent()
-    //     $(".list_completed").prepend(completedItem);
-    // });
-
     $(document).on('click', "button.move-complete", function() {   
         // move from list_todo container to list_completed container
         $(this).html("<img src='repeat.png'>");
