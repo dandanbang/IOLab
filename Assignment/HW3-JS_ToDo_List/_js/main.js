@@ -5,7 +5,10 @@ $(document).ready(
     $("#new-item").on('click', function() {
         // once the document loads, create new item with this function
         var user_input = $("#todo-item-input").val();
+        $("#list_todo").hide();
         $("#list_todo").prepend("<li> <button> Completed! </button>" + user_input + "</li>");
+        $("#list_todo").slideToggle()
+
     })
 );
 
