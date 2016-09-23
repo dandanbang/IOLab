@@ -1,0 +1,75 @@
+header .nav-button{
+	width: 30%;
+}
+/*#pokemon-name {
+	background: #5D8FCB;
+	color: white;
+	padding: 10px;
+	font-size: 14pt;
+	text-indent: 20px;
+	border: 1px solid black;
+	width: 100%;
+	margin: 10px 10px 0;
+	order: 1;
+}
+#chosen-pokemon {
+	width: 50%;
+	order: 2;
+}
+#pokemon-traits {
+	background: white;
+	border: 1px solid black;
+	text-indent: 20px;
+	padding: 10px;
+	width: 50%;
+	margin: 10px 10px;
+	order: 3;
+}*/
+.other-pokemon {
+	width: 47%;
+}
+#description-container {
+	display: none;
+}
+#poke-1 {
+	order: 10;
+}
+#poke-2 {
+	order: 9;
+}
+#poke-3 {
+	order: 6;
+}
+#poke-4 {
+	order: 1;
+}
+#poke-5 {
+	order: 4;
+}
+#poke-6 {
+	order: 5;
+}
+#poke-7 {
+	order: 11;
+}
+#poke-8 {
+	order: 8;
+}
+#poke-9 {
+	order: 7;
+}
+#poke-10 {
+	order: 8;
+}
+#poke-11 {
+	order: 12;
+}
+#poke-12 {
+	order: 3;
+}
+#site-navigation {
+
+}
+#site-navigation a {
+	width: 50%;
+}

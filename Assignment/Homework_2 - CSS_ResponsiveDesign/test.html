@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pokedex!</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<!--iPad viewport sizes-->
+		<link rel="stylesheet" type="text/css" media="(min-width: 768px) and (max-width: 1024px)" href="iPad.css">
+		<!--iPhone6 viewport sizes-->
+		<link rel="stylesheet" type="text/css" media="(min-width: 375px) and (max-width: 767px)" href="iPhone.css">
+	</head>
+
+	<body>
+		
+		<header>
+			<a class="nav-button"><span>Dropdown</span></a>
+			<h1 id="site-title">Pokedex</h1>
+			<img id="pokeball-icon" src="assets/icons/pokeball_icon.png">
+		</header>
+
+		<div id="pokedex-main">
+			
+			<div id="search-bar">
+				<form>
+					<input id= "search-pokemon" type="text" name="search-keyword" placeholder="Search Pokemon">
+				</form>
+			</div>
+
+			<div id="search-result">
+				<img id="chosen-pokemon" src="assets/images/pickahu.png">
+				<h2 id="pokemon-name">No. 001 Pikachu</h2>
+				<ul id="pokemon-traits">
+					<li>Electric type</li>
+					<li>Gentle temperament</li>
+					<li>Grasslands</li>
+				</ul>
+			</div>
+
+			<article id="description-container">
+				<p id="description">
+				Pickahu can be seen napping in a bright sunlight. It has two red dots on its cheeks. By practicing html and css Pikachu can learn confusion. Pikachu likes to steal computer chargers from sleeping college students.
+				</p>
+			</article>
+
+			<div id="pokemon-grid">
+				<img class="other-pokemon" id="poke-1" src="assets/images/whatisthat.png">
+				<img class="other-pokemon" id="poke-2" src="assets/images/abra.png">
+				<img class="other-pokemon" id="poke-3" src="assets/images/vulpix.png">
+				<img class="other-pokemon" id="poke-4" src="assets/images/nidorino.png">
+				<img class="other-pokemon" id="poke-5" src="assets/images/clafary.png">
+				<img class="other-pokemon" id="poke-6" src="assets/images/charmeleon.png">
+				<img class="other-pokemon" id="poke-7" src="assets/images/charmander.png">
+				<img class="other-pokemon" id="poke-8" src="assets/images/firething.png">
+				<img class="other-pokemon" id="poke-9" src="assets/images/jigglyppuff.png">
+				<img class="other-pokemon" id="poke-10" src="assets/images/horsea.png">
+				<img class="other-pokemon" id="poke-11" src="assets/images/pidgey.png">
+				<img class="other-pokemon" id="poke-12" src="assets/images/wartortle.png">
+			</div>
+		</div>
+
+		<footer>
+			<nav id="site-navigation">
+				<a id="nav1" class="nav-button" href="#pokedex-main"><span>BACK</span></a>
+				<a id="nav2" class="nav-button" href="map.html"><span>MAP</span></a>
+				<a id="nav3" class="nav-button" href="area.html"><span>AREA</span></a>
+				<a id="nav4" class="nav-button" href="#pokemon-grid"><span>NEXT</span></a>
+			</nav>
+		</footer>
+
+	</body>
+</html>
