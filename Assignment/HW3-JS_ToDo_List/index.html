@@ -21,18 +21,23 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 
     <title> Homework4 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
     <body>
             <!-- create input tag for user input -->
-            <input>
+            <h1>Your Online To-Do List</h1>
+            <p id="intro">How to use this website: You can type your to-do item in the text input box below, and click "Add to To-do List" once you're done.<br/><br/>The item you've added will show up in the "To-do List" below. However, once you complete that item, you could move it to "Completed-item List" by clicking "Move to Completed-item List" button in that "To-do List".<br/><br/>Similarly, you could also unmark that completed item in your "Completed-item List" by clicking "Add to To-do List" button next to that item.</p>
+            <input id="todo-item-input">
 
             <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
+            <button id="new-item"> Add to To-do List </button>
 
 
             <!-- ability to move items between list_todo and list_completed -->
+            <h2> To-do List </h2>
             <div id="list_todo"> </div>
+            <p><br/><p>
+            <h2> Completed-item List </h2>
             <div id="list_completed"> </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>

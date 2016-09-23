@@ -1,1 +1,17 @@
 /* Add CSS */
+#list_todo li {
+	color:red;
+}
+
+#list_completed li {
+	color:green;
+	text-decoration: line-through
+}
+
+#intro {
+	width:60%;
+}
+
+body {
+	margin: 5%;
+}
