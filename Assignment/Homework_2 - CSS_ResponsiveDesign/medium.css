@@ -1,0 +1,50 @@
+/*Your tablet targeted CSS should go in this file*/
+/* 
+nav {
+	margin: 20px;
+}
+
+nav a {
+	margin: 10px;
+}
+
+.main-container, .project-image, .project-detail {
+	width: 100%;
+	margin: inherit 0;
+}
+
+.project {
+	margin-bottom: 2em;
+}
+
+.project-detail {
+  margin-bottom: 10px;
+}
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container, .project-image, .project-detail {
+	width: 100%; margin: inherit 0;
+}
+
+.project {
+	margin-bottom: 2em;
+}
+
+body {
+	margin: 20px 0; font-size: 18px;
+} 
+
+.responsive{
+	display: flex;
+	flex-wrap: wrap;
+}            
+
+ .img_resp{
+	border: 2px solid black;
+	display: inline-block;
+	width: 25%
+}

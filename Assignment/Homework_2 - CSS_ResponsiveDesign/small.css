@@ -1,0 +1,51 @@
+/*Your mobile targeted css should go here*/
+ 
+* {
+    box-sizing: border-box;
+}
+
+.main-container, .project-image, .project-detail {
+	width: 100%; margin: inherit 0;
+}
+
+.project {
+	margin-bottom: 2em;
+}
+
+body {
+	margin: 20px 0; font-size: 18px;
+} 
+
+.pok_descript {
+    display:none;
+}
+/*
+header a {
+	padding: 10px;
+} 
+
+Q nav {
+	margin: 20px;
+} 
+
+nav a {
+	margin: 5px;
+} 
+
+ */
+ 
+.responsive{
+	display: flex;
+	flex-wrap: wrap;
+}            
+
+ .img_resp{
+	border: 2px solid black;
+	display: inline-block;
+	width: 50%
+}
+
+button_nav {
+	display: inline-block;
+	width: 25%
+}

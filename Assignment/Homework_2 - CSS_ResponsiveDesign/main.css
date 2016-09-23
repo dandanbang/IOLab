@@ -1,0 +1,126 @@
+/*----------------- CSS RESET ------------------*/
+body{
+    width: 100%;
+	height: 100%;
+    margin: 0 auto;
+    background-image: url("assets/backgrounds/background_home.png");
+    background-repeat: repeat;
+    background-size:100%;
+    background-position: center
+}
+
+header {
+    color: white;
+    background-color: #BE5959;
+    font-family: calibri;
+    display: flex;
+    justify-content: space-between;
+/*     height: 100px; */
+}
+
+h2 {
+    color: white;
+	background-color: #5C90CC;                
+    margin-top: 0;       
+    text-align: center;
+}
+
+table{
+	width: 100%;
+}
+
+button {
+    display: inline-block; 
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+td {
+    text-align: center;
+}
+
+/* Doubt: How can I align only the pickahu table to the left
+table.pickahu {
+    text-align: left;
+}
+ */
+
+.div_search{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: calibri;
+}
+
+#inputSearchText{
+    width: 98%;
+  	height: 40px;
+  	border: none;
+  	font-size: 10pt;
+  	float: left;
+  	color: gray;
+  	padding-left: 45px;
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	border-radius: 5px;
+}
+
+.pok_insights {
+    /* margin: left; */
+    margin: left;
+    width: 90%;
+    border: 2px solid #646262;
+    text-align: left;
+    font-family: calibri;
+    background-color: white;
+}
+
+.pok_descript {
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 90%;
+    border: 8px solid #BE5959;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    font-family: calibri;
+    background-color: white;
+}
+
+nav {
+	margin: auto;
+	background-color: #5C90CC;
+    width: 100%;
+    height: 5%;
+    float: center;
+}
+
+.img_pickahu {
+	width: 25%;
+/* 	align="left" */
+    
+}
+
+.img_icon {
+    width: 20%;
+}
+
+/** RESPONSIVE **/
+.responsive{
+	display: flex;
+	flex-wrap: wrap;
+}            
+
+.img_resp{
+	border: 2px solid black;
+	display: inline-block;
+	width: 16%
+}
+
+button_nav {
+	display: inline-block;
+	width: 25%
+}
