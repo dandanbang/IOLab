@@ -1,0 +1,175 @@
+/*----------------- CSS RESET ------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Helvetica;
+    vertical-align: baseline;
+}
+
+body {
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background: #BD5858;
+    color: #ffffff;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.headers {
+    display: inline-block;
+    vertical-align: middle;
+    width: 31%;
+}
+
+#title {
+    font-size: 2.5em;
+}
+
+#dropdown {
+    float: left;
+}
+
+#pokeball {
+    float: right;
+    width: 30%;
+}
+
+input {
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    display: block;
+    font-size: 1em;
+    border: 1px solid black;
+}
+
+.main-poke {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 100%;
+}
+
+span {
+    background-color: #5D90CB;
+    color: #FFFFFF;
+    font-size: 2em;
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 15px;
+    width: 85%;
+    margin-top: -520px;
+
+}
+
+ul {
+    background-color: #FFFFFF;
+    display: block;
+    padding: 50px;
+    font-size: 1.5em;
+    list-style: none;
+    border: 1px solid black;
+    width: 45%;
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+}
+
+
+#pikachu {
+    width: 25%;
+    margin-left: -10px;
+}
+
+.poke-description{
+    background-color: #FFFFFF;
+    border-style: none;
+    width: 50%;
+}
+
+
+#description {
+    border: 10px solid;
+    border-color: #BD5858;
+    border-radius: 30px;
+    display: block;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+section{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: -190px;
+    margin-bottom: -20px;
+}
+
+article {
+    background: url("assets/backgrounds/background_home.png");
+    background-size: 100%;
+}
+
+.other-pokemons img {
+    margin: -5px;
+    border: 2px solid;
+    width: 25.2%;
+}
+
+.other-pokemons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.nav-button {
+    color: black;
+    font-size: 2em;
+}
+
+button {
+    border-radius: 5px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #E4F0EF;
+}
+
+footer{
+    width: 100%;
+    background: #5D90CB;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.footer-navs {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24%;
+}
+
+
+a{
+    text-decoration: none;
+}
