@@ -1,0 +1,176 @@
+body {
+	background-image: url('../backgrounds/background_home.png');
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+header {
+	float: left;
+	width: 100%;
+	background-color: #BC5858;
+	margin: 0;
+	padding: 0;
+}
+
+.topbar_button {
+	border-radius: 10px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	font-size: 1.5em;
+	float: left;
+	margin-top: 2%;
+	margin-left: 3%;
+	margin-right: 20%;
+	padding: 1% 3% 1% 5%;
+}
+
+
+h1 {
+	float: left;
+	color: white;
+	font-size: 2.5em;
+	margin-top: 3%;
+	text-align: center;
+}
+
+.topbar_icon {
+	float: right;
+	margin-top: 10px;
+	margin-right: 4%;
+	padding: 0;
+}
+
+.searchbox{
+	float: left;
+	width: 100%;
+}
+
+.searchbox input {
+	text-indent: 3%;
+	font-size: 2em;
+	border-style: solid;
+	border-width: 2px;
+	align-items: center;
+	width: 90%;
+	height: 70px;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.pickahu_pic {
+	float: left;
+	width: 35%;
+	margin-top: 2%;
+}
+
+.pickahu_pic img {
+	float: left;
+	margin-left: 20%;
+	width: 65%;
+	height: 65%;
+}
+
+.pickahu_profile {
+	float: left;
+	width: 60%;
+	margin-top: 3%;
+
+}
+h2 {
+	float: right;
+	width: 60%;
+	margin-right: 5%;
+	margin-bottom: 0;
+	background-color: #5D90CB;
+	color: white;
+	text-indent: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 150%;
+	font-weight: normal;
+}
+
+.pickahu_profile {
+	margin: 0;
+}
+.pickahu_table {
+	margin: 0;
+	background-color: white;
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pickahu_table li {
+	font-size: 2em;
+	padding: 1.3%;
+	list-style: none;
+}
+
+h3 {
+	display: none;
+}
+
+
+.pickahu_content {
+	float: left;
+	width: 85%;
+	text-align: justify;
+	margin-top: 3%;
+	margin-left: 6%;
+	margin-bottom: 5%;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 15px;
+	border-color: #BC5858;
+
+}
+
+.pickahu_content p {
+	padding: 2% 3% 2% 3%;
+	margin: 0;
+	font-size: 2em;
+	word-spacing: 10px;
+	background-color: white;
+}
+
+
+.pictures img {
+	float: left;
+	margin: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	width: 16.5%
+}
+
+
+footer {
+	margin: 0;
+	float: left;
+	background-color: #5D90CB;
+	width: 100%;
+}
+
+.nav_button {
+	float: left;
+	width: 20%;
+	background-color: #E4F0EF;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	margin-top:5%;
+	margin-bottom: 4%;
+	margin-left: 4%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+
+}
