@@ -17,16 +17,45 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	vertical-align: baseline;
-}
+
+	}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+header{
+	font-family: verdana;
+    font-size: 300%;
+}
+
+img{
+	padding-right: 4%;
+    padding-left: 0%;
+    padding-bottom: 3%;
+    padding-top: 4%;
+    /*display: block;
+    margin: 0 auto;*/
+}
+
+.project-title{
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.project-detail{
+    padding: 20%;
+    display: inline;
+    font-size: 110%;
+}
+
 body {
 	line-height: 1;
+	margin: 3%;
 }
 ol, ul {
 	list-style: none;
@@ -42,6 +71,11 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+footer{
+	font-size: 110%;
+	text-align: center;
 }
 
 /*----------------- CSS RESET ------------------*/
