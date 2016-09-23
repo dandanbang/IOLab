@@ -1,1 +1,90 @@
 /* Add CSS */
+body {
+	display: flex;
+	font-family: Avenir, sans-serif;
+	margin: 1%;
+}
+
+h2 {
+	text-align: center;
+	margin: 0;
+	padding-top: 1.5%;
+}
+
+li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+p {
+	font-size: .75em;
+}
+
+/*Info*/
+
+#info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 33%;
+	margin-right: 1%;
+}
+
+#title {
+	margin: 0;
+}
+
+#description {
+	
+}
+
+#todo-item-input {
+	width: 90%;
+	text-align: center;
+	margin-bottom: 2%;
+	resize: none;
+}
+
+#new-item, #new-list, .lists-button {
+	margin-top: 2%;
+	width: 40%;
+}
+
+#new-list {
+	margin-top: 4%;
+}
+
+/*Lists*/
+
+#list-container {
+	width: 100%;
+}
+
+.lists {
+	display: inline-flex;
+	width: 100%;
+	height: 100%;
+}
+
+.list {
+	width: 50%;
+	padding: 0;
+}
+
+.todo {
+	color: #8C200D;
+	background-color: #FFDED9;
+	margin-right: 1%;
+}
+
+.complete {
+	color: #167049;
+	background-color: #DEFFF1;
+}
+
+.item-button {
+	margin-left: 1%;
+	margin-right: 1%;
+}

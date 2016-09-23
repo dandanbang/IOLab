@@ -24,27 +24,24 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
     <body>
-        <div id='info'>
+        <div id='info' class="main">
             <h1 id='title'>This Is a To Do List</h1>
-            <p id='description'>Enter tasks in the box below to add them to your 'Things to Do.' Click the button next to a task in either list to move it to the other.<br><br>Click 'Create a New List' to add another to do list. You will be limited to 10 lists! Switch between lists using the corresponding buttons</p>
+            <p id='description'>Enter tasks in the box below to add them to your 'Things to Do' list.<br><br>Click the button next to a task in either list to move it to the other.</p>
             <!-- create input tag for user input -->
             <textarea id="todo-item-input" placeholder="Enter task here"></textarea>
             <!-- button takes input and adds a new element with content to 'list_do' -->
             <button id="new-item">Add to List</button>
-            <button id="new-list">Create a New List</button>
         </div>
         <!-- ability to move items between list_todo and list_completed -->
-        <div id='list-container'>
-        <div id="list-1" class="lists">
-            <div class="list todo">
-                <h2>Things to Do</h2>
-                <div class="list_todo"></div>
+        <div id="lists" class="main">
+            <div id="todo" class="list">
+                <h2>Things to Do</h1>
+                <div id="list_todo"></div>
             </div>
-            <div class="list complete">
-                <h2>Things Completed</h2>
-                <div class="list_completed"></div>
+            <div id="complete" class="list">
+                <h2>Things that are Done</h1>
+                <div id="list_completed"></div>
             </div>
-        </div>
         </div>
         <script type="text/javascript" src="_js/main.js"> </script>
     </body>
