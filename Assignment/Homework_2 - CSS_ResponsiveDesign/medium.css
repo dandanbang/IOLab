@@ -1,0 +1,27 @@
+#hamburger{
+	display: none;
+}
+
+table {
+    height:150px;
+}
+
+.pokemon-name {
+	display: block;
+	padding: 10px;
+}
+
+.test{
+	display: none;
+}
+th{
+	display: none;
+}
+
+/*#selected-pokemon-description{
+    width: 500px;
+}*/
+
+#pokemon-list {
+	width:600px;
+}
