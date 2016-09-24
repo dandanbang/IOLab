@@ -1,0 +1,56 @@
+
+#search_bar {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+input {
+    float: left;
+    width: 60%;
+    font-size: 2em;
+    margin-left:15%;
+    margin-top: 2%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#search_button {
+    float: left;
+    font-size: 1.5em;
+    margin-left: 2%;
+    margin-right: 15%;
+    margin-top: 2.2%;
+}
+
+#search_results {
+    float: left;
+    margin-top: 5%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+#play_list {
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 30%;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2%;
+    font-size: 3em;
+    text-align: center;
+}
+.lists {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
