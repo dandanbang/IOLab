@@ -1,0 +1,47 @@
+/*Your tablet targeted CSS should go in this file*/
+#middle-layer {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-bottom: 15px;
+	flex-direction: column;
+}
+.floating-image {
+	height: auto;
+	width: 10%;
+	border: none;
+}
+.Poke-ID{
+	margin: 0;
+	width: 75%;
+	background-color: #5D90CB;
+	font-size: 1em;
+	color: #ffffff;
+	padding: 15px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000000;
+	order: 1;
+}
+#listaboutpokes{
+	margin: 0;
+	width:75%;
+	background-color: #ffffff;
+	padding: 15px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000000;
+	order: 3;
+}
+#selectedpoke {
+	height: auto;
+	width: 75%;
+	border: none;
+	margin-bottom: 1%;
+	margin-right: 3%;
+	order: 2;
+}
+.description {
+	display: none;
+}
