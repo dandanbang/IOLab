@@ -1,0 +1,125 @@
+body {
+    background-image: url("../assets/backgrounds/background_home.png");
+    background-size:cover;
+}
+#logo-container {
+    max-height: 100%;
+}
+
+.btn-white {
+    background-color: white !important;
+    min-width: 8em;
+
+}
+
+.input-field .search {
+    background: white;
+     border-style: solid; 
+    border: 1px solid #9e9e9e;
+}
+
+.container .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.container .card-panel {
+    padding: 1%;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.container .feature {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container .feature .lst{
+    border: 1px solid grey;
+}
+
+.container .feature img{
+    padding: 5%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .container .feature .lst{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-top: 8%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container .feature .white-text {
+        margin-top: 5%;
+
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container .feature .lst{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .container .card-panel li {
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container .feature .lst {
+        margin-top: 5%;
+
+    }
+
+    .container .card-panel li {
+        margin-left: 15%;
+    }
+
+}
+
+.container .card-panel h1 {
+    margin: 0%;
+    padding: 2%;
+    font-size: 1.8rem;
+}
+
+.container .card-panel li {
+    list-style: disc;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+.container .blurb .card-panel {
+    margin-bottom: 8%;
+    border: 8px solid salmon;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+.row .img-list {
+    padding: 0 !important;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.footer-custom {
+    padding: 2%;
+}
+
+.footer-custom .btn-white {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.remove-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.remove-padding {
+    padding: 0 !important;
+}
