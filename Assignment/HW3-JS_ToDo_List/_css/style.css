@@ -1,1 +1,21 @@
 /* Add CSS */
+#to-do{
+    color: #39CCCC; /* Playing with fun colors for the two list headers*/
+}
+
+#complete{
+    color: #85144b;
+}
+
+#in_progress{
+    color: #3D9970;
+}
+
+/* Adding nice fonts to the headers and instructive text*/
+h1, h2{
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+p{
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
