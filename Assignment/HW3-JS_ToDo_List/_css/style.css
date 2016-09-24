@@ -1,1 +1,90 @@
 /* Add CSS */
+body {
+
+	line-height: 1;
+	background-image: url("blue1.jpg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+
+.container {
+	margin-top: 50px;
+	width: 100%;
+}
+
+.list_ul{
+	margin-top: 20px;
+	display: none;
+	width: 75%;
+	float: middle;
+	line-height: 20px;
+	background-color: #cecac3;
+	border-radius: 25px;
+}
+
+#firstdiv{
+width: 100%;
+display: inline-block;
+
+}
+
+#div1{
+	margin-top: 50px;
+	/*height: 500px;*/
+	background-color: #e7a72c;
+	/*background-image: url("sticky1.jpg");
+	background-size: 100%;*/
+	color: white;
+	border-radius: 25px;
+	/*border: 3px solid red;*/
+}
+
+#div2{
+	margin-top: 50px;
+	background-color: #dd7a44;
+	color: white;
+	border-radius: 25px;
+	/*border: 3px solid black;*/
+}
+
+#new-item{
+	margin-top: 40px;
+}
+#todo-item-input{
+width:65%;
+}
+
+.btn btn-info btn-xs{
+	font-weight: bold;
+}
+
+#input_todo{
+	margin-top: 10px;
+	
+}
+
+#inst1{
+	margin-top: 50px;
+}
+
+#button1{
+	color:black;
+}
+
+#img1{
+	margin : 20px  150px auto 350px;
+	height: 90px;
+    width: 90px;
+}
+
+#page_title{
+	margin : -70px  50px auto 500px;
+	width: 50%;
+	color: white;
+
+}
+
+#todo-item-input{
+	border: 3px solid black;
+}

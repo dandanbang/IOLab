@@ -15,26 +15,69 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 9. Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
 10. All of your JavaScript is commented appropriately.
 11. Your code is clean and concise (minimal repetition and unused code)-->
-
+<!DOCTYPE html>
 <html>
 <head>
 
-    <title> Homework4 Javascript and jQuery </title>
-    <link rel="stylesheet" href="_css/style.css">
-
+    <title> Task Manager </title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script type="text/javascipt" src"https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Uncomment the below line for seeing the pure javascript code , and comment the last script line before body ends*** EXTRA CREDIT -->
+    <!-- <script type="text/javascript" src="_js/purejs.js"> </script> -->
+    
+    
 </head>
     <body>
+      <div id="firstdiv">
+      <img src="_css/Notepad.png" id="img1">
+      <div id = "page_title">
+      <h1 >TASK MANAGER</h1>
+      </div>
+      </div>
+           <div class = "container">
+
+        
             <!-- create input tag for user input -->
-            <input>
-
+            <div id="input_todo" class="row">
+            <div class="col-sm-2"> <p> </p> </div>
+            <input id="todo-item-input" class="col-sm-10">
+            </div>
+            <div class="row">
+            <div class="col-sm-5"> <p> </p> </div>
             <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
+            <button id="new-item" class="btn btn-danger btn-lng col-sm-2" onclick= "new_item_function()"> Add item </button>
+            </div>
 
-
+            <div class="row">
+            
+            <div class="col-sm-1"> <p> </p> </div>
+            <div class="col-sm-4" id= "div1">
+            <h3> TO DO :</h3>
             <!-- ability to move items between list_todo and list_completed -->
             <div id="list_todo"> </div>
-            <div id="list_completed"> </div>
+            </div>
+           
 
-            <script type="text/javascript" src="_js/main.js"> </script>
+            <div class="col-sm-2"> <p> </p> </div>
+            <div class = "col-sm-4" id="div2">
+            <h3> COMPLETED :</h3>
+            <div id="list_completed"> </div>
+            </div>
+            </div>
+
+            <button  id="inst1" class="btn btn-primary btn-lng"> Instructions </button>
+           <div id="instructions">
+           <ul class="list_ul" id ="ul_list">
+           <li> You can add items to your to-do tasks by clicking on the "Add item" button above.</li>
+           <li> Once the task is completed you can move the item to the completed list by clicking on the "Completed" button next to the button. </li>
+           <li> If you need to work on your completed tasks again you can move the item to To-do list by clicking on "Add to to-do" button next to the item.</li>
+           </ul>
+           </div>
+           
+            </div>
+            <!-- Comment the below line for seeing the pure javascript code , and uncomment this line if you want the to test the qorking jQuery code *** EXTRA CREDIT -->
+             <script type="text/javascript" src="_js/main.js"> </script>
     </body>
 </html>
