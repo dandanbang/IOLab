@@ -1,0 +1,18 @@
+/* Add CSS */
+body{
+    display: flex;
+    justify-content: center;
+}
+#container {
+    height: auto;
+    width: 600px;
+}
+#userInput {
+    height: 100px;
+    width: 500px;
+}
+#list_todo {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
