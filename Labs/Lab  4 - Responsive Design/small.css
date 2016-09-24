@@ -1,1 +1,35 @@
 /*Your mobile targeted css should go here*/
+h1 {
+	text-align: center;
+	color:blue;
+	font-family: Helvetica, sans-serif;
+
+}
+
+nav {
+	display:inline-block;
+	position: absolute;
+	background-color: #ccc;
+	width:100%;
+	text-align: center;
+	border: 2px  black dashed rgba(255,255,255, 0);
+	font-family: Helvetica, sans-serif;
+
+}
+
+h3 {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+
+}
+
+footer {
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+
+}

@@ -1,0 +1,90 @@
+.monster{
+	margin-bottom: 2em;
+	width: 100%;
+	box-sizing: border-box;
+	/*border: solid black 5px;*/
+	align-content: center;
+	position: relative;
+	height: 15em;
+}
+.dropdown {
+	font-size: 0.5em;
+}
+.monster img {
+	display: inline-block;
+	box-sizing: border-box;
+	/*margin-top: 5em;*/
+/*	margin-left: 2em;
+	margin-right: 2em;*/
+	position: absolute;
+	margin: 1em;
+	left: 0;
+	bottom: 0;
+	flex: 0 0  200px;
+
+	/*height: auto;*/
+	/*width: 15%;*/
+
+}
+
+.monster ul {
+	/*display: inline-block;*/
+	font-family: Gill Sans;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.index {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: white;
+}
+
+.titlebox{
+	box-sizing: border-box;
+	border: solid black 1px;
+	background-color: #5D8FCB;
+	color: white;
+	font-family: Gill Sans;
+	font-weight: normal;
+	font-size: 2em;
+	padding: 0.5em;
+	order: 1;
+	margin-left: 1em;
+	margin-right: 1em;
+	height: 2em;
+	flex: 0 0  100%;
+	/*width: 100%;*/
+	/*display: inline-block;*/
+	/*margin-top: 0;*/
+	/*position: relative;*/
+}
+
+.index ul{
+	display: inline-flex;
+	box-sizing: border-box;
+	overflow: auto;
+	margin: 0 0 0 5em;
+	order: 2;
+	width: 60%;
+	/*background-color: white;*/
+	/*position: relative;*/
+	/*float:right;*/
+	
+}
+
+.listbox {
+	display: inline-block;
+	box-sizing: border-box;
+	border: solid black 1px;
+	flex: 0 0 60%;
+}
+
+.pokemon {
+	box-sizing: border-box;
+	border: solid black 1px;
+	margin: 0 -5px -5px 0;
+	width: 25%;
+
+}
