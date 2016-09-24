@@ -1,0 +1,87 @@
+
+
+.pokeball{
+	display: inline-block;
+}
+
+.imagediv{
+	width : 23%;
+	/*max-height: 150px;
+	max-width: 200px;*/
+	display : inline-block;
+
+}
+
+.nav_button{
+	width: 25%;
+	display: inline-block;
+	size: 30%;
+	/*padding: 20px 20px 20px 20px;*/
+}
+
+.button_nav{
+
+	width: 20%;
+	
+}
+.searchbar1{
+	
+	padding: 30px 10px 50px 5px;
+	margin: 30px 50px 20px 10px; 
+
+}
+
+.section1 {
+	
+	width: 20%;
+	margin: 20px 10px 70px 35px;
+	
+	padding: 5px 550px 10px 20px;
+		/*margin: 20px 100px auto; */
+	
+
+}
+
+.table_container {
+display: inline-block;
+width: 100%
+
+}
+
+.pikachu_main{
+	display: inline-block;
+	width: 20%;
+	margin: 20px auto; 
+}
+.pikachu_img {
+	margin-top: -140px;
+	margin-left: 20px;
+	size: 80%;
+	padding: 50px  2px 10px 2px;
+
+
+}
+
+.headertitle{
+
+	font-size: 24px;
+	
+
+}
+.section2{
+	
+	float:right;
+	width: 20%;
+	margin-right: 100px;
+	margin-top: 0px;
+	padding: 50px 100px 65px 10%;
+	
+}
+
+.para{
+	display:inline-block;
+	padding: 40px 60px 40px 60px;
+	margin: 20px 20px 20px 10px;
+
+	
+}
