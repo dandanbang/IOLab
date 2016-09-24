@@ -1,0 +1,240 @@
+/*----------------- CSS RESET ------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------- CSS RESET ------------------*/
+
+body {
+	background-image: url("assets/backgrounds/background_home.png");
+	background-size: 100% auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/* top */
+#top {
+    background: #be5959;
+    color: #fff;
+    padding: 0.5em 0;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2em;
+}
+
+#top h1 {
+    display: inline-block;
+    width: auto;
+}
+
+/* Setup layout but hide the elements. */
+#top img {
+    display: none;
+    float: right;
+    margin-right: 2.5%;
+    width: 1.2em;
+    height: auto;
+}
+
+
+#top button {
+    display: none;
+    float: left;
+    margin-left: 2.5%;
+    padding: 0.5em 1em;
+
+    text-decoration: none;
+    font-size: 0.5em;
+    font-weight: 700;
+    color: #000;
+    background: #e5f1f2;
+
+    border: 1px solid #636564;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+
+
+/* feature */
+#feature h2 {
+    display: inline-block;
+    background: #5c90cc;
+    color: #fff;
+    width: 95%;
+    font-size: 1.5em;
+
+    padding: 0.5em 0;
+    border: 1px #000 solid;
+    margin-bottom: 5%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pokemon_info {
+    display: inline-block;
+    width: 95%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+
+    padding: 1.4em 0;
+    border: 1px #000 solid;
+
+    font-weight: 700;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin-bottom: 12%;
+}
+
+.pokemon_info ul {
+    display:inline-block;
+    width: auto;
+    text-align: left;
+}
+
+.pokemon_info li {
+    line-height: 1.4em;
+}
+
+.pokemon_info li:before {
+    content: "- "
+}
+
+
+.pokemon_control {
+    display: flex;
+    flex-flow: column;
+}
+
+.pokemon_stars {
+    width: 100%;
+    padding:0;
+    border: 1px #000 solid;
+}
+
+.pokemon_stars img {
+    float: left;
+    border: 1px #000 solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav_buttons {
+    width: 100%;
+    background: #5c90cc;
+    border: 1px #000 solid;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav_buttons a {
+    display: inline-block;
+    margin: 0.7em 0.5em;
+    padding: 0.3em 0.5em;
+
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    background: #e5f1f2;
+
+    border: 1px solid #636564;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+
+
+/* feature */
+#feature {
+    width: 100%;
+    text-align: center;
+}
+
+#feature section {
+    display: inline-block;
+    width: 95%;
+    text-align: left;
+    background: #fff;
+    padding: 1.3em 1em;
+    border: 1px #000 solid;
+
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 7%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Set it as hidden but define the parameters for the sake of layout ('inline-block'). */
+#feature article {
+    display: none;
+    width: 95%;
+
+    text-align: left;
+    background: #fff;
+    line-height: 1.3;
+    padding: 1.2em 1em;
+    border: 0.6em #be5959 solid;
+
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

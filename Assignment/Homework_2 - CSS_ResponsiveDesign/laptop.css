@@ -1,0 +1,71 @@
+body {
+    font-size: 100%;
+}
+
+/* pokemon_control */
+
+/* On iphone, each row has 2 images (100% / 2 = 50% each). */
+.pokemon_stars img {
+    width: 16.65%;
+}
+
+.nav_buttons {
+    order: 2;
+}
+
+/* 4 equal button 'slices'. */
+.nav_buttons a {
+    width: 15%;
+}
+
+.pokemon_stars {
+    order: 1;
+}
+
+
+/* feature */
+#feature img {
+    float: left;
+    width: 25%;
+    height: auto;
+    max-width: 12em;
+    margin: 0 0 5% 8%;
+}
+
+#feature section {
+    margin-bottom: 5%;
+}
+
+#feature h2 {
+    float:right;
+    text-align: left;
+    width: 60%;
+    padding-left: 1.5em;
+    margin: 0 2.5% 0 0;
+}
+
+.pokemon_info {
+    float: right;
+    text-align: left;
+    width: 60%;
+    margin: 0 2.5% 5% 0;
+    padding: 2em 0 4em 2em;
+}
+
+.pokemon_info li {
+    line-height: 1.7em;
+}
+
+/* Hidden in iphone version. */
+#feature article {
+    display: inline-block;
+}
+
+#top img {
+    display: inline-block;
+}
+
+#top button {
+    display: inline-block;
+    font-size: 0.5em;
+}
