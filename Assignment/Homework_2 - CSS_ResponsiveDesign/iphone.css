@@ -1,0 +1,49 @@
+button {
+	min-width: 50px;
+	max-width: 80px;
+	font-size: .75em;
+}
+
+#title {
+	font-size: 1.5em;
+}
+
+#search_pokemon {
+	font-size: .5em;
+}
+
+#pokemon_stats {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	width: 100%;
+}
+
+#pokemon_img {
+	width: 75%;
+	margin-right: 11.5%;
+	margin-bottom: 1%;
+}
+
+#pokemon_infobox {
+	margin-left: 0;
+}
+
+#pokemon_name {
+	font-size: 1em;
+	text-align: center;
+}
+
+#pokemon_attributes {
+	font-size: .75em;
+}
+
+#pokemon_desc {
+	width: 90%;
+	font-size: .75em;
+}
+
+.pokemon_nav {
+	width: 48%;
+	border: 1px solid #231F20;
+}

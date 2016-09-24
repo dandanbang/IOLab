@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokedex</title>
+    <!-- Load stylesheets based on viewport  -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="iphone.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 376px) and (max-width: 768px)" href="ipad.css">
+  </head>
+  <body>
+    <header id="top">
+      <button id="dropdown"><a href="#bottom">Dropdown</a></button>
+      <h1 id='title'>Pokedex</h1>
+      <img id='pokeball' src="assets/icons/pokeball_icon.png" alt="Pokeball">
+    </header>
+    <article>
+      <input type="text" id="search_pokemon" value="Search Pokemon">
+      <section id='pokemon_info'>
+        <span id='pokemon_stats'>
+          <img id='pokemon_img' src="assets/images/pickahu.png" alt="Pikachu">
+          <div id='pokemon_infobox'>
+            <h2 id='pokemon_name'>No. 001 Pikachu</h2>
+            <div id='pokemon_attributes'>
+              <ul>
+                <li>Electric type</li>
+                <li>Gentle temperment</li>
+                <li>Grasslands</li>
+              </ul>
+            </div>
+          </div>
+        </span>
+        <p id='pokemon_desc'>
+          Pikachu can be seen napping in a bright sunlight. It has two red dots on its cheeks. By practicing html and css Pikachu can learn confusion. Pikachu likes to steal computer chargers from sleeping college students.
+        </p>
+      </section>
+      <nav>
+        <img class="pokemon_nav" src="assets/images/whatisthat.png" alt="What Is That">
+        <img class="pokemon_nav" src="assets/images/abra.png" alt="Abra">
+        <img class="pokemon_nav" src="assets/images/vulpix.png" alt="Vulpix">
+        <img class="pokemon_nav" src="assets/images/nidorino.png" alt="Nidorino">
+        <img class="pokemon_nav" src="assets/images/clafary.png" alt="Clafary">
+        <img class="pokemon_nav" src="assets/images/charmeleon.png" alt="Charmeleon">
+        <img class="pokemon_nav" src="assets/images/charmander.png" alt="Charmander">
+        <img class="pokemon_nav" src="assets/images/firething.png" alt="Fire Thing">
+        <img class="pokemon_nav" src="assets/images/jigglyppuff.png" alt="Jigglypuff">
+        <img class="pokemon_nav" src="assets/images/horsea.png" alt="Horsea">
+        <img class="pokemon_nav" src="assets/images/pidgey.png" alt="Pidgey">
+        <img class="pokemon_nav" src="assets/images/wartortle.png" alt="Wartortle">
+      </nav>
+    </article>
+    <footer id='bottom'>
+      <button class="button_nav"><a href="#top">BACK</a></button>
+      <button class="button_nav"><a href="hw1_map.html">MAP</a></button>
+      <button class="button_nav"><a href="hw1_area.html">AREA</a></button>
+      <button class="button_nav">NEXT</button>
+    </footer>
+  </body>
+</html>
