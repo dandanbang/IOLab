@@ -1,1 +1,37 @@
-/* Add CSS */
+.list {
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid blue;
+    word-wrap: break-word;
+
+}
+
+#lists{
+    display: flex;
+    max-width: 100%;
+}
+
+button > img{
+    width: 10px;
+    margin: 2px;
+}
+
+.todo {
+    background-color: pink;
+    width: 200px;
+}
+
+.completed{
+    background-color: lightgreen;
+    width: 200px;
+}
+
+#blank-list{
+    visibility: hidden;
+}
+
+body{
+    font-family: helvetica;
+}
