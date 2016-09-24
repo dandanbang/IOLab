@@ -17,17 +17,33 @@ $(document).ready(function(e) {
 
 });
 
+// paly button hadnler, call changeTrack function
 $(document).on("click", "#play", function(){
 	song_url = $(this.parentNode).children('a').attr('href');
 	changeTrack(song_url);
 });
 
-
+// add to list button event handler
 $(document).on("click", "#addlist", function(){
-	$("#play_list .lists ul").prepend($(this.parentNode));
-	// $("#play_list .lists #addlist").text("Up");
-
 	$('#search_results').prepend($(this.parentNode).clone());
+	var down_button = "<button id='down'>Down</button>";
+	$(down_button).insertAfter($(this));
+	$("#play_list .lists ul").prepend($(this.parentNode));
+	$("#play_list .lists #addlist").text("Up");
+	$("#play_list .lists #addlist").attr("id", "up");
+});
+
+
+// move song up a step in playlist
+$(document).on("click", "#up", function() {
+	var pre_song = $(this.parentNode).prev();
+	$($(this.parentNode)).insertBefore($(pre_song));
+});
+
+// move song down  step in playlist
+$(document).on("click", "#down", function() {
+	var next_song = $(this.parentNode).next();
+	$($(this.parentNode)).insertAfter($(next_song));
 });
 
 
