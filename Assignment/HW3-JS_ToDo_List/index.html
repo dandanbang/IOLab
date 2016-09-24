@@ -21,20 +21,35 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 
     <title> Homework4 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="_js/main.js"> </script>
 
 </head>
     <body>
-            <!-- create input tag for user input -->
-            <input>
-
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
-
-
-            <!-- ability to move items between list_todo and list_completed -->
-            <div id="list_todo"> </div>
-            <div id="list_completed"> </div>
-
-            <script type="text/javascript" src="_js/main.js"> </script>
+        <div class = 'container'>
+        <!-- create input tag for user input -->
+            <div id = "introduction">
+                <h1> TO-DO LIST FOR THE DAY <h1>
+                <p> Let's organize your life by making a todo list and see what you can complete by the end of the day! Write what you need to do in the box below and click "Add Item" to add it as a to-do task in the left. If it is complete, click on the button to move it to the right box. If it is actually not complete, click on the button again to move it back to the to-do list.</p>
+                <img id="picture" src = "http://www.northeastern.edu/careers/blog/wp-content/uploads/2014/06/grad-school-someecard.png">
+            </div>
+            <div id = 'todo-item'>
+                <input placeholder = "What do you need to do?"> 
+        <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button id="new-item"> Add Item </button>
+            </div>
+        <!-- ability to move items between list_todo and list_completed -->
+            <div id = "boxes">
+                <div id="list_todo"> 
+                    <h4> TO-DO </h4>
+                    <ul id = "to-do"></ul>
+                </div>
+                <div id="list_completed">
+                    <h4> COMPLETED ITEMS </h4> 
+                    <ul id = "complete"></ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
