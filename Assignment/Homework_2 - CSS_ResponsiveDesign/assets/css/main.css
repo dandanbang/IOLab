@@ -1,0 +1,191 @@
+/*----------------- CSS RESET ------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+  font-family:monospace;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------- CSS RESET ------------------*/
+
+/*Your main CSS should go here*/
+
+body {
+  background-color: #2C3131;
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+}
+
+.page {
+  width: 770px;
+  margin: 0 auto;
+  background: white;
+}
+header {
+	width: 100%;
+	background: #BD5858;
+	color: #F9F9FA;
+	box-sizing: border-box;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+footer {
+	width: 100%;
+	background: #5D90CB;
+	color: #F9F9FA;
+  box-sizing: border-box;
+	height: 50px;
+	line-height: 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#navicon {
+  display: none;
+}
+
+.button {
+  width: 15%;
+  margin: 10px;
+  background: #E4F0EF;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.poke_name_ipad {
+  border: 1px solid black;
+  width: 95%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  display:none;
+}
+
+.poke_name_laptop {
+  border-bottom: 1px solid black;
+  display: block;
+}
+
+.info_img {
+  margin-left: 4%;
+  width: 20%;
+  height: 20%;
+}
+
+.poke_info {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.info_text {
+  width: 70%;
+  border: 1px solid black;
+}
+
+h3 {
+  font-size: 20px;
+  background-color: #5D90CB;
+  color: white;
+  padding: 1% 5%;
+}
+
+ul {
+  padding: 3% 5%;
+}
+
+li, p {
+  line-height: 150%;
+}
+
+.poke_description {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px 10px;
+  border: 6px solid #BD5858;
+  border-radius: 10px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.item {
+  width: 16%;
+  height: 16%;
+  border: 1px solid black;
+}
+
+.page_img {
+  width: 100%;
+}
