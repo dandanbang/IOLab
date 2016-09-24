@@ -1,1 +1,59 @@
 /* Add CSS */
+body {
+	padding: 10px;
+}
+[class*="col-"] {
+    margin-bottom: 15px;
+    /*text-align: center;*/
+}
+#to-do-input {
+	padding: 10px;
+}
+#add-item {
+	margin-left: 15px;
+	color: white;
+	background: black;	
+
+}
+
+img {
+	max-width: 60%;
+	max-height: 40%;
+	display: block;
+    margin: auto;
+}
+.task-column {
+	border: 1px solid black;
+	min-height: 50px;
+	vertical-align	: center;
+	border-radius: 5px;
+}
+#to-do-div {
+	background: #FA7B66;
+	color: white;
+	border: 1px solid #FA7B66;
+}
+#done-div {
+	background: #69BABF;
+	color: white;
+	border: 1px solid #69BABF;
+}
+.glyphicon {
+	font-size: 1.5em;
+}
+#completed-icon {
+	color: #69BABF;
+
+}
+#incomplete-icon {
+	color: #FA7B66;
+}
+ul {
+	text-indent: 10px;
+}
+li {
+	font-size: 12pt;
+	/*display: inline-block;
+	margin: 0;*/
+}
+
