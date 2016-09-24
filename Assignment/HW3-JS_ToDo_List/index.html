@@ -1,40 +1,62 @@
 <!--
-1. User sees labeled ‘to-do’ and ‘completed items’ lists, which are empty upon page load. The lists are visually distinct from each other.
-2. User can add one ‘to-do’ item at a time using a text input field and an ‘add to list’ button.
-3. Each newly-added ‘to-do’ item appears at the top of the ‘to-do’ list (not the bottom).
-4. User can click a button within each ‘to-do’ item to mark it as complete, at which point:
-a. The ‘to-do’ item disappears from the ‘to-do’ list
-b. The ‘to-do’ item appears at the top of the ‘completed items’ list.
-c. Items on the ‘completed items’ list should be styled differently than those on the ‘to-do’ list as an additional visual indication of their completion.
-5. User can click a button within each ‘complete’ item to ‘unmark’ it as complete, at which point:
-a. The ‘complete’ item disappears from the ‘completed items’ list.
-b. The ‘complete’ item appears at the top of the ‘to-do’ list with the same styling as the other ‘to-do’ list items.
-6. Items on each list remain there until the user marks or ‘unmarks’ them.
-7. Your site has a title and intuitive labeling or instructions on how to use it.
-8. You can use only jQuery and JavaScript – no additional plugins/libraries.
-9. Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
-10. All of your JavaScript is commented appropriately.
-11. Your code is clean and concise (minimal repetition and unused code)-->
+CHECK 1. User sees labeled ‘to-do’ and ‘completed items’ lists, which are empty upon page load. The lists are visually distinct from each other.
+CHECK 2. User can add one ‘to-do’ item at a time using a text input field and an ‘add to list’ button.
+CHECK 3. Each newly-added ‘to-do’ item appears at the top of the ‘to-do’ list (not the bottom).
+CHECK 4. User can click a button within each ‘to-do’ item to mark it as complete, at which point:
+CHECK a. The ‘to-do’ item disappears from the ‘to-do’ list
+CHECK b. The ‘to-do’ item appears at the top of the ‘completed items’ list.
+CHECK c. Items on the ‘completed items’ list should be styled differently than those on the ‘to-do’ list as an additional visual indication of their completion.
+CHECK 5. User can click a button within each ‘complete’ item to ‘unmark’ it as complete, at which point:
+CHECK a. The ‘complete’ item disappears from the ‘completed items’ list.
+CHECK b. The ‘complete’ item appears at the top of the ‘to-do’ list with the same styling as the other ‘to-do’ list items.
+CHECK 6. Items on each list remain there until the user marks or ‘unmarks’ them.
+CHECK 7. Your site has a title and intuitive labeling or instructions on how to use it.
+CHECK 8. You can use only jQuery and JavaScript – no additional plugins/libraries.
+CHECK 9. Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
+CHECK 10. All of your JavaScript is commented appropriately.
+CHECK 11. Your code is clean and concise (minimal repetition and unused code)-->
 
 <html>
 <head>
 
-    <title> Homework4 Javascript and jQuery </title>
+    <title> Homework 4 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
     <body>
             <!-- create input tag for user input -->
-            <input>
+            <div class="container">
+                <h2> To-Do List </h2>
+                <p><em> <b> Step 1: </b> To start adding tasks onto your To-Do List, please input a task in the textbox and click the pink "Add New Item" button or hit the "return" key. <br/> <br/>
 
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
+                Note: Feel free to rearrange items in the list by dragging and dropping them anywhere within your list. </em></p>
+                <input name="ListItem" placeholder="Any tasks to put in?">
+
+                <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button id="new-item"> Add New Item </button>
 
 
-            <!-- ability to move items between list_todo and list_completed -->
-            <div id="list_todo"> </div>
-            <div id="list_completed"> </div>
+                <!-- ability to move items between list_todo and list_completed -->
+                <p> <em> <b> Step 2: </b> Once you complete a task, click the button next to the associated task to move it to the "Completed" list. </em> </p>
+
+
+                <div id="list_todo"> 
+                    <h2> To-Do: <br/> </h2>
+                    <ol id="todo_ol"> 
+                    </ol>
+                </div>
+
+                <p> <em> <b> Step 3: </b> If a task needs to be moved back to the "To-Do" list, simply click on the button next to the appropriate task in the "Completed" list. </em> </p>
+
+
+                <div id="list_completed"> 
+                    <h2> Completed: <br/> </h2>
+                    <ol id="completed_ol"> 
+                    </ol>
+                </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>
+            </div>
     </body>
 </html>

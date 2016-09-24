@@ -1,1 +1,92 @@
 /* Add CSS */
+body {
+	font: normal normal 13px/16px "Open Sans", sans-serif;
+	background: #ccc;
+}
+input {
+	padding: 4px 40px 4px 5px;
+	width: auto;
+	margin-top: 4px;
+	border-radius: 5px;
+}
+button {
+	float: right;
+}
+h2 {
+	text-decoration: underline;
+}
+.container {
+	padding: 20px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background: white;
+	border-radius: 5px;
+}
+#new-item {
+	background-color: #FFB6C1;
+	color: #FFFFFF;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 2px;
+	padding:  5px 15px;
+}
+#new-item: hover {
+	cursor: pointer;
+	opacity: .8;
+}
+#list_todo {
+	width: 300px;
+	min-height: 100px;
+	height: auto;
+	background-color: #FFF0F5;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin: 20px auto 10px;
+	text-align: center;
+}
+#list_todo li {
+	width: 90%;
+	word-break:break-all;
+	text-align: left;
+	color: #000000;
+	font-style: normal;
+}
+#list_completed {
+	width: 300px;
+	min-height: 100px;
+	height: auto;
+	background-color: #F5FFFA;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
+}
+#list_completed li {
+	width: 90%;
+	word-break:break-all;
+	text-align: left;
+	color: #228B22;
+	font-style: italic;
+
+
+}
+ol {
+	min-height: 10px;
+}
+ol li {
+	padding: 5px;
+	color: #000;
+	max-width: 250px;
+}
+li:hover {
+  cursor: pointer;
+}
+/*Animations*/
+.fade-out {
+	animation: fade-out .5s ease forwards !important;
+}
+.fade-in {
+	animation: fade-in .5s ease forwards;
+}
