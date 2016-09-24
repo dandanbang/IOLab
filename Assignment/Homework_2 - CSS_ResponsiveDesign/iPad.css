@@ -1,0 +1,59 @@
+header .nav-button{
+	width: 20%;
+}
+
+.other-pokemon {
+	width: 24.68%;
+}
+#nav1 {
+	order: 4;
+}
+#nav2 {
+	order: 2;
+}
+#nav3 {
+	order: 3;
+}
+#nav4 span{
+	order: 1;
+	display: none;
+}
+#nav4::after {
+	content: "INFO";
+}
+#poke-1 {
+	order: 1;
+}
+#poke-2 {
+	order: 2;
+}
+#poke-3 {
+	order: 3;
+}
+#poke-4 {
+	order: 4;
+}
+#poke-5 {
+	order: 12;
+}
+#poke-6 {
+	order: 11;
+}
+#poke-7 {
+	order: 5;
+}
+#poke-8 {
+	order: 6;
+}
+#poke-9 {
+	order: 7;
+}
+#poke-10 {
+	order: 8;
+}
+#poke-11 {
+	order: 9;
+}
+#poke-12 {
+	order: 10;
+}

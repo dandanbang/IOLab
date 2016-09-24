@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	<script type="text/javascript">
+		$(document).ready(function (){
+			i = 0;
+			$("#Dog").click(function(){
+				i ++;
+				$("#no-clicks").html(i + " clicks");
+			})
+		    $("#Dog2").click(function(){
+				i --;
+				$("#no-clicks").html(i + " clicks");
+			})
+		    
+		})
+	</script>
+
+	<body>
+		<h4 id="no-clicks"></h4>
+		<img id = 'Dog' src = 'http://ghk.h-cdn.co/assets/16/09/980x490/landscape-1457107485-gettyimages-512366437.jpg'>
+		<img id = 'Dog2' src = 'http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg'>
+
+
+	</body>
+</html>
+
+
