@@ -1,1 +1,96 @@
 /* Add CSS */
+
+#div_textBoxes{
+    margin: auto;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+    /*margin: 10px;*/
+}
+
+#helloText {
+    font-size: 40px;
+    text-align: center;
+}
+
+#introText{
+    margin: auto;
+    width: 80%;
+    text-align: justify;
+}
+
+img {
+    height: 50%;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #F0E68C;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#btnNewItem {
+    background-color: #DAA520;
+    border: none;
+    /*color: white;*/
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+#list_completed{
+    margin: auto;
+    float: left;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+    margin: 10px;
+}
+
+#list_todo{
+    margin: auto;
+    float: left;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+    margin: 10px;
+}
+
+#hdComplet{
+    background-color: #4CAF50;
+}
+
+ #hdToDo {
+    /*color: #A52A2A;*/
+    background-color: #A52A2A;
+}
+
+#ul_todo {
+    float: left;
+    background: #CD5C5C;
+}
+
+#ul_complete {
+    float: left;
+    background: #ADFF2F;
+}
