@@ -37,7 +37,12 @@ $(document).on("click", "#addlist", function(){
 	if (status == true) {
 		alert("This song has already added to the playlist.")
 	} else if (status == false) {
-		$('#search_results .lists ul').prepend($(this.parentNode).clone());
+		var section = $(this.parentNode.parentNode.parentNode.parentNode).attr("id"); // find which div section this song belongs, search_results or related_list?
+		if (section == "search_results") {
+			$('#search_results .lists ul').prepend($(this.parentNode).clone());
+		} else if (section == "related_list") {
+			$('#related_list .lists ul').prepend($(this.parentNode).clone());
+		}
 		var down_button = "<button id='down'>Down</button>";
 		$(down_button).insertAfter($(this));
 		$("#play_list .lists ul").prepend($(this.parentNode));
