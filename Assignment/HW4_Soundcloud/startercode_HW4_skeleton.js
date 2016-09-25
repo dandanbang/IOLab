@@ -32,12 +32,18 @@ $(document).on("click", "#play", function(){
 
 // add to list button event handler
 $(document).on("click", "#addlist", function(){
-	$('#search_results .lists ul').prepend($(this.parentNode).clone());
-	var down_button = "<button id='down'>Down</button>";
-	$(down_button).insertAfter($(this));
-	$("#play_list .lists ul").prepend($(this.parentNode));
-	$("#play_list .lists #addlist").text("Up");
-	$("#play_list .lists #addlist").attr("id", "up");
+	var song_name = $(this).next().text();
+	var status = checkExisted(song_name);
+	if (status == true) {
+		alert("This song has already added to the playlist.")
+	} else if (status == false) {
+		$('#search_results .lists ul').prepend($(this.parentNode).clone());
+		var down_button = "<button id='down'>Down</button>";
+		$(down_button).insertAfter($(this));
+		$("#play_list .lists ul").prepend($(this.parentNode));
+		$("#play_list .lists #addlist").text("Up");
+		$("#play_list .lists #addlist").attr("id", "up");
+	}
 });
 
 
@@ -52,6 +58,20 @@ $(document).on("click", "#down", function() {
 	var next_song = $(this.parentNode).next();
 	$($(this.parentNode)).insertAfter($(next_song));
 });
+
+
+function checkExisted(song){
+	var playlist_songs = $("#play_list #song p");
+	for (var i = 0; i < playlist_songs.length; i++) {
+		if (song == $(playlist_songs[i]).text()) {
+			return true;
+		} else {
+			continue;
+		}
+	}
+	return false;
+}
+
 
 
 function callAPI(query) {
