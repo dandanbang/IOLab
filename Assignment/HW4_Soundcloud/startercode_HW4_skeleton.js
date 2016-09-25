@@ -34,11 +34,12 @@ $(document).on("click", "#addlist", function(){
 	if (status == true) {
 		alert("This song has already added to the playlist.")
 	} else if (status == false) {
-		var section = $(this.parentNode.parentNode.parentNode.parentNode).attr("id"); // find which div section this song belongs, search_results or related_list?
-		if (section == "search_results") {
-			$('#search_results .lists ul').prepend($(this.parentNode).clone());
-		} else if (section == "related_list") {
-			$('#related_list .lists ul').prepend($(this.parentNode).clone());
+		var pre_pos = $(this.parentNode).prev();
+		var next_pos = $(this.parentNode).next();
+		if (pre_pos[0] == undefined) {
+			$($(this.parentNode).clone()).insertBefore(next_pos);
+		} else {
+			$($(this.parentNode).clone()).insertAfter(pre_pos);
 		}
 		var down_button = "<button id='down'>Down</button>";
 		$(down_button).insertAfter($(this));
