@@ -1,7 +1,4 @@
-// # Issues to fix: add a same song to the playlist
-// 		  add to playlist will change the order of original list
-
-// set global index to load more data
+// init some global variables
 var j = 1;
 var box = "";
 
@@ -51,7 +48,6 @@ $(document).on("click", "#addlist", function(){
 	}
 });
 
-
 // move song up a step in playlist
 $(document).on("click", "#up", function() {
 	var pre_song = $(this.parentNode).prev();
@@ -64,7 +60,7 @@ $(document).on("click", "#down", function() {
 	$($(this.parentNode)).insertAfter($(next_song));
 });
 
-
+// check whether or not a song has already existed in the playlist
 function checkExisted(song){
 	var playlist_songs = $("#play_list #song p");
 	for (var i = 0; i < playlist_songs.length; i++) {
@@ -77,8 +73,7 @@ function checkExisted(song){
 	return false;
 }
 
-
-
+// call soundcloud api, querying songs and insert first 20 songs to page
 function callAPI(query) {
 	$.get("https://api.soundcloud.com/tracks?client_id=b3179c0738764e846066975c2571aebb",
 		{'q': query,
