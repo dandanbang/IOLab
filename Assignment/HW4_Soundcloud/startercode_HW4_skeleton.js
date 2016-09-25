@@ -4,6 +4,7 @@
 // set global index to load more data
 var j = 1;
 var box = "";
+
 // Event hander for calling the SoundCloud API using the user's search query
 $(document).ready(function(e) {
 	$('#search_button').click(function() {
@@ -98,10 +99,12 @@ function changeTrack(url) {
 // Scroll handler
 $(window).scroll(function() {
     if($(window).scrollTop() == $(document).height() - $(window).height()) {
-		   if (j == window.globaldata.length % 20) {
-			   alert("No more songs.");
-			   return;
-		   } else {
+			if (window.globaldata == undefined) {   // escape window.globaldata undefined issue
+				return;
+			} else if (j == window.globaldata.length % 20) {
+				alert("No more songs.");
+				return;
+			} else {
 			   for (var i = 20*j; i < (j + 1) * 20; i++) {
 				   if (window.globaldata[i].artwork_url == null) {
 					   image_url = "./no-image-found.jpg";
