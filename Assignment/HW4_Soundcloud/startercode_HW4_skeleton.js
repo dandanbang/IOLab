@@ -1,7 +1,9 @@
-// # Issues: add a same song to the playlist
+// # Issues to fix: add a same song to the playlist
 // 		  add to playlist will change the order of original list
 
-
+// set global index to load more data
+var j = 1;
+var box = "";
 // Event hander for calling the SoundCloud API using the user's search query
 $(document).ready(function(e) {
 	$('#search_button').click(function() {
@@ -11,6 +13,7 @@ $(document).ready(function(e) {
 			alert("You must enter some text");
 			return;
 		}
+		box = "search"
 		callAPI(text);
 		$("input")[0].value = "";
 	})
@@ -21,11 +24,14 @@ $(document).ready(function(e) {
 $(document).on("click", "#play", function(){
 	song_url = $(this.parentNode).children('a').attr('href');
 	changeTrack(song_url);
+	var first_tag = $(this.parentNode).attr("tag");
+	box = "related";
+	callAPI(first_tag);
 });
 
 // add to list button event handler
 $(document).on("click", "#addlist", function(){
-	$('#search_results').prepend($(this.parentNode).clone());
+	$('#search_results .lists ul').prepend($(this.parentNode).clone());
 	var down_button = "<button id='down'>Down</button>";
 	$(down_button).insertAfter($(this));
 	$("#play_list .lists ul").prepend($(this.parentNode));
@@ -52,16 +58,25 @@ function callAPI(query) {
 		{'q': query,
 		'limit': '200'},
 		function(data) {
-			// remove previous loaded data
-			$('#search_results').empty();
+			if ( box == "search") {
+				$('#search_results .lists ul').empty();
+			} else if (box == "related") {
+				$('#related_list .lists ul').empty();
+			}
 			for (var i = 0; i < 20; i++) {
+				data[i].tag_list.split(" ")[0];
 				if (data[i].artwork_url == null) {
 					image_url = "./no-image-found.jpg";
 				} else {
 					image_url = data[i].artwork_url;
 				}
-				var div = "<div id='song'><button id='play'>Play</button><button id='addlist'>Add to Playlist</button><p>" + data[i].title + "</p><p>"+ data[i].user.username + "</p><img src='"+ image_url +"' alt='" + data[i].title +"'/><a href='"+ data[i].permalink_url +"'></a></div>"
-				$("#search_results").prepend(div);
+				var div = "<div id='song' tag='" + data[i].tag_list.split(" ")[0] + "' ><button" + " id='play'>Play</button><button id='addlist'>Add to Playlist</button><p>" + data[i].title + "</p><p>"+ data[i].user.username + "</p><img src='"+ image_url +"' alt='" + data[i].title +"'/><a href='"+ data[i].permalink_url + "'></a></div>";
+				if ( box == "search") {
+					window.globaldata = data;
+					$('#search_results .lists ul').append(div);
+				} else if (box == "related") {
+					$("#related_list .lists ul").append(div);
+				}
 			};
 		},'json'
 	);
@@ -79,3 +94,24 @@ function changeTrack(url) {
       links: url
     });
 }
+
+// Scroll handler
+$(window).scroll(function() {
+    if($(window).scrollTop() == $(document).height() - $(window).height()) {
+		   if (j == window.globaldata.length % 20) {
+			   alert("No more songs.");
+			   return;
+		   } else {
+			   for (var i = 20*j; i < (j + 1) * 20; i++) {
+				   if (window.globaldata[i].artwork_url == null) {
+					   image_url = "./no-image-found.jpg";
+				   } else {
+					   image_url = window.globaldata[i].artwork_url;
+				   }
+				   var div = "<div id='song' tag='" + window.globaldata[i].tag_list.split(" ")[0] + "' ><button" + " id='addlist'>Add to Playlist</button><p>" + window.globaldata[i].title + "</p><p>"+ window.globaldata[i].user.username + "</p><img src='"+ image_url +"' alt='" + window.globaldata[i].title +"'/><a href='"+ window.globaldata[i].permalink_url +"'></a></div>"
+				   $("#search_results .lists ul").append(div);
+			   }
+		   }
+		   j++;
+    }
+});

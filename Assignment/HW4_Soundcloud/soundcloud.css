@@ -1,4 +1,8 @@
-
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 2% 0 2% 0;
+}
 #search_bar {
     margin: 0;
     padding: 0;
@@ -23,20 +27,28 @@ input {
     margin-top: 2.2%;
 }
 
-#search_results {
-    float: left;
-    margin-top: 5%;
-}
-
 img {
     width: 100px;
     height: 100px;
+}
+#search_results {
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 30%;
 }
 
 #play_list {
     float: right;
     margin-top: 5%;
-    margin-right: 10%;
+    margin-right: 15%;
+    width: 30%;
+}
+
+#related_list {
+    float: right;
+    margin-top: 5%;
+    margin-right: 15%;
     width: 30%;
 }
 
