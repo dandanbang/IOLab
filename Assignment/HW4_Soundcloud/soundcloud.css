@@ -1,8 +1,24 @@
 h1 {
-    text-align: center;
-    font-size: 3em;
+    padding: 0;
+    font-size: 4em;
     margin: 2% 0 2% 0;
+    color: #607d8b;
+    letter-spacing: 0;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
 }
+
+#logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 30%;
+    margin-right: 3%;
+}
+#topbar {
+    float: left;
+    width: 100%;
+}
+
 #search_bar {
     margin: 0;
     padding: 0;
@@ -58,6 +74,8 @@ h2 {
     margin-bottom: 2%;
     font-size: 3em;
     text-align: center;
+    color: #292929;
+    text-shadow:#f3f3f3 1px 1px 0px, #b2b2b2 1px 2px 0;
 }
 .lists {
     border-style: solid;
@@ -65,4 +83,13 @@ h2 {
     border-color: black;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+button {
+    background-color: #0077CC;
+    border-color: #026EBB;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    margin-right: 2px;
 }
