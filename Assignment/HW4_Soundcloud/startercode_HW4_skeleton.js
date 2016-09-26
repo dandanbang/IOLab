@@ -92,7 +92,7 @@ function callAPI(query) {
 				} else {
 					image_url = data[i].artwork_url;
 				}
-				var div = "<div id='song' tag='" + data[i].tag_list.split(" ")[0] + "' ><button" + " id='play'>Play</button><button id='addlist'>Add to Playlist</button><p>" + data[i].title + "</p><p>"+ data[i].user.username + "</p><img src='"+ image_url +"' alt='" + data[i].title +"'/><a href='"+ data[i].permalink_url + "'></a></div>";
+				var div = "<div id='song' tag='" + data[i].tag_list.split(" ")[0] + "' ><button" + " id='play'>Play</button><button id='addlist'>Add to Playlist</button><p><strong>Title: </strong>" + data[i].title + "</p><p><strong>Artist: </strong>"+ data[i].user.username + "</p><img src='"+ image_url +"' alt='" + data[i].title +"'/><a href='"+ data[i].permalink_url + "'></a></div>";
 				if ( box == "search") {
 					window.globaldata = data;
 					$('#search_results .lists ul').append(div);
@@ -132,7 +132,7 @@ $(window).scroll(function() {
 				   } else {
 					   image_url = window.globaldata[i].artwork_url;
 				   }
-				   var div = "<div id='song' tag='" + window.globaldata[i].tag_list.split(" ")[0] + "' ><button" + " id='addlist'>Add to Playlist</button><p>" + window.globaldata[i].title + "</p><p>"+ window.globaldata[i].user.username + "</p><img src='"+ image_url +"' alt='" + window.globaldata[i].title +"'/><a href='"+ window.globaldata[i].permalink_url +"'></a></div>"
+				   var div = "<div id='song' tag='" + window.globaldata[i].tag_list.split(" ")[0] + "' ><button" + " id='addlist'>Add to Playlist</button><p><strong>Title: </strong>" + window.globaldata[i].title + "</p><p><strong>Artist: </strong>"+ window.globaldata[i].user.username + "</p><img src='"+ image_url +"' alt='" + window.globaldata[i].title +"'/><a href='"+ window.globaldata[i].permalink_url +"'></a></div>"
 				   $("#search_results .lists ul").append(div);
 			   }
 		   }
