@@ -1,0 +1,9 @@
+cd
+mkdir
+mv
+ls
+mv
+cp
+grep
+ssh
+rm
