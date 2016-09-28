@@ -1,0 +1,74 @@
+<!--
+1. User sees labeled ‘to-do’ and ‘completed items’ lists, which are empty upon page load. The lists are visually distinct from each other.
+2. User can add one ‘to-do’ item at a time using a text input field and an ‘add to list’ button.
+3. Each newly-added ‘to-do’ item appears at the top of the ‘to-do’ list (not the bottom).
+4. User can click a button within each ‘to-do’ item to mark it as complete, at which point:
+a. The ‘to-do’ item disappears from the ‘to-do’ list
+b. The ‘to-do’ item appears at the top of the ‘completed items’ list.
+c. Items on the ‘completed items’ list should be styled differently than those on the ‘to-do’ list as an additional visual indication of their completion.
+5. User can click a button within each ‘complete’ item to ‘unmark’ it as complete, at which point:
+a. The ‘complete’ item disappears from the ‘completed items’ list.
+b. The ‘complete’ item appears at the top of the ‘to-do’ list with the same styling as the other ‘to-do’ list items.
+6. Items on each list remain there until the user marks or ‘unmarks’ them.
+7. Your site has a title and intuitive labeling or instructions on how to use it.
+8. You can use only jQuery and JavaScript – no additional plugins/libraries.
+9. Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
+10. All of your JavaScript is commented appropriately.
+11. Your code is clean and concise (minimal repetition and unused code)-->
+
+<html>
+<head>
+
+    <title> Homework4 Javascript and jQuery </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    <body>
+        <!-- create input tag for user input -->
+         <h1> Your To-Do List</h1>
+            <div id = "instructions">
+                <p> Are you taking a ton of ischool awesome classes ? Do you find yourself surrounded by projects which makes you forget some of your other important tasks ? Fret no more! <b>You have your own personal task list</b>. 
+                <ul>
+                    <li> Mention what task you need to do in the textbox below.</li>
+                    <li> click "Add Item to list" button and your task will be automatically saved to to-do list.</li>
+                    <li> If you have completed your task, you can hit the 'mark as complete' button and it will move automatically to 'completed task list' </li>
+                    <li>You can move your task from completed task list to to-do list by clicking the 'mark as incomplete' button </li>
+                    <li> simple ! right? Lets get started! </li>
+                </ul>
+                </p>
+            </div>
+
+             <h3>Enter task to be done below </h3>
+            <input type = "text" name = "todo_item_input" id = "todo_input" > 
+        <!-- button takes input and adds a new element with content to 'list_do' -->
+            <button id="new-item"> Add Item to List</button>
+            
+        <!-- ability to move items between list_todo and list_completed -->
+
+            <br/>
+            <h3 id = "header1"> Here is your To-Do List </h3>
+            <hr/>
+            <div id="list_todo"> 
+                <img class = "todoImage" src = "http://www.ineedmotivation.com/blog/wp-content/uploads/2008/01/todo.jpg">
+                <ul id = "to-do"></ul>
+            </div>
+
+            <h3 id = "header2" > Here is your Completed Task List </h3>
+            <hr/>
+            <div id="list_completed"> 
+                <img class = "completedImage" src = "http://www.marciewrites.com/wp-content/uploads/2013/10/Completed-to-do-list-writechangegrow.jpg">
+                <ul id = "completed"></ul>
+            </div>
+
+        <!--JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+        <script src="main.js"> </script>
+    </body>
+</html>

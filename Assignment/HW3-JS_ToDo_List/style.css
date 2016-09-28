@@ -1,0 +1,59 @@
+/* Add CSS */
+/*----------------- CSS RESET ------------------*/
+
+body{
+    background-image: url("https://ae01.alicdn.com/kf/HTB1gYMOIXXXXXX1XVXXq6xXFXXXu/12x8FT-font-b-Light-b-font-Brown-Orange-Wooden-Planks-font-b-Wood-b-font-font.jpg");
+    width: 980px;
+    margin: 20px 35px 50px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+#instructions{
+    width : 90%;
+    background-image:url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c10.jpg");
+    font-style: italic;
+    font-color: pink;
+    color: white;
+    padding: 15px;
+
+}
+
+.todoImage{
+    float: left;
+}
+
+
+.completedImage{
+    float: left;
+}
+#to-do, 
+#completed{
+    display: block;
+    margin-left: 50%;
+    margin-top: 15%;
+}
+
+
+h1,h2,h3 {
+    color: white;
+}
+
+#list_todo{
+    background-color: yellow;
+    width: 80%;
+    display: block;
+    margin-left: 50px;
+    font-family: helvetica;
+    font-color: blue;
+    display: inline-block;
+}
+
+#list_completed{
+    background-color: pink;
+    width: 80%;
+    display: block;
+    margin-left: 50px;
+    font-family: sans-serif;
+    color: green;
+    display: inline-block;
+}
