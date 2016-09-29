@@ -1,0 +1,175 @@
+body {
+    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: block;
+    min-width: 438px;
+    width: 90%;
+    min-height: 5em;
+    background: #0d0d3a;
+    margin: 0.3em auto;
+    border: 2px solid #0d0d3a;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    padding: 0 0 2em 0;
+}
+
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    box-sizing: border-box;
+    padding: 0.1em 0;
+    overflow: auto;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0.6em;
+}
+
+.header h1 {
+    float: left;
+}
+
+
+/* Search box. */
+.search_box {
+    margin: 1.1em 0.6em;
+    padding: 0;
+    float: right;
+}
+
+#search_field {
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    border: 1px solid #000;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    background: #cecece;
+    color: #000;
+    text-indent: 10px;
+}
+
+#search_field:focus, #search_submit:focus {
+    outline:none;
+}
+
+#search_submit {
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    border: 1px solid #cecece;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    color: #000;
+    background: #cecece;
+}
+
+#search_submit:hover {
+    border-color: #dedede;
+    background: #dedede;
+}
+
+.music_lists {
+    display:block;
+    margin: 0 auto;
+    width: 96%;
+    overflow: auto;
+}
+
+
+
+/* Search Results. */
+.search_results_list {
+    float: left;
+    width: 48%;
+}
+
+.song_entry_header {
+    padding-bottom: 0.5em;
+}
+
+/* Song container */
+.song_entry_container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.song_entry {
+    position: relative;
+    width: 100%;
+    clear:both;
+    margin-bottom: 1em;
+    overflow: auto;
+    background: #131353;
+}
+
+.song_pic {
+    display: block;
+    float: left;
+    width: 2em;
+    height: 2em;
+    background: #cecece;
+}
+
+.song_title {
+    display: block;
+    float: left;
+    width: 60%;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+    font-size: 0.7em;
+    letter-spacing:0.03em;
+}
+
+.song_actions {
+    display: block;
+    height: 2em;
+    float: right;
+    box-sizing: border-box;
+    min-width: 20%;
+}
+
+.song_actions button {
+    font-size: 0.5em;
+    margin: 0 0.2em;
+    background: #eeeeee;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+
+.song_actions button:hover {
+    background: #cccccc;
+}
+
+/* Removes the pesky outline. */
+.song_actions button:focus {
+    outline: none;
+}
+
+
+/* Playlist. */
+.play_list {
+    float: right;
+    width: 48%;
+}
+
+.play_list_header {
+    padding-bottom: 0.5em;
+}
+
+.play_list_container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+/* Navigation for player list. */
+.play_list_navi {
+    display: none;
+    float: right;
+}
