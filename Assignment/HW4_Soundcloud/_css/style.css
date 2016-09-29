@@ -1,0 +1,84 @@
+/* Add CSS */
+body {
+	padding: 10px;
+	background: #00C1AB;
+	/*background: black;*/
+}
+[class*="col-"] {
+    /*margin-bottom: 15px;*/
+    /*text-align: center;*/
+}
+#to-do-input {
+	padding: 10px;
+	margin-left: 40px;
+	margin-bottom: 15px;
+}
+#add-item {
+	margin-left: 15px;
+	color: white;
+	background: black;	
+
+}
+
+img {
+	max-width: 20%;
+	max-height: 20%;
+	display: block;
+    margin: auto;
+}
+.task-column {
+	border: 1px solid black;
+	min-height: 50px;
+	vertical-align	: center;
+	border-radius: 5px;
+
+}
+#to-do-div {
+	background: #FF666B;
+	border: 1px solid #FF666B;
+}
+#done-div {
+	background: #36374F;
+	color: white;
+	border: 1px solid #36374F;
+}
+.glyphicon {
+	font-size: 1.5em;
+	padding: 5px;
+}
+#to-do-div #play-icon {
+	color: black;
+}
+#to-do-div #add-to-playist-icon {
+	color: black;
+}
+#done #play-icon {
+	color: white;
+}
+#done #remove-from-playist-icon {
+	color: white;
+}
+
+ul {
+	/*text-indent: 10px;*/
+}
+li {
+	/*border: 3px solid black;*/
+	margin-bottom: 5px;
+	vertical-align: center;
+}
+#to-do-div li {
+	border: 3px solid black;
+}
+#done-div li {
+	border: 3px solid white;
+}
+.song_display {
+	/*border: 1px solid black;*/
+	background: white;
+}
+.artwork {
+	max-width: 100px;
+	max-height: 100px;
+
+}

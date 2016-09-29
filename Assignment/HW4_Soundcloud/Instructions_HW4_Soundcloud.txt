@@ -9,7 +9,7 @@ Requirements (the things for which you’ll be graded)
     i.	Hint: You’ll need to pass in the user’s search query as the argument for the callAPI() function.
     c.	(6 points) The first 20 results from the response object are rendered on the page. Each song result displays the following information for that song:
         i.	Song title
-        ii.	Artist
+        ii.	Artists
         iii.	Picture
 
 2.	PLAYING SONGS VIA THE STRATUS PLUGIN (5 total points)
@@ -23,7 +23,7 @@ Requirements (the things for which you’ll be graded)
     a.	User can create a playlist of songs by picking individual songs from the search results.
     b.	(2 points) User can click an ‘add to playlist’ button attached to each song result to add a song to the playlist.
     c.	(2 point) Songs are added to the top of the playlist. Hint: use the .prepend() method.
-    d.	(2 point) Songs are not ‘removed’ from the search results when they’re added to the playlist. Hint: use the jQuery .clone() method to prevent them from being removed from the search results.
+    d.	(2 point) Songs are not ‘removed’ from the search results when they’re added to the playlist. Hint: use the jQuery .clone() method to prevent them from being removed from the search results.	I
     e.	(2 point) User can remove songs from the playlist. Hint: use the jQuery .remove() method.
     f.	(2 points) User can move songs up or down in the playlist one spot at a time. Hint: use the jQuery .prev(), .next(), .insertBefore(), and .insertAfter() methods.
     g.	(2 point) User can play songs that are in the playlist. This play functionality is the same as the play functionality in the search results.
@@ -38,7 +38,7 @@ Bonus (You can get up to 4 extra points for doing both of these)
     1.	 (2 points) ‘RELATED’ SONGS
         a.	When a user plays a song, a set of ‘related’ songs are loaded into a new section of the page.
         b.	These ‘related’ songs are found via taking the first ‘tag’ from the tag_list field found in each song in the SoundCloud API response object and then querying the SoundCloud API using this ‘tag’ as the ‘q’ attribute of the data object of the $.get() method.
-        c.	These ‘related’ songs can be played or added to the playlist just like how the regular search results.
+        c.	These ‘related’ songs can be played or added to the playlist just like how thee regular search resultss.
         d.	The ‘related’ songs section is loaded independently from the main search results.
     2.	(2 points) ‘INFINITE’ SCROLL
         a.	Use a jQuery library of your choosing to load the next 20 results from the SoundCloud API response object each time the user scrolls to the bottom of the main results. There will only be 200 total results, so don’t be alarmed if the ‘infinite’ scroll stops after 10 additional result loads.
