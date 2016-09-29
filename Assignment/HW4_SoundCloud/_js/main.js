@@ -14,16 +14,18 @@ $(document).ready(
     })
 );
 
-
+/* jQuery code to play music*/
 $(document).on("click", ".play", function () {
 	playSong($(this).attr('id'));
 });
 
+/* jQuery code for down button functionality*/
 $(document).on("click", ".down", function() {
 	searchedSong = $(this).parent().parent();
 	searchedSong.insertAfter(searchedSong.next());
 });
 
+/* jQuery code to search the music*/
 function searchSongsAPI(searchQuery) {
 	$("#results").children("#songResults").children().remove();
 	$.get("https://api.soundcloud.com/tracks?client_id=b3179c0738764e846066975c2571aebb",
@@ -38,17 +40,18 @@ function searchSongsAPI(searchQuery) {
 		},'json'
 	);
 }
-
+/* jQuery code for up button functionality*/
 $(document).on("click", ".up", function() {
 	searchedSong = $(this).parent().parent();
 	searchedSong.insertBefore(searchedSong.prev());
 });
 
-
+/* jQuery code to remove song from palylist*/
 $(document).on("click", ".remove", function() {
 	$(this).parent().parent().remove();
 });
 
+/* jQuery function to play music*/
 function playSong(url) {
 	$('#stratus').remove();
 	$.stratus({
