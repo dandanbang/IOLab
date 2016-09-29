@@ -1,0 +1,44 @@
+
+body{
+	background-image: url("http://pre10.deviantart.net/3046/th/pre/f/2010/320/d/1/website_background_by_modsoft-d3302jz.png");
+	color: white;
+	margin-left: 20px;
+}
+
+h2{
+	padding-top: 3%;
+	background-image: url("https://images.sharefaith.com/images/3/1335548756984_58/img_mouseover3.jpg");
+	height: 13%;
+	text-align: center;
+}
+.song {
+	display: flex;
+	margin-bottom: 3%;
+}
+
+article {
+	display: flex;
+	flex-direction: row;
+}
+
+
+li {
+	list-style: none;
+}
+
+
+.song-details {
+	margin-left: 3%;
+}
+
+#search-results, #playlist {
+	margin-top: 3%;
+}
+
+
+
+
+.h3style {
+	padding-left: 200px;
+}
+
