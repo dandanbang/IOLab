@@ -1,0 +1,31 @@
+#test1 {
+    padding: 6em;
+    }
+
+h2 {
+	font-size: 2em;
+	color:#ff6d00;
+}
+
+.searrch {
+	padding:1em;
+}
+
+#search_it {
+	margin-top: 1em;
+}
+
+.searchboox {
+	margin-top: 1em;
+}
+
+textarea:focus {
+  border-bottom: 1px solid #ff6d00 !important;
+  -webkit-box-shadow: 0 1px 0 0 #ff6d00 !important;
+  -moz-box-shadow: 0 1px 0 0 #ff6d00 !important;
+  box-shadow: 0 1px 0 0 #ff6d00 !important;
+}
+
+.introtext {
+  color:#bf360c;
+}
