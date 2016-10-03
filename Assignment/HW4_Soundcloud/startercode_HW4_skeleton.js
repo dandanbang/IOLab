@@ -10,7 +10,7 @@ function processResponse(data){
 			var artwork = data[i].artwork_url;	
  	       }
         else {
-        	var artwork = "404.jpg";
+        	var artwork = "http://pix.iemoji.com/images/emoji/apple/ios-9/256/frowning-face-with-open-mouth.png";
         }
 
 		var title = data[i].title;
