@@ -1,1 +1,17 @@
 /*Your mobile targeted css should go here*/
+
+header {
+	min-width: 200px;
+}
+
+img {
+	min-width: inherit;
+}
+
+.project-image {
+	width: 100%;
+}
+
+.project-detail {
+	min-width: 200px;
+}
