@@ -6,6 +6,19 @@
 // 1. Include 'alt' and 'src' as keys within each of the 3 objects - values should correspond to the cat's name and img source (you can re-use name and URLs from the existing cat elements in the HTML)
 // 2. Put these 3 objects into an array - you can do this programmatically or hard-coded
 // 3. We created the handler for the 'Cats from Obj' button in the HTML. Use the function below to trigger.
+
+var cat1 = {
+	src: “https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg”
+	alt: “meow1”
+}
+
+var cat2 = {
+	src: “https://pbs.twimg.com/profile_images/625769159339737088/2dwpQAXA.jpg”
+	alt: “meow1”
+}
+
+cat_array = [cat1, cat2]
+
 function populateFromObj() {
 
 	// 1. Iterate through each 'cat' object in the list you created above
@@ -24,6 +37,36 @@ function populateFromObj() {
 		//				.innerHTML
 		//				.appendChild
 		//				.getElementsByClassName
+
+	
+
+
+//console.log(cat_array)    //>>>this is what added
+
+
+ for (var i = 0; i < cat_array.length; i++){
+	var newDiv = document.createElement (“div”);
+	newDiv.className += “id-grid-item”
+	//console.log(newDiv);
+
+	var newImg = document.createElement(“img”);
+	var imgSrc = cat_array[i].src;
+	var imgAlt = cat_array[i].alt;
+
+	newImg.setAttribute(“src”, imgSrc);
+	newImg.setAttribute(“alt”, imgAlt);
+
+	newDiv.appendChild(newImg);
+
+	console.log(newDiv);
+
+	var mainContainer = document.getElementsByClassName(“main-container”)
+	console.log(mainContainer);
+	mainContainer.appendChild(newDiv);
+
+}
+
+
 }
 
 
