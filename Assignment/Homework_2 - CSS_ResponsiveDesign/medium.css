@@ -1,0 +1,19 @@
+.pokemon-name {
+	display: block;
+	text-align: center;
+	background-color: #538cc6;
+	padding: 10px;
+	width: 500px;
+}
+
+th{
+	display: none;
+}
+
+/*#selected-pokemon-description{
+    width: 500px;
+}*/
+
+#pokemon-list {
+	width:600px;
+}

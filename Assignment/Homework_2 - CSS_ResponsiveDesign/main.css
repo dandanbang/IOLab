@@ -1,0 +1,149 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	max-width: none;
+}
+
+html, body{
+	font-family: 'Open Sans', sans-serif;
+	margin:auto;
+}
+
+/*header section*/
+header{
+	background: #b30000;
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+	margin-bottom: 10px
+}
+
+.header-element {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+	margin: auto;
+	align-content: center;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+#dropdown{
+	float:left;
+	vertical-align: middle;
+}
+
+#dropdown:hover {
+	background: #ff9999;
+}
+
+/*body section*/
+#pokedex-main-component{
+	background-image: url("assets/backgrounds/background_home.png");
+
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	font-size: 1em;
+}
+
+.selected-pokemon {
+	width: 90%
+}
+
+.pokemon-name {
+	display: none;
+}
+
+.pokemon-pic {
+	text-align: center;
+}
+
+.pokemon-pic img {
+	display: inline-block;
+	width:90pt;
+	margin: 0 auto;
+}
+
+#pokemon-list {
+	width:750px;
+}
+
+#selected-pokemon-pic {
+	display: inline-block;
+	width: 30%;
+}
+
+#selected-pokemon-property {
+	display: inline-block;
+	vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+	border: 1px solid #ddd;
+}
+
+td {
+	background-color: #ffffff;
+	padding: 5px 40px;
+}
+
+th {
+    background-color: #538cc6;
+    color: white;
+	text-align: center;
+	padding: 5px 20px;
+}
+
+#selected-pokemon-description{
+	display: block;
+	margin: 20px auto;
+    border-radius: 25px;
+    border: 2px solid #538cc6;
+    padding: 20px;
+	background: #ffffff;
+}
+
+nav {
+	margin-top: 10px;
+	background: #538cc6;
+	vertical-align: middle;
+	margin: auto;
+	text-align: center;
+}
+
+.nav-button {
+	display: inline-block;
+	padding: 15px 5%;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nav-button:hover {
+	background: #80b3ff;
+}
