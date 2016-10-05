@@ -47,3 +47,10 @@ table {
 /*----------------- CSS RESET ------------------*/
 
 /*Your main CSS should go here*/
+#site-title {
+	display: inline-block;
+	background-color: black;
+	color: teal;
+	text-align: center;
+	font-weight: bold;
+}
