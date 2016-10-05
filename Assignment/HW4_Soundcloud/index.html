@@ -1,0 +1,87 @@
+<!--
+1. User sees labeled ‘to-do’ and ‘completed items’ lists, which are empty upon page load. The lists are visually distinct from each other.
+2. User can add one ‘to-do’ item at a time using a text input field and an ‘add to list’ button.
+3. Each newly-added ‘to-do’ item appears at the top of the ‘to-do’ list (not the bottom).
+4. User can click a button within each ‘to-do’ item to mark it as complete, at which point:
+a. The ‘to-do’ item disappears from the ‘to-do’ list
+b. The ‘to-do’ item appears at the top of the ‘completed items’ list.
+c. Items on the ‘completed items’ list should be styled differently than those on the ‘to-do’ list as an additional visual indication of their completion.
+5. User can click a button within each ‘complete’ item to ‘unmark’ it as complete, at which point:
+a. The ‘complete’ item disappears from the ‘completed items’ list.
+b. The ‘complete’ item appears at the top of the ‘to-do’ list with the same styling as the other ‘to-do’ list items.
+6. Items on each list remain there until the user marks or ‘unmarks’ them.
+7. Your site has a title and intuitive labeling or instructions on how to use it.
+8. You can use only jQuery and JavaScript – no additional plugins/libraries.
+9. Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
+10. All of your JavaScript is commented appropriately.
+11. Your code is clean and concise (minimal repetition and unused code)-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Homework4 Javascript and jQuery </title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="_js/main.js"> </script>
+    <script type="text/javascript" src="_js/materialize.min.js"></script>
+
+</head>
+<body>
+    <nav class='cyan darken-3 remove-margin-bottom'>
+        <div class="container title-style">
+            <a class="heading1 center">TO DO LIST</a>
+        </div>
+    </nav>
+    <div>
+        <div class="container">
+            <div class="row margin-top">
+                <div class="col l12 m12 s12">
+                    <div class="col l10 m10 s12 input-field">
+                        <form class="add-new-button">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <input id="input" type="text" class="validate new-input">
+                        </form>
+                    </div>
+                    <!-- button takes input and adds a new element with content to 'list_do' -->
+                    <div class="col l2 m2 s12 add-new-button">
+                        <button id="new-button" name="new" class="btn">add</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <!-- ability to move items between list_todo and list_completed -->
+            <div class="row two-card">
+                <!--  to-do list --> 
+                <div  class="col l6 m6 s12"> 
+                    <div class="card">
+                        <div class="card-content card-title">
+                            <h5>To-do items</h5>
+                        </div>
+                        <div class="card-action" > 
+                            <ul id="list_todo" class="sorted-list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!--  completed list --> 
+                <div class="col l6 m6 s12 "> 
+                    <div class="card">
+                        <div class="card-content card-title">
+                            <h5>Completed items</h5>
+                        </div>
+                        <div class="card-action"> 
+                            <ul id="list_completed" class="sorted-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+</body>
+</html>
