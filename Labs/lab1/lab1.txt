@@ -1,0 +1,12 @@
+Name : Pooja
+IO LAB
+Lab1 
+1.     Change Directory 					: cd 
+2.     Create a Directory 					: mkdir
+3.     Rename a Directory 					: mv old_name new_name 
+4.     List the contents of a Directory 	: ls
+5.     Move a file to a new location    	: mv [filename] [foldername]
+6.     Copy a file to a new location	    : cp source destination
+7.     Search for a string in a filename	: find / -name "abc.txt"
+8.     Access the shell of a remote machine : ssh remote_host
+9.     Remove a directory folder     		: rmdir
