@@ -36,8 +36,7 @@ def submitSurvey():
 		email = escape(session['email'])
 		surveyResponse = {}
 		surveyResponse['course'] = request.form.get('course')
-		surveyResponse['color'] = request.form.get('color')
-		surveyResponse['food'] = request.form.get('food')
+		surveyResponse['movie'] = request.form.get('movie')
 		surveyResponse['vacation'] = request.form.get('vacation')
 		surveyResponse['fe-before'] = request.form.get('feBefore')
 		surveyResponse['fe-after'] = request.form.get('feAfter')

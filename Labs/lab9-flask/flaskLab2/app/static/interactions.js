@@ -5,20 +5,21 @@
 // 	var feBefore = $("input[name=front-end-before]").val();
 // 	var feAfter = $("input[name=front-end-after]").val();
 
-	//ajax code to send data, but use form as its much easier
+	//ajax code to send data, but use form as its much 
+
+//check if field is empty
+
 	
 $('#submit-survey').on('click', function submitSurvey() {
 	var course = $("input[name=course]").val();
-	var color = $("input[name=color]").val();
-	var food = $("input[name=food]").val();
+	var movie = $("input[name=movie]").val();
 	var vacation = $("input[name=vacation]").val();
 	var feBefore = $("input[name=front-end-before]").val();
 	var feAfter = $("input[name=front-end-after]").val();
 	$.post("submit-survey",
 		{
 		course: course,
-		color: color,
-		food: food,
+		movie: movie,
 		vacation: vacation,
 		feBefore: feBefore,
 		feAfter: feAfter},
