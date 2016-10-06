@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+<!--3.a.-->
+
+{% block title %}
+	Survey
+{% endblock %}
+
+
+{% block header %}
+<!--calling super function 3.b.-->
+	{{super()}}
+	<form action="logout" id="logout">
+		<span id="username">Logged in as {{ name }}</span>
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+{% block content %}
+<h1>A Little Survey About You</h1>
+	<div class="main-container">
+		<h3>About You</h3>
+		<label class="survey-item">How many bones have you ever broken?<input type="text" name="bones"></label>
+		<label class="survey-item">What is your favorite time of day to take a walk?
+		<input type="text" name="walk"></label>
+		<label class="survey-item">What year did you stop liking Kanye West?
+		<input type="text" name="kanye"></label>
+		<label class="survey-item">And your favorite vacation spot?
+		<input type="text" name="vacation"></label>
+
+		<h3>Let's look at your desired skillz progression</h3>
+		<label class="survey-item">How would you rate your ability to cook now?<input type="range" min="1" max="5" step=".5" name="cooking-before" id="cook-before"><span></span></label>
+		<label class="survey-item">How good do you want to be at cooking in the future?<input type="range" min="1" max="5" step=".5" name="cooking-after" id="cook-after"><span></span></label>
+
+		<button class="action-button" id="submit-survey">Submit</button>
+</div>
+{% endblock %}
