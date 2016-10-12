@@ -1,0 +1,38 @@
+<html>
+<head>
+
+    <title> Homework4 Javascript and jQuery </title>
+    <link rel="stylesheet" href="HW4.css">
+    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://stratus.soundcloud.com/stratus.js"></script>
+    <script src="startercode_HW4_skeleton.js"> </script>
+
+</head>
+    <body>
+        <div class = 'container'>
+        <!-- create input tag for user input -->
+            <div id = "introduction">
+                <h1> Soundcloud <h1>
+                <p> Search, choose, and play songs of your choice.</p>
+                <img id="picture" src = "http://gryzzly.github.io/html5fest/assets/logo.png">
+            </div>
+            <div id = 'searchbox'>
+                <input placeholder = "Music?"> 
+        <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button id="newsearch"> Search </button>
+            </div><br>
+        <!-- ability to move items between list_todo and list_completed -->
+            <div id = "lists">
+                <div id="search_results"> 
+                    <h4> SEARCH RESULTS </h4>
+                    <ol id = "searchlist"></ol>
+                </div>
+                <div id="playlist">
+                    <h4> YOUR PLAYLIST  </h4> 
+                    <ol id = "mylist"></ol>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
