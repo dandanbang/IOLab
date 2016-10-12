@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title> Homework4 Javascript and jQuery </title>
+    <link rel="stylesheet" href="soundcloud.css">           
+
+    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+    <script type="text/javascript" src="startercode_hw4_skeleton.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <h2> Soundcloud Search </h2><br>
+        <p>
+            Enter something to search. Use the play button to play. Use the add to playlist button to add to playlist. Use the remove from playlist button to remove from playlist. Use the up and down buttons to move songs up and down in the playlist. Created in a loveless household by Paul Glenn. Don't @ me.
+        </p>
+    <div id="search">
+        <input id="search-field">    
+        <button class="search-button">search</button>
+    </div>
+    <div id="results">
+    <table>
+        <caption>Search Results</caption>
+            <tr>
+                <th>Artwork</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th></th><th></th>
+            </tr>
+        <tbody id="results_body">
+
+        </tbody>
+    </table>
+    </div>
+    <div id="playlist">
+        <table>
+            <caption>Playlist</caption>
+            <tr>
+                <th>Artwork</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th></th><th></th><th></th><th></th>
+            </tr>
+            <tbody id="playlist_body">
+
+            </tbody>
+    </table>
+</body>
+</html>
