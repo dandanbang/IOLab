@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Play Music Here</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+    <body>
+        <h1>Find and Play Music Here!</h1>
+        <li class='instructions'>Search for music below!</li>
+        <li class='instructions'>Play songs from the search results or move them to the playlist and play from there!</li>
+        <li class='instructions'>Use the up and down buttons to rearrange the order of playlist songs or click remove to take a song off the playlist!</li>
+        <input type="text" id="query" placeholder="Find Music">
+        <button id="search">Search</button>
+        <article>
+            <section class="list-container" id='search-results-container'>
+                <h2>Search Results</h2>
+                <div id="search-results"></div>
+            </section>
+            <section class="list-container" id='playlist-container'>
+                <h2>Playlist</h2>
+                <div id="playlist"></div>
+            </section>
+        </article>
+        <script type="text/javascript" src="_js/main.js"> </script>
+    </body>
+</html>
