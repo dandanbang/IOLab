@@ -1,0 +1,101 @@
+<!--
+HW 5 – JavaScript & jQuery Wrap-Up (30 total points)
+The goal of this assignment is to continue to build your JavaScript & jQuery skills. For this assignment we are going to recreate some of the functionality of music streaming site SoundCloud. Your task is to build a web page that supports the following interactions. Be sure to read through all of the required interactions before beginning. Use the hw5-skeleton.js file for the two functions listed in the instructions. This file can be found in the ‘javascript’ folder of the GitHub repo.
+Styling is not the primary focus for this assignment, so don’t worry about making your page beautiful (of course, you can if you want). You’re more than welcome to use any CSS framework.
+Requirements (the things for which you’ll be graded)
+
+1.  QUERYING SOUNDCLOUD’S API (9 total points)
+    a.  (2 point) User can input text to search SoundCloud’s API
+    b.  (1 point) Use the provided callAPI() function.
+    i.  Hint: You’ll need to pass in the user’s search query as the argument for the callAPI() function.
+    c.  (6 points) The first 20 results from the response object are rendered on the page. Each song result displays the following information for that song:
+        i.  Song title
+        ii. Artist
+        iii.    Picture
+
+2.  PLAYING SONGS VIA THE STRATUS PLUGIN (5 total points)
+    a.  (3 points) User can click a ‘play’ button attached to each song result to play that song via the Stratus player plugin.
+    b.  (2 points) Use the provided playSong() function and pass in the song’s permalink URL as the argument for playSong().
+          i.    Hint: Find the ‘permalink_url’ field for each song in the SoundCloud API response object and pass this URL as the argument for the playSong() function.
+          c.    Cut and paste the following link to the Stratus player JS file in your HTML file.
+          i.    <script type='text/javascript' src="stratus-player.js"></script>
+
+3.  CREATING A PLAYLIST (12 total points)
+    a.  User can create a playlist of songs by picking individual songs from the search results.
+    b.  (2 points) User can click an ‘add to playlist’ button attached to each song result to add a song to the playlist.
+    c.  (2 point) Songs are added to the top of the playlist. Hint: use the .prepend() method.
+    d.  (2 point) Songs are not ‘removed’ from the search results when they’re added to the playlist. Hint: use the jQuery .clone() method to prevent them from being removed from the search results.
+    e.  (2 point) User can remove songs from the playlist. Hint: use the jQuery .remove() method.
+    f.  (2 points) User can move songs up or down in the playlist one spot at a time. Hint: use the jQuery .prev(), .next(), .insertBefore(), and .insertAfter() methods.
+    g.  (2 point) User can play songs that are in the playlist. This play functionality is the same as the play functionality in the search results.
+
+4.  CODING STYLE (4 total points)
+    a.  (1 point) Your site has a title and intuitive labeling or instructions on how to use it.
+    b.  (1 point) Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
+    c.  (1 point) All of your JavaScript is commented appropriately.
+    d.  (1 point) Your code is clean and concise (minimal repetition and unused code).
+
+Bonus (You can get up to 4 extra points for doing both of these)
+    1.   (2 points) ‘RELATED’ SONGS
+        a.  When a user plays a song, a set of ‘related’ songs are loaded into a new section of the page.
+        b.  These ‘related’ songs are found via taking the first ‘tag’ from the tag_list field found in each song in the SoundCloud API response object and then querying the SoundCloud API using this ‘tag’ as the ‘q’ attribute of the data object of the $.get() method.
+        c.  These ‘related’ songs can be played or added to the playlist just like how the regular search results.
+        d.  The ‘related’ songs section is loaded independently from the main search results.
+    2.  (2 points) ‘INFINITE’ SCROLL
+        a.  Use a jQuery library of your choosing to load the next 20 results from the SoundCloud API response object each time the user scrolls to the bottom of the main results. There will only be 200 total results, so don’t be alarmed if the ‘infinite’ scroll stops after 10 additional result loads.
+
+-->
+
+<html>
+<head>
+
+    <title> (Poorman's) Soundcloud </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type='text/javascript' src="https://stratus.soundcloud.com/stratus.js"></script>
+
+</head>
+    <body>
+        <div class = "heading">
+            <table>
+                <tr>
+                    <th>
+                        <h1 class = "title-hw4">(Poorman's) Soundcloud</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p id = 'hw-desc'> Let's play some tune. As shitty as this interface may look, it will get the job done! Interface is fairly simple, enter the songs you like in the search text box, recite the words "Glory Glory Man United" and your songs shall appear. Now you may choose to play, add to playlist, remove from play list and modify the play list by dragging the songs up and down. Let it roll..! 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <img src = "image.jpg"> </img>
+        </div>
+        <!-- create input tag for user input -->
+        <div class = "search-button">
+            <div class = "input-search">
+                <input id="todo-item-input" placeholder="Lets play something!">
+            </div>
+            <div class = "initial-button">
+                <button id="new-item"> Search </button>
+            </div>
+        </div>
+
+
+        <!-- ability to move items between list_todo and list_completed -->
+        <div class = "list">
+            <div class = "list-p-to-do">
+                <h1 id = "text-to-do">Search Result</h1>
+                <div id="list_todo"> </div>
+            </div>
+            <div class = "list-p-to-do">
+                <h1 id = "text-completed">Playlist</h1>
+                <div id="list_completed"> </div>
+            </div>
+        </div>
+
+            <script type="text/javascript" src="startercode_HW4_skeleton.js"> </script>
+    </body>
+</html>
