@@ -1,0 +1,15 @@
+.search-button{
+  background-color: #FF5500;
+
+  color: #FFFFFF;
+  
+}
+#results-div{
+	display:flex;
+	}
+#results{
+	width:50%;
+}
+#playlist-div{
+	width:50%;
+}
