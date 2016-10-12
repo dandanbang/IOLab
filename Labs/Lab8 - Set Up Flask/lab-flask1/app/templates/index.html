@@ -1,0 +1,22 @@
+<!--this should be stored in template folder-->
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <!-- the action here will decide the url and will be matched by the url routing in views.py-->
+    <form action="submitform">
+      Name:<br>
+      <!-- the name element type needs can be retrieved by calling request.args.get in views.py-->
+      <input type="text" name="name"><br>
+      skype:<br>
+      <input type="text" name="skype"><br>
+      favorite class:<br>
+      <input type="text" name="favorite_class"><br>
+      favorite person:<br>
+      <input type="text" name="favorite_person"><br>
+      <!--initiates the submission and will take the user to a different url-->
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

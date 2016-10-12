@@ -1,0 +1,170 @@
+/* Add CSS */
+/*body{
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+    background-size:100%;
+
+}*/
+
+#helloText {
+    font-family: "Lucida Sans Unicode";
+    text-align: center;
+}
+
+#introText{
+    font-family: "Lucida Sans Unicode";
+    margin: auto;
+    width: 80%;
+    text-align: justify;
+}
+
+img {
+    width: 40%;
+}
+
+#albumImg {
+    width: 20%;
+}
+
+.row{
+    /*margin: 20px 20px;*/
+    background-color: lightblue;
+}
+
+input[type=text]{
+    font-family: "Lucida Sans Unicode";
+    width: 90%;
+    margin: 20px 20px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*button {
+    width: 80%;
+    background-color: #F0E68C;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}*/
+
+#btnNewItem {
+/*button{*/
+    font-family: "Lucida Sans Unicode";
+    /*width: 80%;*/
+    cursor: pointer;
+
+    background-color: #DAA520;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 20px;
+}
+
+#btnMoveMe {
+/*button{*/
+    font-family: "Lucida Sans Unicode";
+    /*width: 80%;*/
+    cursor: pointer;
+
+    background-color: #DAA520;
+    border: none;
+    color: white;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 20px;
+}
+
+#btnUp, #btnDown {
+/*button{*/
+    font-family: "Lucida Sans Unicode";
+    /*width: 80%;*/
+    cursor: pointer;
+
+    background-color: #008080;
+    border: none;
+    color: white;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 20px;
+}
+
+#btnPlay {
+/*button{*/
+    font-family: "Lucida Sans Unicode";
+    /*width: 80%;*/
+    cursor: pointer;
+
+    background-color: #483D8B;
+    border: none;
+    color: white;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 20px;
+}
+
+#btnTrack {
+    font-family: "Lucida Sans Unicode";
+    cursor: pointer;
+    background-color: #DAA520;
+    padding: 1px 1px;
+    text-align: center;
+    font-size: 5px;
+}
+
+#list_completed{
+    margin: auto;
+    float: left;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+    margin: 10px;
+}
+
+#list_todo{
+    margin: auto;
+    float: left;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+    margin: 10px;
+    /*background: #CD5C5C;*/
+}
+
+#hdComplet{
+    padding: 15px 10px;
+    background-color: #4CAF50;
+}
+
+ #hdToDo {
+    padding: 15px 10px;
+    background-color: #A52A2A;
+}
+
+#ul_todo {
+    float: left;
+    background: #CD5C5C;
+}
+
+#ul_complete {
+    float: left;
+    background: #32CD32;
+}
+
+#track {
+    border: 2px solid black;
+}

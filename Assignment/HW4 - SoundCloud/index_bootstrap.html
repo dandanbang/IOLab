@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title> SoundCloud </title>
+                <!--Bootstrap-->
+                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <!--My stylesheet-->
+                <link rel="stylesheet" href="_css/style.css">
+                
+                <style>
+                    #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+                    #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+                    #sortable li span { position: absolute; margin-left: -1.3em; }
+                </style>
+
+        </head>
+        <!-- <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script> -->
+
+        <body>
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <h1 id="helloText">Welcome to the Sel Music Experience </h1> 
+                        <p id='introText'> Here you have a way to add tracks from the 'Search Result' list to the 'On the Go' list' </p> <p> </p> 
+                        <p id='introText'> When you find the track you are searching, just add it to your 'On the Go' playlist with the 'Add On the Go' button.
+                            If you feel like changing the order the tracks are displayed, change it with the 'Up' and 'Down' buttons.  </p> <p> </p> 
+                        <p id='introText'> Play each track with the 'Play button and enjoy your MUSIC list making!</p>
+                    </div> 
+                    <div class="col-md-6">
+                        <img src="assets/soundcloud1.jpg">
+                    </div>
+                </div>
+
+                <div class="row">
+                        <input class="col-md-10" type="text" id="txtToDoItem" name="toDo" placeholder="Give it a Try...">
+                </div>
+                <div class="row">
+                        <!-- <div class="col-md-2"></div> -->
+                        <!-- button takes input and adds a new element with content to 'list_do' -->
+                        <button class="col-md-2" id="btnNewItem"> Add Song </button>
+                </div>
+
+                <div class="row">
+                    <!-- ability to move items between list_todo and list_completed -->
+                    <div class="col-md-6" id="list_todo"> 
+                            <h3 id="hdToDo"> Search Results </h3> 
+                            <ul id="ul_todo"></ul>
+                    </div>
+                        
+                    <div class="col-md-6" id="list_completed"> 
+                            <h3 id="hdComplet"> On the Go </h3>
+                            <ul id="ul_complete"></ul>
+                    </div>
+                </div>
+
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+                <!-- <script type="text/javascript" src="http://stratus.sc/stratus.js"></script> -->
+                <script src="https://stratus.soundcloud.com/stratus.js"></script>
+                <!-- <script type='text/javascript' src="https://stratus.soundcloud.com/stratus.js"></script> -->
+
+                <!-- jQuery library -->
+                <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+
+                <!--Sortable List JQuery-->
+                <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+                <!--Bootstrap-->
+                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/2.2.2/js/bootstrap.min.js"></script>
+                
+              
+
+                <!-- <script type="text/javascript" src="http://stratus.sc/stratus.js"></script> -->
+
+               <!--  <script type="text/javascript" src="jquery.js"></script>    
+                <script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
+                <script type="text/javascript"></script>
+ -->
+                <!--My JavaScript-->
+                <script type='text/javascript' src='_js/main.js'></script>
+                <!-- <script type="text/javascript"> -->
+        </body>
+</html>
