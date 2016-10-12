@@ -1,5 +1,16 @@
 // JavaScript in-class exercises for IO Lab 2/5/2016
 
+var cat1 = {
+	src: "http://d39kbiy71leyho.cloudfront.net/wp-content/uploads/2016/05/09170020/cats-politics-TN.jpg",
+	alt: "cat1"
+}
+
+var cat2 = {
+	src: "https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg",
+	alt: "cat2"
+}
+
+cat_array = [cat1, cat2]
 
 // Create 3 'cat' objects and insert them into the DOM
 // Instructions
@@ -24,6 +35,22 @@ function populateFromObj() {
 		//				.innerHTML
 		//				.appendChild
 		//				.getElementsByClassName
+		for (var i = 0; i < cat_array.length; i++){
+			var newDiv = document.createElement("div");
+			newDiv.className += "id-grid-item";
+
+			var newImg = document.createElement("img");
+			var imgSrc = cat_array[i].src;
+			var imgAlt = cat_array[i].alt;
+
+			newImg.setAttribute("src", imgSrc);
+			newImg.setAttribute("alt", imgAlt);
+
+			newDiv.appendChild(newImg);
+			console.log(newDiv);
+
+			var mainContainer = document.getElementsByClassName("main-container")[0];
+			mainContainer.appendChild(newDiv)
 }
 
 
