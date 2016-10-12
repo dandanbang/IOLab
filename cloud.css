@@ -1,0 +1,64 @@
+.song {
+	width: 100px;
+    float: left;
+    height: 190px;
+    margin: 30px 15px;
+    border: solid 1px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.songs {
+	margin-top: 100px;
+    width: 800px;
+    float: right;
+}
+
+.play-btn {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+    border-color: black;
+}
+
+.add-btn {
+	position: absolute;
+    top: -37px;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+    border-color: black;	
+}
+
+.remove-btn {
+	position: absolute;
+    top: -22px;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+    border-color: black;
+}
+
+.playlist {
+	width: 100px;
+	margin-top: 100px;
+}
+
+.up-btn, .down-btn {
+	position: absolute;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+    border-color: black;
+    bottom: -23px;
+}
+
+.down-btn {
+	right: 0;
+}
