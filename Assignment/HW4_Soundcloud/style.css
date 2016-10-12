@@ -1,0 +1,36 @@
+body {
+	font-size: small;
+	line-height: 1;
+	background-image: url("orange-gradient.jpg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+.space_gap{
+	height: 100px;
+}
+
+.space_gap1{
+	height: 50px;
+}
+
+#div_head{
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 50px;
+	margin-top: -25px;
+	text-align: center;
+}
+/*tr {display: block; }*/
+tr,th, td { 
+width: 50px;
+height : 15px;}
+
+#img1{height:50px;
+width:50px;} 
+/*tbody { display: block; height: 100px; overflow: auto;} */
+
+#header{
+	padding-top: 10px;
+}
