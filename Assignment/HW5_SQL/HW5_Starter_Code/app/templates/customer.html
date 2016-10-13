@@ -9,6 +9,7 @@
     <form action="" method="post" name="login">
       {{ form.hidden_tag() }}
       <div class="divider"></div>
+      <h3> Customer information </h3>
       <div class="section">
         <p>
           Company name:<br>
@@ -17,12 +18,45 @@
         <p>
           Customer email:<br>
           {{ form.email(size=120) }}<br>
-          <!-- Additional form fields for the customer should go here -->
         </p>
+        <p>
+          Customer first name:<br>
+          {{ form.first_name(size=120) }}<br>
+        </p>
+        <p>
+          Customer last name:<br>
+          {{ form.last_name(size=120) }}<br>
+        </p>
+        <p>
+          Customer phone number:<br>
+          {{ form.phone_number(size=120) }}<br>
+        </p>
+        
       </div>
       <div class="divider"></div>
+      <h3> Address Information</h3>
       <div class="section">
         <!-- Additional form fields for the Address should go here -->
+        <p>
+          Street Address:<br>
+          {{ form.street_address(size=120) }}<br>
+        </p>
+        <p>
+          City:<br>
+          {{ form.city(size=120) }}<br>
+        </p>
+        <p>
+          State:<br>
+          {{ form.state(size=120) }}<br>
+        </p>
+        <p>
+          Country :<br>
+          {{ form.country(size=120) }}<br>
+        </p>
+        <p>
+          Zip Code:<br>
+          {{ form.zip_code(size=120) }}<br>
+        </p>
       </div>
       <p><input type="submit" value="Create Customer"></p>
     </form>
