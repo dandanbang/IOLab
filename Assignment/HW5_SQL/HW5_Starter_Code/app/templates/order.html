@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class= "section">
+            <a href="{{ url_for('display_customer') }}">Home</a>
+        </div>
+        <!-- display customer name -->
+        <h2>Create a new order for {{fname ~ " " ~ lname}} </h2>
+
+        <!-- get order information -->
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <div class="divider"></div>
+
+            <div class="section">
+                <p>
+                    Name of the Part: <br>
+                    {{ form.part_name(size = 120) }}<br>
+                </p>
+                <p>
+                    Name of the Manufacturer: <br>
+                    {{ form.manufacturer_name(size = 120) }}<br>
+                </p>
+            </div>
+            <div class="divider"></div>
+
+            <p><input type="submit" value="Create Order"></p>
+        </form>
+    </div>
+</div>
+{% endblock %}
