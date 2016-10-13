@@ -18,13 +18,12 @@ def retrieve_customers():
     	result = cur.execute("SELECT * FROM customers").fetchall()
     return result
 
-def insert_order(name_of_part, manufacturer_of_part,customer_id):
+def insert_order(customer_id, name_of_part, manufacturer_of_part):
     with sql.connect("app.db") as con:
         cur = con.cursor()
-        print(name_of_part)
         cur.execute("INSERT INTO orders (name_of_part, manufacturer_of_part) VALUES (?,?)", (name_of_part[0], manufacturer_of_part))
         order_id = cur.lastrowid
-        cur.execute("INSERT INTO customer_orders (customer_id, order_id) VALUES (?,?)", (customer_id, order_id))
+        cur.execute("INSERT INTO customer_orders (customer_id, order_id) VALUES (?,?)", (customer_id[0], order_id))
         id = cur.lastrowid # is this right? or is there another way to generate/assign an
         con.commit()
 
