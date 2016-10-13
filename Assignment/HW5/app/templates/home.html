@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to ACME Aircraft Parts</h1>
+      <div class= "section">
+        <a href="{{ url_for('create_customer') }}">Add a Customer</a>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <h3>These are all of our awesome customers:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="order_now">Order Now</th>
+              <th data-field="first_name">First Name</th>
+              <th data-field="last_name">Last Name</th>
+              <th data-field="company">Company</th>
+              <th data-field="email">Email</th>
+              <th data-field="phone">Phone</th>
+              <th data-field="street_address">Street Address</th>
+              <th data-field="city">City</th>
+              <th data-field="state">State</th>
+              <th data-field="country">Country</th>
+              <th data-field="zip_code">Zip Code</th>
+          </tr>
+          </thead>
+          {% set i = 0 %}
+          {% for customer in customers %}
+
+            <tr>
+              <td rowspan = {{ counts[i] + 1 }}><a href="{{ url_for('create_order', value=customer['customer_id']) }}">Add an Order</a></td>
+              <td rowspan = {{ counts[i] + 1 }}>{{ customer['first_name'] }}</td>
+              <td rowspan = {{ counts[i] + 1 }}>{{ customer['last_name'] }}</td>
+              <td rowspan = {{ counts[i] + 1 }}>{{ customer['company'] }}</td>
+              <td rowspan = {{ counts[i] + 1 }}>{{ customer['email'] }}</td>
+              <td rowspan = {{ counts[i] + 1 }}>{{ customer['phone'] }}</td>
+             {% for a in address %}
+                {% if customer["customer_id"]==a["customer_id"] %}
+                <tr>
+                  <td>{{ a['street_address'] }}</td>
+                  <td>{{ a['city'] }}</td>
+                  <td>{{ a['state'] }}</td>
+                  <td>{{ a['country'] }}</td>
+                  <td>{{ a['zip_code'] }}</td>
+                </tr>
+                {% endif %}
+             {% endfor %}
+            </tr>
+            {% set i = i + 1 %}
+          {% endfor %}
+        </table>
+      </div>
+      <div class="section">
+        <h3>Orders from Customers:</h3>
+                <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="name_of_part">Name of Part</th>
+              <th data-field="manufacturer_of_part">Manufacturer of Part</th>
+        </tr>
+          </thead>
+          {% for order in orders %}
+            <tr>
+              <td>{{ order['name_of_part'] }}</td>
+              <td>{{ order['manufacturer_of_part'] }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
