@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<h2>Place Your Order Here</h2>
+		<form action="" method="post" name="login">
+		{{ orderForm.hidden_tag() }}
+		<div class="divider"></div>
+		<div class="section">
+	        <p>
+	          Part Name:<br>
+	          {{ orderForm.partname(size=120) }}<br>
+	        </p>
+	        <p>
+	          Manufacturer:<br>
+	          {{ orderForm.manufacturer(size=120) }}<br>
+	        </p>
+	    </div>
+	    </div>
+		<p><input type="submit" value="Create Order"></p>
+    	</form>
+	</div>
+</div>
+{% endblock %}
