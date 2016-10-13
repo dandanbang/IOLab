@@ -45,6 +45,7 @@ def create_order(value):
     if form.validate_on_submit():
         name_of_part = form.name_of_part.data
         manufacturer_of_part = form.manufacturer_of_part.data
-        insert_orders(name_of_part, manufacturer_of_part),
+        insert_orders(value,name_of_part, manufacturer_of_part),
+
         return redirect('/customer')
     return render_template('orders.html', form=form)

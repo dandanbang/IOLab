@@ -33,8 +33,8 @@ create table orders (
 
 create table customer_order (
 	id integer primary key,
-	order_id integer,
-	customer_id integer,
+	order_id integer not null,
+	customer_id integer not null,
 	foreign key(order_id) references orders(order_id),
 	foreign key(customer_id) references customer(customer_id)
 );

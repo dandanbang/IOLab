@@ -10,11 +10,25 @@ def insert_data(first_name, last_name, company, email, phone, street_address, ci
 		new_cur.execute("INSERT INTO address (street_address, city, state, country, zip_code) VALUES (?,?,?,?,?)", (street_address, city, state, country, zip_code))
 		con.commit()
 
-def insert_orders( name_of_part, manufacturer_of_part):
+def insert_orders( customer_id,name_of_part, manufacturer_of_part):
 	# SQL statement to insert into database 
 	with sql.connect("app.db") as con:
 		cur = con.cursor()
 		cur.execute("INSERT INTO orders ( name_of_part, manufacturer_of_part) VALUES (?,?)", (name_of_part, manufacturer_of_part))
+		order_id = cur.lastrowid
+		
+		cur.execute("INSERT INTO customer_order (customer_id, order_id) VALUES (?,?)", (customer_id, order_id))
+		
+		con.commit()
+
+def insert_customer_orders(customer_id):
+	# get last row
+	with sql.connect("app.db") as con:
+		cur = con.cursor()
+
+		order_id = cur.lastrowid
+		cur.execute("INSERT INTO customer_order (customer_id, order_id) VALUES (?,?)", (customer_id, order_id))
+		
 		con.commit()
 
 def retrieve_customers():
