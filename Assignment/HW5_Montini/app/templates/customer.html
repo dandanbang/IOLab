@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class= "section">
+      <a href="{{ url_for('display_customer') }}">Home</a>
+    </div>
+    <h2>Add Customer to Our Database</h2>
+    <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <div class="divider"></div>
+      <div class="section">
+        <p>
+          First name:<br>
+          {{ form.fname(size=120) }}<br>
+        </p>
+        <p>
+          Last name:<br>
+          {{ form.lname(size=120) }}<br>
+        </p>
+        <p>
+          Company Name:<br>
+          {{ form.company(size=120) }}<br>
+        </p>
+        <p>
+          Customer email:<br>
+          {{ form.email(size=120) }}<br>
+        </p>
+        <p>
+          Phone number:<br>
+          {{ form.phone(size=120) }}<br>
+        </p>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+      <h2>Please Provide Your Address</h2>
+        <!-- Additional form fields for the Address -->
+        <p>
+          Street Address:<br>
+          {{ form.street(size=120) }}<br>
+        </p>
+        <p>
+          City:<br>
+          {{ form.city(size=120) }}<br>
+        </p>
+        <p>
+          State:<br>
+          {{ form.state(size=120) }}<br>
+        </p>
+        <p>
+          Country:<br>
+          {{ form.country(size=120) }}<br>
+        </p>
+        <p>
+          Zip Code:<br>
+          {{ form.zipcode(size=120) }}<br>
+        </p>
+      </div>
+      <p><input type="submit" value="Create Customer"></p>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
