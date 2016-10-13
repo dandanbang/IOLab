@@ -21,11 +21,23 @@ def retrieve_customers():
     	result = cur.execute("select * from customers").fetchall()
     return result 
 
-def insert_order(name_of_part, manufacturer_of_part):
+def insert_customerorder(customer_id):
+    # SQL statement to insert into database goes here
+    with sql.connect("app.db") as con:
+    	cur = con.cursor()
+    	order_id = cur.lastrowid
+    	c_id = customer_id
+    	cur.execute("INSERT INTO customer_order(c_id, ord_id) VALUES (?, ?)", (c_id, order_id))
+    	con.commit()
+
+def insert_order(customer_id, name_of_part, manufacturer_of_part):
     # SQL statement to insert into database goes here
     with sql.connect("app.db") as con:
     	cur = con.cursor()
     	cur.execute("INSERT INTO orders(name_of_part, manufacturer_of_part) VALUES (?, ?)", (name_of_part, manufacturer_of_part))
+    	order_id = cur.lastrowid
+
+    	cur.execute("INSERT INTO customer_order(c_id, ord_id) VALUES (?, ?)", (customer_id, order_id))
     	con.commit()
     	
 

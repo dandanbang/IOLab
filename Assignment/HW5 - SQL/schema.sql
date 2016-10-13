@@ -40,7 +40,6 @@ create table orders (
 
 create table customer_order (
 	ord_id integer not null,
-	id integer primary key,
 	c_id integer not null,
 	foreign key(c_id) references customers(customer_id),
 	foreign key(ord_id) references orders(order_id)
