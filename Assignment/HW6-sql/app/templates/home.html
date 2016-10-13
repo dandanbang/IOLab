@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to ACME Aircraft Parts</h1>
+      <div class= "section">
+        <a href="{{ url_for('createCust') }}">Add a Customer</a>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <h3>These are all of our awesome customers:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="first_name">First Name</th>
+              <th data-field="last_name">Last Name</th>
+              <th data-field="company">Company</th>
+              <th data-field="email">Email</th>
+              <th data-field="phone">Phone Number</th>
+            </tr>
+          </thead>
+          {% for customer in customers %}
+            <tr>
+              <td>{{ customer['first_name'] }}</td>
+              <td>{{ customer['last_name'] }}</td>
+              <td>{{ customer['company'] }}</td>
+              <td>{{ customer['email'] }}</td>
+              <td>{{ customer['phone'] }}</td>
+             
+              <td><a href="{{ url_for('createOrder', value=customer['customer_id']) }}">Add an Order</a></td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+      <div class="section">
+        <h3>Orders from Customers:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="part_name">Name of Part</th>
+              <th data-field="manufacturer_name">Manufacturer of Part</th>
+              <th data-field="customer_id">Customer ID</th>
+            </tr>
+          </thead>
+          {% for order in orders %}
+            <tr>
+              <td>{{ order['part_name'] }}</td>
+              <td>{{ order['manufacturer_name'] }}</td>
+              <td>{{ order['customer_id'] }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
