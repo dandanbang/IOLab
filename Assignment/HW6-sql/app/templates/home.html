@@ -1,15 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="container">
-    <div class="row">
       <h1>Welcome to ACME Aircraft Parts</h1>
-      <div class= "section">
         <a href="{{ url_for('createCust') }}">Add a Customer</a>
-      </div>
-      <div class="divider"></div>
-      <div class="section">
         <h3>These are all of our awesome customers:</h3>
-        <table class="striped">
+        <table>
           <thead>
             <tr>
               <th data-field="first_name">First Name</th>
@@ -31,10 +25,8 @@
             </tr>
           {% endfor %}
         </table>
-      </div>
-      <div class="section">
         <h3>Orders from Customers:</h3>
-        <table class="striped">
+        <table>
           <thead>
             <tr>
               <th data-field="part_name">Name of Part</th>
@@ -50,7 +42,4 @@
             </tr>
           {% endfor %}
         </table>
-      </div>
-    </div>
-  </div>
 {% endblock %}

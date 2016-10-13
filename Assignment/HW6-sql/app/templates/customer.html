@@ -1,16 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class= "section">
       <a href="{{ url_for('displayCustomerDetails') }}">Home</a>
-    </div>
-    <h2>Add Customer to Our Database</h2>
+    <h2>Add Customer</h2>
     <form action="" method="post" name="login">
       {{ form.hidden_tag() }}
-      <div class="divider"></div>
-      <div class="section">
-        <!-- Add Customer Information -->
         <p>
           First Name:<br>
           {{form.first_name(size=120)}}<br>
@@ -31,10 +24,6 @@
           Customer Phone:<br>
           {{form.phone(size=120)}}<br>
         </p>
-      </div>
-      <div class="divider"></div>
-      <div class="section">
-        <!-- Add Address Information -->
         <p>
           Street Address:<br>
           {{form.street_address(size=120)}}<br>
@@ -59,6 +48,4 @@
       </div>
       <p><input type="submit" value="Create Customer"></p>
     </form>
-  </div>
-</div>
 {% endblock %}
