@@ -5,7 +5,7 @@ def insert_customers(first_name, last_name, company, email, phone, street_addres
         cur = con.cursor()
         cur.execute('INSERT INTO customers (first_name, last_name, company, email, phone) VALUES (?,?,?,?,?)', (first_name, last_name, company, email, phone))
         con.commit()
-        customer_id = cur.execute('SELECT last_insert_rowid()').fetchall()[0][0]
+        customer_id = cur.lastrowid
         cur.execute('INSERT INTO addresses(street_address, city, state, country, zipcode, customer_id) VALUES (?,?,?,?,?,?)', (street_address, city, state, country, zipcode, customer_id))
         con.commit()
 
