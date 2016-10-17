@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS customer_address;
 DROP TABLE IF EXISTS customer_order;
 
 CREATE TABLE customer (
-  customer_id INT PRIMARY KEY,
+  customer_id INTEGER PRIMARY KEY,
   first_name TEXT,
   last_name TEXT,
   company TEXT,
@@ -17,7 +17,7 @@ CREATE TABLE customer (
 );
 
 CREATE TABLE address (
-  address_id INT PRIMARY KEY,
+  address_id INTEGER PRIMARY KEY,
   street_address TEXT,
   city TEXT,
   state TEXT,
@@ -26,7 +26,7 @@ CREATE TABLE address (
 );
 
 CREATE TABLE orders (
-  order_id INT PRIMARY KEY,
+  order_id INTEGER PRIMARY KEY,
   name_of_part TEXT,
   manufacturer_of_part TEXT
 );
@@ -43,6 +43,9 @@ CREATE TABLE customer_order(
   FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
   FOREIGN KEY (order_id) REFERENCES orders (order_id)
 );
+
+INSERT INTO customer (first_name, last_name, company, email, phone) VALUES
+    ('paul', 'glenn', 'test', 'test@test.com', '313-555-5555');
 
 
 -- Create the following tables with the properties listed (with appropriate data types) and
