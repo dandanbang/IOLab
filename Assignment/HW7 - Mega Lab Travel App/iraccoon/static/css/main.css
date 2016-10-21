@@ -1,0 +1,19 @@
+/* custom styles */
+
+body {
+  padding-top: 30px;
+}
+
+.header-logo {
+    float: left;
+    width: 10%;
+    margin-top: 1.5%;
+    margin-right: 2%;
+}
+.row {
+    margin-top: 3%;
+}
+.col-sm-3.col-md-2.sidebar {
+    float: left;
+    width: 30%;
+}
