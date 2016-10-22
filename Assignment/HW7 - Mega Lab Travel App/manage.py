@@ -1,17 +1,18 @@
-import os
 import datetime
 from flask_script import Server, Manager
 from flask_migrate import Migrate, MigrateCommand
+import os
 
 from iraccoon import app, db
-from iraccoon.models import Users, Trips, UsersHasTrips
 from iraccoon.utils import set_config
-
-# read confi
 
 app.config.from_object('settings')
 
-set_config()
+if app.config['APP_ENV'] in ['production', 'develop']:
+    set_config(app.config['APP_ENV'])
+else:
+    print("No APP Environment found or value error, please check settings.py")
+    exit(2)
 
 migrate = Migrate(app, db)
 manager = Manager(app)

@@ -1,8 +1,7 @@
 from itsdangerous import URLSafeTimedSerializer
-
 from iraccoon import app, mail
 from flask_mail import Message
-from iraccoon.config import BaseConfig, EnvConfig
+from iraccoon.config import DevelopConfig, ProductionConfig
 
 def generate_confirmation_token(email):
     serializer = URLSafeTimedSerializer(app.config['SECRET_KEY'])
@@ -12,11 +11,7 @@ def generate_confirmation_token(email):
 def confirm_token(token, expiration=3600):
     serializer = URLSafeTimedSerializer(app.config['SECRET_KEY'])
     try:
-        email = serializer.loads(
-            token,
-            salt=app.config['SECURITY_PASSWORD_SALT'],
-            max_age=expiration
-        )
+        email = serializer.loads(token, salt=app.config['SECURITY_PASSWORD_SALT'], max_age=expiration)
     except:
         return False
     return email
@@ -28,10 +23,11 @@ def send_email(to, subject, template):
         html=template,
         sender=app.config['MAIL_DEFAULT_SENDER']
     )
-    print(to, subject, app.config['MAIL_DEFAULT_SENDER'])
+    print(to, subject, app.config['MAIL_DEFAULT_SENDER'], app.config['MAIL_USERNAME'])
     mail.send(msg)
 
-def set_config():
-    app.config.from_object(EnvConfig)
-    # print(app.config['SQLALCHEMY_DATABASE_URI'])
-    # app.config.from_object(EnvConfig)
+def set_config(env):
+    if env == "production":
+        app.config.from_object(ProductionConfig)
+    elif env == "develop":
+        app.config.from_object(DevelopConfig)

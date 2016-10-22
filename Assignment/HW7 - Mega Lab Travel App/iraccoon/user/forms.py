@@ -48,4 +48,3 @@ class ChangePasswordForm(Form):
 class AddTripForm(Form):
     trip_name = StringField('trip_name', validators = [DataRequired(), Length(max=100)])
     trip_destination = StringField('trip_destination', validators = [DataRequired(), Length(max=100)])
-    # trip_date =
