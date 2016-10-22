@@ -44,12 +44,10 @@ class Trips(db.Model):
     trip_id = db.Column(db.Integer, primary_key=True)
     trip_name = db.Column(db.String, nullable=False)
     trip_destination = db.Column(db.String, nullable=False)
-    trip_date = db.Column(db.DateTime, nullable=False)
 
-    def __init__(self, trip_name, trip_destination, trip_date):
+    def __init__(self, trip_name, trip_destination):
         self.trip_name = trip_name
         self.trip_destination = trip_destination
-        self.trip_date = trip_date
 
 class UsersHasTrips(db.Model):
     __tablename__ = "user_has_trips"

@@ -13,7 +13,9 @@
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           {% if current_user.confirmed and current_user.is_authenticated() %}
-            <li><a href="{{ url_for('user.profile') }}">Profile</a></li>
+          <h3>
+              Welcome {{ current_user.first_name}},{{ current_user.last_name}}
+          </h3>
           {% elif current_user.is_authenticated() %}
             <li><a href="{{ url_for('user.unconfirmed') }}">Confirm</a></li>
           {% endif %}

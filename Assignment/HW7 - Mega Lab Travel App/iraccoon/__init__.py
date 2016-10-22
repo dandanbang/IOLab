@@ -20,8 +20,11 @@ db = SQLAlchemy(app)
 # register blueprints
 from iraccoon.main.views import main_blueprint
 from iraccoon.user.views import user_blueprint
+from iraccoon.trips.views import trip_blueprint
 app.register_blueprint(main_blueprint)
 app.register_blueprint(user_blueprint)
+app.register_blueprint(trip_blueprint)
+
 
 # flask login
 from iraccoon.models import Users

@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="add_trip">
+<h1>Add a trip</h1>
+<br>
+<form class="form-addtrip" role="form" method="post" action="">
+    {{ form.csrf_token }}
+    <p>
+        {{ form.trip_name(placeholder="Trip Name") }}
+    </p>
+    <p>
+        {{ form.trip_destination(placeholder="Trip Destination") }}
+    </p>
+  <p>
+  {{ form.partner() }}
+  </p>
+  <button class="btn btn-success" type="submit">Add</button>
+  <br><br>
+</form>
+</div>
+{% endblock %}

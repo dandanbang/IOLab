@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<h1>These are all your trips.</h1>
+<br>
+
+{% if current_user.is_authenticated() %}
+<table class="table">
+   <thead>
+     <tr>
+       <th data-field="order_now">Delete</th>
+       <th data-field="first_name">Trip Name</th>
+       <th data-field="last_name">Trip Destination</th>
+       <th data-field="company">Partner</th>
+     </tr>
+   </thead>
+   {% for trip in trips %}
+     <tr>
+      <td><a class="btn btn-danger" href="#"><i class="icon-trash icon-white"></i> Delete</a></td>
+       <td>{{ trip['trip_name'] }}</td>
+       <td>{{ trip['trip_destination'] }}</td>
+       <td>{{ trip['partner'] }}</td>
+     </tr>
+   {% endfor %}
+ </table>
+{% endif %}
+
+
+{% endblock %}

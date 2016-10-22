@@ -1,6 +1,6 @@
 import datetime
 
-from flask import render_template, Blueprint, url_for, redirect, flash, request
+from flask import render_template, Blueprint, url_for, redirect, flash, request, jsonify
 from flask_login import login_user, logout_user, login_required, current_user
 
 from iraccoon.models import Users
@@ -31,7 +31,7 @@ def register():
         confirm_url = url_for('user.confirm_email', token=token, _external=True)
         html = render_template('user/activate.html', confirm_url=confirm_url)
         subject = "Please confirm your email"
-        send_email(user.email, subject, html)
+        # send_email(user.email, subject, html)
 
         login_user(user)
 
@@ -65,13 +65,25 @@ def logout():
     return redirect(url_for('user.login'))
 
 
+@user_blueprint.route('/allusers')
+@login_required
+def allusers():
+    response = {}
+    response['name'] = []
+    users = Users.query.all()
+    for user in users:
+        if user.user_id != current_user.user_id:
+            response['name'].append(user.first_name + ',' + user.last_name)
+    return jsonify(**response)
+
+
 @user_blueprint.route('/profile', methods=['GET', 'POST'])
 @login_required
 @check_confirmed
 def profile():
     form = ChangePasswordForm(request.form)
     if form.validate_on_submit():
-        user = User.query.filter_by(email=current_user.email).first()
+        user = Users.query.filter_by(email=current_user.email).first()
         if user:
             user.password = bcrypt.generate_password_hash(form.password.data)
             db.session.commit()
@@ -90,7 +102,7 @@ def confirm_email(token):
         flash('Account already confirmed. Please login.', 'success')
         return redirect(url_for('main.home'))
     email = confirm_token(token)
-    user = User.query.filter_by(email=current_user.email).first_or_404()
+    user = Users.query.filter_by(email=current_user.email).first_or_404()
     if user.email == email:
         user.confirmed = True
         user.confirmed_on = datetime.datetime.now()
@@ -127,7 +139,7 @@ def forgot():
     form = ForgotForm(request.form)
     if form.validate_on_submit():
 
-        user = User.query.filter_by(email=form.email.data).first()
+        user = Users.query.filter_by(email=form.email.data).first()
         token = generate_confirmation_token(user.email)
 
         user.password_reset_token = token
@@ -155,7 +167,7 @@ def forgot_new(token):
     if user.password_reset_token is not None:
         form = ChangePasswordForm(request.form)
         if form.validate_on_submit():
-            user = User.query.filter_by(email=email).first()
+            user = Users.query.filter_by(email=email).first()
             if user:
                 user.password = bcrypt.generate_password_hash(form.password.data)
                 user.password_reset_token = None
