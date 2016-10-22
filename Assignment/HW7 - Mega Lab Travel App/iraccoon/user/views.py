@@ -22,7 +22,7 @@ def register():
             last_name = form.last_name.data,
             email=form.email.data,
             password=form.password.data,
-            confirmed=False
+            confirmed=True
         )
         db.session.add(user)
         db.session.commit()
