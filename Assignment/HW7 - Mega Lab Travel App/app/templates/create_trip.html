@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Create Trip
+{% endblock %}
+
+
+{% block header %}
+	<form action="logout" id="logout">
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+{% block content %}
+<h1>Create an Awesome Trip</h1>
+	<div class="main-container">
+		<form action="" method="POST" name="login">
+			{{ form.csrf_token }}
+			<p>
+				Trip Name: {{ form.trip_name(placeholder="Trip Name") }}
+			</p>
+			<p>
+				Destination: {{ form.destination(placeholder="Destination") }}
+			</p>
+			<p>
+				Fellow Traveller: {{ form.friends(placeholder="Fellow Traveller") }}
+			</p>
+			<button class="action-button" type="submit">Submit</button>
+		</form>
+</div>
+{% endblock %}
