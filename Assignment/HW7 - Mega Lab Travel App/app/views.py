@@ -37,7 +37,7 @@ def signup():
         user = form.name.data
         username = form.username.data
         password = form.password.data
-        travellers = login_user(request.form.get("username"))
+        travellers = login_user(request.form.get("username"), request.form.get("password"))
         if travellers:
             flash("Username has already taken.", 'danger')
             return render_template('signup.html', form=form)
@@ -45,6 +45,7 @@ def signup():
             user_id = insert_user(user, username, password)
             session['name'] = user
             session['username'] = username
+            session['password'] = password
             session['id'] = user_id
             return redirect(url_for('index'))
     return render_template('signup.html', form=form)
