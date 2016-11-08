@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{% block title %}{% endblock %} - Monkey Travel</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+		{% block styles %}{% endblock %}
+	</head>
+
+	<body>
+
+		<header>
+			<div id="site-title-wrapper">
+				<div id="site-icon-wrapper">
+					<img src="../static/logo.png">
+				</div>
+				<!-- <h3 id="site-title">Monkey Travel</h3> -->
+			</div>
+			{% block header %}
+			{% endblock %}
+		</header>
+		<div id="content">{% block content %}{% endblock %}</div>
+
+		<footer>
+			<p>&copy; Copyright 2016 Monkey Travel, all rights reserved</p>
+		</footer>
+
+		<script type="text/javascript" src="{{ url_for('static', filename='interactions.js') }}"></script>
+	</body>
+</html>
