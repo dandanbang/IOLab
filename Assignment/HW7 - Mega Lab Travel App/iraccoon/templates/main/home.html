@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+{% block content %}
+
+{% if current_user.is_authenticated() %}
+    <h2>Your Trips Around the World.</h2>
+    <iframe
+      width="1200"
+      height="600"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJ1nRpb5uyeMVRVKIj4DyDJ-rmcWBR1rw&q=Space+Needle,Seattle+WA" allowfullscreen>
+    </iframe>
+{% endif %}
+
+{% endblock %}

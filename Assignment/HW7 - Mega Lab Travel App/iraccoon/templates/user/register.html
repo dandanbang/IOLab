@@ -1,0 +1,50 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<h1>Sign Up</h1>
+<br>
+<form class="form-signin" role="form" method="post" action="">
+    {{ form.csrf_token }}
+    <p>
+        {{ form.first_name(placeholder="First Name") }}
+    </p>
+    <p>
+        {{ form.last_name(placeholder="Last Name") }}
+    </p>
+    <p>
+        {{ form.email(placeholder="Email") }}
+        <span class="error">
+            {% if form.email.errors %}
+            {% for error in form.email.errors %}
+            {{ error }}
+            {% endfor %}
+            {% endif %}
+        </span>
+    </p>
+  <p>
+  {{ form.password(placeholder="Password") }}
+    <span class="error">
+      {% if form.password.errors %}
+        {% for error in form.password.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </span>
+  </p>
+  <p>
+  {{ form.confirm(placeholder="Confirm") }}
+    <span class="error">
+      {% if form.confirm.errors %}
+        {% for error in form.confirm.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </span>
+  </p>
+  <button class="btn btn-success" type="submit">Register!</button>
+  <br><br>
+  <p>Already have an account? <a href="/login">Sign in</a>.</p>
+</form>
+
+{% endblock %}
