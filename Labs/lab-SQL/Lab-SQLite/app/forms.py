@@ -6,4 +6,3 @@ from wtforms.validators import DataRequired
 class CustomerForm(Form):
     company = StringField('company', validators=[DataRequired()])
     email = EmailField('email', validators=[DataRequired()])
-    
