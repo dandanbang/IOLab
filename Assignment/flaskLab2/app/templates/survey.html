@@ -1,0 +1,36 @@
+<!-- 4a. Make this file an extension of the ‘base.html’ template -->
+{% extends "base.html" %}
+
+{% block title %}
+	Survey
+{% endblock %}
+
+
+{% block header %}
+<!-- 4b. The HTML in this file for the form with the id of ‘logout’ is currently replacing the entire contents of the <header> tag in the ‘base.html’ template. Using the super() function, pull in the original contents of the <header> tag from the ‘base.html’ template -->
+	{{super()}}
+	<form action="logout" id="logout">
+		<span id="username"> You are {{ name }}</span>
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+<!-- 4c. Make sure the HTML in this file from the <h1> and down is replacing the block called ‘content’ in the ‘base.html’ template -->
+{% block content %}
+<h1>A Little Survey About You</h1>
+	<div class="main-container">
+		<h3> Random Questions </h3>
+		<label class="survey-item"> What is your favorite animal? <input type="text" name="animal"></label>
+		<label class="survey-item"> What do you like to shop?
+		<input type="text" name="shop"></label>
+		<label class="survey-item">What year would you go to if you had a time machine?
+		<input type="text" name="timemachine"></label>
+		<label class="survey-item"> What is your favorite movie?<input type="text" name="movie"></label>
+
+		<h3>Let's look at your front end skillz progression</h3>
+		<label class="survey-item">What was your front end proficiency before IO Lab?<input type="range" min="0" max="10" step="1" name="front-end-before" id="fe-before"><span></span></label>
+		<label class="survey-item">How about after the front end module?<input type="range" min="0" max="10" step="1" name="front-end-after" id="fe-after"><span></span></label>
+
+		<button class="action-button" id="submit-survey">Submit</button>
+</div>
+{% endblock %}

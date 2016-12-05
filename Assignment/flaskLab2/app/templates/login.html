@@ -1,0 +1,22 @@
+<!-- 2a. Make this file an extension of the ‘base.html’ template -->
+{% extends "base.html" %}
+
+{% block title %}
+	Login
+{% endblock %}
+
+<!-- 2c. Make sure the HTML in this file is replacing the block called ‘content’ in the ‘base.html’ template -->
+{% block content %}
+
+<h1>Hi There! Take this awesome survey! </h1>
+<div class="main-container">
+	<h3>First, log in with your username and email address.</h3>
+	<form action="login" method='post'>
+    <!-- 2b. Use the existing form and create form inputs that capture the user’s name and email -->
+        <label for = "username">username</label><input type = "text" name="username"></input>
+        <label for = "email">email</label><input type="text" name="email"></input>
+    <!-- 2d. Make the form submit to the ‘/login’ endpoint -->
+		<input class="action-button" id="login" type="submit" value="Submit">
+	</form>
+</div>
+{% endblock %}
