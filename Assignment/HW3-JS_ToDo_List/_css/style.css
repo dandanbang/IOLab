@@ -1,1 +1,23 @@
 /* Add CSS */
+#complete_label{
+	background-color: green
+
+}
+#complete_label{
+	background-color: red
+}
+#Data_Box{
+margin-top:25;
+display:flex;
+justify-content: space-between;
+}
+#todo{
+width:50%;
+order:1;
+background-color: red;
+}
+#completed{
+width:50%;
+order:2;
+background-color: green;
+}
