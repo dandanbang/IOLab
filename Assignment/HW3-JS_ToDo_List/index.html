@@ -21,18 +21,30 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 
     <title> Homework4 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </head>
     <body>
+        <!-- adding a title and instructive text -->
+        <header>
+            <h1 id="site-title">Sasha's Super To-Do List!</h1>
+            <p>To use this site, type a to-do into the box below and hit 'click me' to move it into your to-do list. <br>Once complete, hit "move me!" to move it into the completed list. <br>Moved it too soon? Hit 'Add To To-Do List!' to put it back in the to-do list.</p>
             <!-- create input tag for user input -->
-            <input>
 
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
-
+            <input id="todo-item-input">
+             <!-- button takes input and adds a new element with content to 'list_do' -->
+            <button id="new-item">Add a to-do!</button>
+            <!--<h4> OR</h4>
+            <ul class="ul_list"></ul>
+                <input id="input-new-list">
+                <button id="new-list">Create a new List!</button>-->
 
             <!-- ability to move items between list_todo and list_completed -->
+            <h2 id="to-do"> To Do List</h2>
             <div id="list_todo"> </div>
+            <h2 id="in_progress"> In Progress List</h2>
+            <div id="working_todo"> </div>
+            <h2 id="complete">Completed List</h2>
             <div id="list_completed"> </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>

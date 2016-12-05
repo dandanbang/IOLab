@@ -24,10 +24,43 @@ function populateFromObj() {
 		//				.innerHTML
 		//				.appendChild
 		//				.getElementsByClassName
+
+	var cat1 = {
+		src : "http://d39kbiy71leyho.cloudfront.net/wp-content/uploads/2016/05/09170020/cats-politics-TN.jpg",
+		alt : "Cat Dandy"
 }
+	var cat2 = {
+		src: "http://www.helpinghomelesscats.com/images/cat1.jpg",
+		alt: "Cutie"
+	}
 
+	cat_array = [cat1, cat2]
 
+	console.log(cat_array)
 
+	for (var i = 0; i < cat_array.length; i++) {
+		var newDiv = document.createElement("div");
+		newDiv.className += "id-grid-item";
+
+		console.log(newDiv);
+
+		var newImg = document.createElement("img");
+		var imgSrc = cat_array[i].src;
+		var imgAlt = cat_array[i].alt;
+
+		newImg.setAttribute("src", imgSrc);
+		newImg.setAttribute("alt", imgAlt);
+
+		newDiv.appendChild(newImg);
+
+		console.log(newDiv)
+
+		var mainContainer = document.getElementsByClassName("main-container")[0];
+		console.log(mainContainer)
+		mainContainer.appendChild(newDiv);
+	}
+
+}
 // Continue with the following excercises if you have copmleted the excercise above
 // We provided you with the buttons in the html doc that trigger each of these functions--
 // make sure to uncomment the buttons if you do decide to complete the following excercises
