@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1>Welcome to ACME Aircraft Parts</h1>
+    <div class= "section">
+      <a href="{{ url_for('create_customer') }}">Add a Customer</a>
+      <p></p>
+      <a href="{{ url_for('display_customer') }}">Home</a>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      {% for order_id in order_id %}
+        <h4>Customers from Order: {{ order_id }}</h4>
+      {% endfor %}
+      <table class="striped">
+        <thead>
+          <tr>
+            <th data-field="first_name">Customer First Name</th>
+            <th data-field="last_name">Customer Last Name</th>
+            <th data-field="company">Company</th>
+            <th data-field="email">Email</th>
+            <th data-field="phone">Phone</th>
+          </tr>
+        </thead>
+        {% for customer in customers %}
+          <tr>
+            <td>{{ customer['first_name'] }}</td>
+            <td>{{ customer['last_name'] }}</td>
+            <td>{{ customer['company'] }}</td>
+            <td>{{ customer['email'] }}</td>
+            <td>{{ customer['phone'] }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
