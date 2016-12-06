@@ -1,0 +1,74 @@
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: blue;
+    color: white;
+    border 1px solid blue;
+    border-radius: 1em;
+    margin-right: 1em;
+}
+
+.navigation a:hover {
+    background: #0000b4;
+}
+
+.address_bar {
+    background: blue;
+    color: white;
+}
+
+.cta_button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: blue;
+    color: white;
+    border 1px solid blue;
+    border-radius: 1em;
+    margin-bottom: 0.1em;
+}
+
+.cta_button:hover {
+    background: #0000b4;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    background: #1d90a2;
+    color: white;
+    padding: 0.5em;
+}
+
+.header_row {
+    border-top: 2px solid black;
+    font-weight: bold;
+}
+
+
+/* Override the default style. */
+table td {
+    background: white;
+}
+
+table.address {
+    width: 90%;
+}
+
+table .customer_header_row td {
+    background-color: #1d90a2;
+    color: white;
+}
+
+table .address_header_row td {
+    background-color: coral;
+    color: white;
+}
