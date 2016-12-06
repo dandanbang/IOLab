@@ -3,33 +3,85 @@
   <div class="container">
     <div class="row">
       <h1>Welcome to ACME Aircraft Parts</h1>
-      <div class= "section">
+      <div class= "top_section">
         <a href="{{ url_for('create_customer') }}">Add a Customer</a>
       </div>
       <div class="divider"></div>
+      <h3>These are all of our awesome customers:</h3>
       <div class="section">
-        <h3>These are all of our awesome customers:</h3>
         <table class="striped">
           <thead>
             <tr>
+              <th data-field="order_now">Order Now</th>
+              <th data-field="first_name">First Name</th>
+              <th data-field="last_name">Last Name</th>
               <th data-field="company">Company</th>
               <th data-field="email">Email</th>
+              <th data-field="phone">Phone</th>
+              <th data-field="street">Street</th>
+              <th data-field="city">City</th>
+              <th data-field="state">State</th>
+              <th data-field="country">Country</th>
+              <th data-field="zip_code">ZipCode</th>
+
             </tr>
           </thead>
           {% for customer in customers %}
             <tr>
-              <td>{{ customer['company'] }}</td>
-              <td>{{ customer['email'] }}</td>
-              <!-- Add more fields to showcase on this page
-              Below is a method of adding the 'add an order' button which will route you to create_order in views.py
-              <td><a href="{{ url_for('create_order', value=customer['customer_id']) }}">Add an Order</a></td> -->
+             <td rowspan = {{ customer['address'] | length + 1}}><a href="{{ url_for('create_order', value=customer['customer_id']) }}">Add an Order</a></td>
+              <td rowspan = {{ customer['address'] | length + 1}} >{{ customer['first_name'] }}</td>
+              <td rowspan = {{ customer['address'] | length + 1 }} >{{ customer['last_name'] }}</td>
+              <td rowspan = {{ customer['address'] | length + 1 }} >{{ customer['company'] }}</td>
+              <td rowspan = {{ customer['address'] | length  + 1}} >{{ customer['email'] }}</td>
+              <td rowspan = {{ customer['address'] | length + 1 }} >{{ customer['phone'] }}</td>
+
+              {% for address in customer['address'] %}
+              <tr>
+                <td>{{ address['street'] }}</td>
+                <td>{{ address['city'] }}</td>
+                <td>{{ address['state'] }}</td>
+                <td>{{ address['country'] }}</td>
+                <td>{{ address['zipcode'] }}</td>
+            </tr>
+             {% endfor %}
+
             </tr>
           {% endfor %}
         </table>
       </div>
+      <h3>Orders from Customers:</h3>
       <div class="section">
-        <h3>Orders from Customers:</h3>
-        <!-- Display all the current existing order information here -->
+          <table class="striped">
+            <thead>
+              <tr>
+                <th data-field="first_name">First Name</th>
+                <th data-field="last_name">Last Name</th>
+                <th data-field="company">Company</th>
+                <th data-field="email">Email</th>
+                <th data-field="phone">Phone</th>
+                <th data-field="street">Name of Part</th>
+                <th data-field="city">Manufacturer of Part</th>
+
+              </tr>
+            </thead>
+            {% for order in orders %}
+              <tr>
+                <td rowspan = {{ order['orders'] | length + 1 }} >{{ order['first_name'] }}</td>
+                <td rowspan = {{ order['orders'] | length + 1 }} >{{ order['last_name'] }}</td>
+                <td rowspan = {{ order['orders'] | length + 1 }} >{{ order['company'] }}</td>
+                <td rowspan = {{ order['orders'] | length + 1 }} >{{ order['email'] }}</td>
+                <td rowspan = {{ order['orders'] | length + 1 }} >{{ order['phone'] }}</td>
+
+                {% for ord in order['orders'] %}
+                <tr>
+                  <td>{{ ord['name_of_part'] }}</td>
+                  <td>{{ ord['manufacturer_of_part'] }}</td>
+              </tr>
+               {% endfor %}
+
+              </tr>
+            {% endfor %}
+          </table>
       </div>
     </div>
   </div>

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class= "top-section">
+        <a href ="{{ url_for('display_customer') }}">Home</a>
+    </div>
+    <h2>Add Order to Our Database</h2>
+    <form action="" method="post" name="post_order">
+        {{ form.hidden_tag() }}
+      <div class="divider"></div>
+      <h3>Add Order for:</h3>
+      <div class="section">
+          <table class="customer_info">
+            <thead>
+              <tr>
+                <th data-field="first_name">First Name</th>
+                <th data-field="last_name">Last Name</th>
+                <th data-field="company">Company</th>
+                <th data-field="email">Email</th>
+                <th data-field="phone">Phone</th>
+              </tr>
+            </thead>
+                <td >{{ customer[0]['first_name'] }}</td>
+                <td >{{ customer[0]['last_name'] }}</td>
+                <td >{{ customer[0]['company'] }}</td>
+                <td>{{ customer[0]['email'] }}</td>
+                <td>{{ customer[0]['phone'] }}</td>
+          </table>
+      </div>
+      <div class="divider"></div>
+      <h3>Order Info:</h3>
+      <div class="section">
+        <!-- Additional form fields for the Address should go here -->
+        <p>
+            Name of Part: <br />
+            {{ form.name_of_part(size=120) }}<br />
+        </p>
+        <p>
+            manufacturer Of Part: <br />
+            {{ form.manufacturer_of_part(size=120) }}<br />
+        </p>
+      </div>
+      <p><input type="submit" value="Create Order"></p>
+    </form>
+  </div>
+</div>
+{% endblock %}
