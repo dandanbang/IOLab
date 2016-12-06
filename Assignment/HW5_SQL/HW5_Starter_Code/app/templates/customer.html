@@ -11,15 +11,47 @@
       <div class="divider"></div>
       <div class="section">
         <p>
-          Company name:<br>
-          {{ form.company(size=120) }}<br>
+          First name:
+          {{ form.first_name(size=60) }}<br>
         </p>
         <p>
-          Customer email:<br>
-          {{ form.email(size=120) }}<br>
-          <!-- Additional form fields for the customer should go here -->
+          Last Name:
+          {{ form.last_name(size=60) }}<br>
+        </p>
+        <p>
+          Company:
+          {{ form.company(size=60) }}<br>
+        </p>
+        <p>
+          E-mail:
+          {{ form.email(size=60) }}<br>
+        </p>
+        <p>
+          Phone Number:
+          {{ form.phone(size=60) }}<br>
         </p>
       </div>
+        <h3>Enter Customer Address Data</h3>
+        <p>
+          Street Address:
+          {{ form.street_add(size=60) }}<br>
+        </p>
+        <p>
+          City:
+          {{ form.city(size=60) }}<br>
+        </p>
+        <p>
+          State:
+          {{ form.state(size=60) }}<br>
+        </p>
+        <p>
+          Country:
+          {{ form.country(size=60) }}<br>
+        </p>      
+        <p>
+          Zip Code:
+          {{ form.zip(size=60) }}<br>
+        </p>      
       <div class="divider"></div>
       <div class="section">
         <!-- Additional form fields for the Address should go here -->
