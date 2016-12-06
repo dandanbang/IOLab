@@ -1,1 +1,83 @@
 /*Your tablet targeted CSS should go in this file*/
+
+body{
+    background: red;
+}
+
+button{
+    display: inline;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid;
+    font-size: 1em;
+    padding: 5px 7px;
+    background-color:ghostwhite;
+    width: 100px;
+    height: 30px;
+    margin-left: 15px;
+    padding-top:3px;
+    padding-bottom: 3px;
+}
+
+.pikachu{
+    float: left;
+    width: 33%;
+    margin-top: 15px;
+}
+
+.pokeball{
+    margin-right: 15px;
+}
+
+
+.pikachu_deets{
+    display: inline-block;
+}
+.No-1-Pikachu{
+    display: inline-block;
+}
+
+table{
+   display: none;
+}
+
+td{
+    display: none;
+}
+
+th{
+    display: none;
+}
+
+tbody{
+    display: none;
+}
+
+
+#pokedex{
+    width: 100%;
+    display: inline-block;
+
+}
+
+.pokedex-images img{
+    border: 3px solid darkgrey;
+    max-width: 8%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#footer button{
+    width: 800px;
+    height: 50px;
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+    padding-top:2px;
+    padding-bottom: 2px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+

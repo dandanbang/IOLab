@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Survey
+{% endblock %}
+
+{% block header %}
+	{{ super() }}
+	<form action="logout" id="logout">
+		<span id="username">Logged in as {{ name }}</span>
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+{% block content %}
+	<h1>Way to go - your results are in! Read 'em and weep:</h1>
+	<div class="main-container">
+		<h3>Here are some of your favorite things</h3>
+		<span class="result-item">Your favorite class is {{ surveyResponse['color']}}</span>
+		<span class="result-item">Your favorite teachers are {{ surveyResponse['food']}}</span>
+		<span class="result-item">The coolest thing you've done is {{ surveyResponse['vacation']}}</span>
+
+		<h3>Wow! Your front end skillz are dope!</h3>
+		<span class="result-item">Before IO Lab, your front end skillz were at a {{ surveyResponse['fe-before']}}</span>
+		<span class="result-item">But in just a few short weeks of IO Lab, your front end skillz are now a {{ surveyResponse['fe-after']}}</span>
+
+		<div id="results-email-container">
+			<span>Want your survey results emailed to you?</span>
+			<a class="action-button" id="email-results-button" href="mailto:{{ email }}?subject={{ name }}'s Ape Ask Survey Results&amp;body={{ surveyResponse }}">Yes!</a>
+		</div>
+	</div>
+{% endblock %}

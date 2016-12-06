@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class= "section">
+      <a href="{{ url_for('create_order') }}">Home</a>
+    </div>
+    <h2>Add An Order To Our Database</h2>
+    <form action="" method="post" name="login">
+      <div class="section">
+        <p>
+          Part to order:<br>
+          {{ form.name_of_part(size=120) }}<br>
+        </p>
+        <p>
+          Order Details:<br>
+          {{ form.manufacturer_of_part(size=120) }}<br>
+        </p>
+      <p><input type="submit" value="Add Order"></p>
+    </form>
+  </div>
+</div>
+{% endblock %}
