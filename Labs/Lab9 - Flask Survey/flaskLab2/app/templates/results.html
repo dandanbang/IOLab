@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Survey
+{% endblock %}
+
+{% block header %}
+	{{ super() }}
+	<form action="logout" id="logout">
+		<span id="username">Logged in as {{ name }}</span>
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+{% block content %}
+	<h1>Ohh YES! - Your results have been stored for your future reference...</h1>
+	<div class="main-container">
+		<h3>Here are some of your Today achievements</h3>
+		<span class="result-item">Your new met classmate is: <br>{{ surveyResponse['classmate']}}</span>
+		<span class="result-item">Your GOAL of the day is: <br>{{ surveyResponse['goal']}}</span>
+		<span class="result-item">Your wake up time was: <br>{{ surveyResponse['hour']}}</span>
+
+		<h3>Wow! Your grades are getting better as far as I can see!</h3>
+		<span class="result-item">Your best grade today was {{ surveyResponse['grade']}}</span>
+		<span class="result-item">And you give your day a score of {{ surveyResponse['day_score']}}</span>
+
+		<div id="results-email-container">
+			<span>Want your answers emailed to you?</span>
+			<a class="action-button" id="email-results-button" href="mailto:{{ email }}?subject={{ name }}'s Today Survey Results&amp;body={{ surveyResponse }}">Yes!</a>
+		</div>
+	</div>
+{% endblock %}
