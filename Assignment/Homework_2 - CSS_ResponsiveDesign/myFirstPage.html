@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pokedex displays</title>
+		<!-- Load stylesheets based on viewport  -->
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" media="(max-width: 500px)" href="small.css">
+		<link rel="stylesheet" type="text/css" media="(min-width: 700px) and (max-width: 1200px)" href="medium.css">
+		<!-- Load in custom fonts -->
+    </head>
+
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 33%" align="center"><button id="dropdownButton" type="button">Dropdown</button></td>
+                <td style="width: 33%" align="center"><h1 id="lblPokedex">Pokedex</h1></td>
+                <td style="width: 33%" align="center"><img src="assets/icons/pokeball_icon.png" alt="Empty"></td>
+            </tr>
+        </table>
+    </header>
+    
+    <body>
+        <div class="search_text">
+            <input id="inputSearchText" type="search" placeholder="Search Pokemon">
+        </div>
+        
+        <table class="pickahu" style="cellpadding = 10">
+            <tr>
+                <td>
+                    <img src="assets/images/pickahu.png" alt="Empty" > 
+                </td>
+                <td>
+                    <div class="pok_insights" style="width: 300%">                
+                        <h2>No. 001 Pickahu</h2>
+                        <ul>
+                            <li>- Electric type</li>
+                            <li>- Gentle Temperment</li>
+                            <li>- Grasslands</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <section class="pok_descript" style="width: 60%">
+            <article>
+                <p>	Pickahu can be seen napping in a bright sunlight. It has two 
+                	red dots on its cheeks. By practicing html and css Pickahu can learn confusion.</p>
+                <p>	Pickahu likes to steal computer chargers from sleeping college students.
+                </p>
+            </article>
+        </section>
+
+        <table style="width: 100%">
+            </tr>
+            <div class = "grid-parent">
+                <div class="grid"><img src="assets/images/whatisthat.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/abra.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/vulpix.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/nidorino.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/clafary.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/charmeleon.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/charmander.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/firething.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/jigglyppuff.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/horsea.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/pidgey.png" alt="Empty" width="100%" height="100%"></div>
+                <div class="grid"><img src="assets/images/wartortle.png" alt="Empty" width="100%" height="100%"></div>
+            </tr>
+        </table>
+
+        <nav>
+       		<table style="width: 100%">
+                <tr>
+                    <td><a href="#top"><button>BACK</button></a></td>
+                    <td><a href="#top"><button>MAP</button></td>
+                    <td><a href="#top"><button>AREA</button></td>
+                    <td><a href="#top"><button>NEXT</button></td>
+                </tr>
+            </table>
+        </nav>
+    </body>
+
+</html>
