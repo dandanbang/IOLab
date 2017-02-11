@@ -1,1 +1,25 @@
 /*Your tablet targeted CSS should go in this file*/
+
+#site-title{
+    background: black
+}
+
+h1 {
+    color:white;
+    font-size: 150%
+}
+
+
+.project img {
+    width:90%;
+}
+
+.navigation{
+    background: grey;
+
+}
+
+/*this isn't working*/
+.project_detail {
+    font: helvetica;
+}
