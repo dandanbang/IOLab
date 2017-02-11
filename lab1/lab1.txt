@@ -1,0 +1,11 @@
+1. cd
+2. mkdir
+3. mv <old name> <new name>
+4. ls
+5. mv myfile newlocation
+6. cp
+7. grep "text to find"
+8. ssh
+	ssh-agent
+	ssh-add
+9. rm -rf folderToRemove
