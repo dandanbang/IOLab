@@ -47,3 +47,21 @@ table {
 /*----------------- CSS RESET ------------------*/
 
 /*Your main CSS should go here*/
+
+p {
+    width: 100%;
+    border: 5px solid red;
+    background: blue
+    align-content: bottom;
+}
+
+
+div {
+	align-content: center;
+    width: 97%;
+    height: 50%;
+    border: 6px solid red;
+}
+
+
+
