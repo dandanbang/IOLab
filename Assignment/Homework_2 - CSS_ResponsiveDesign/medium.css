@@ -1,0 +1,106 @@
+img {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    width: 20%;
+}
+
+#Top{
+    background-color:#BD5858;
+    color:white;
+    
+    display: inline-block; 
+    width: 90%
+}
+
+#Top button{
+    display: inline-block;
+    margin:0% 0% 0% 0%;
+}
+
+#Top h1{
+    display: inline-block; 
+    align-content: center;
+    margin:0% 20% 0% 20%;
+
+}
+
+#Top img{
+    width: 5%;
+    margin:0% 0% 0% 10%;
+    border-width: 0px;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+
+}
+
+ul > li:before {
+  content: "- "; 
+}
+
+input{
+    width: 90%;
+    align-content:center;
+}
+
+h3{
+    background-color:lightblue;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+ul{
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+section{
+    background-color: white;
+    border-color: #BD5858;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px
+}
+
+
+
+footer {
+    background-color: #5D8FCB;
+    height: 100%;
+    text-align: center;
+}
+
+button{
+    background-color: lightgrey;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px
+
+}
+#firstImg{
+    width:20%;
+    display: inline-block;
+}
+
+#firstImg img{
+    width:80%;
+    display: inline-block;
+    background-color:white;
+}
+
+#description{
+    width:70%;
+    display: inline-block;
+}
+
+.headache{
+    display: inline-block;
+    width: 100%
+}
